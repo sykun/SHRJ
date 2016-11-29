@@ -1,0 +1,36 @@
+.consulting-container{
+	width:100%;
+	height:850px;
+	margin-top:35px;
+}
+.consulting-container-left{
+	width:25%;
+	height:850px;
+	margin-left:40px;	
+    background-color:black;
+    color:white;
+    font-size:14px;
+    float:left;
+}
+.table{
+	margin-top:25px;
+	margin-left:15px;
+}
+.consulting-container-right{
+	width:100%;
+	height:850px;
+   /* margin-left:20px;*/
+}
+.table-right{
+	margin-top:25px;
+	padding-left:400px;
+	font-size:16px;
+	font-family:"微软雅黑";
+}
+.table-bottom img{
+	width:100%;
+	height:745px;
+}
+.table-bottom img{
+	width:100%;
+}
