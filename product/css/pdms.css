@@ -1,0 +1,55 @@
+.product-content{
+    padding-left: 30px;
+    padding-right:30px;
+}
+.product-v1{
+    padding-top: 10px;
+    text-align: center;
+    font-family: "微软雅黑";
+    padding-bottom: 80px;
+    /*background-color: red;*/
+}
+.product-v1 h2{
+    padding-right: 100px;
+}
+.product-v2 .fl h3{
+    text-align: center;
+}
+.product-v3 .fl h3{
+    text-align: center;
+}
+.product-v2 .fl{
+    width:40%;
+    float:left;
+   /* background-color: green;*/
+    height:300px;
+}
+.product-v2 .fr{
+    padding-right: 30px;
+    width:56%;
+    float:left;
+    font-family: "微软雅黑";
+   /* background-color: red;*/
+    height:250px;
+    padding-top: 50px;
+}
+.product-v3 .fr{
+    padding-left: 30px;
+    width:56%;
+    float:left;
+    font-family: "微软雅黑";
+    /*background-color: orange;*/
+    height:250px;
+    padding-top: 80px;
+}
+.product-v3 .fl{
+    width:40%;
+    float:left;
+    padding-top: 30px;
+    /*background-color: blue;*/
+    height:300px;
+}
+
+body{
+    background-color:rgb(249,249,249);
+}
