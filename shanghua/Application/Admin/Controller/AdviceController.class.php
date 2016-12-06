@@ -2,6 +2,12 @@
 namespace Admin\Controller;
 use Think\Controller;
 class AdviceController extends Controller {
+	public function __construct(){
+        parent::__construct();
+        if(!isLogin()){
+            $this->error("请先登录",U("Admin/login"));
+        }
+    }
      public function lists(){
     	$adviceModel = D("advice");
 	    $advice = $adviceModel->select();

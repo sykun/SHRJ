@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/mycss.css"/>
     <script type="text/javascript" src="__PUBLIC__/admin/js/modernizr.min.js"></script>
 </head>
-<body style="background:url(__PUBLIC__/admin/images/login.jpg)">
+<body style="background-color:rgb(249,249,249)">
 <div >
 	<div class="topbar-wrap white">
     	<div class="topbar-inner clearfix">
@@ -17,7 +17,6 @@
 	        </div>
 	        <div class="top-info-wrap">
 	            <ul class="top-info-list clearfix">
-	                <li><a href="#" class="top-a">欢迎：admin</a></li>
 	                <li><a href="__MODULE__/Index/index" class="top-a">后台首页</a></li>
 	                <li><a href="#" class="top-a">前台首页</a></li>
 	                <li><a href="#" class="top-a">退出</a></li>
@@ -38,9 +37,14 @@
 			</div>
 			<div class="input-group">
 				<label>验证码：</label>
-				<input type="text" style="width:100px;" />
-				<img src="__PUBLIC__/admin/images/yzm.gif" width="79px" height="25px;" class="yzm">
+				<input type="text" />
+				
 			</div>
+			<div class="input-group">
+				<img src="__PUBLIC__/admin/images/yzm.gif" width="79px" height="25px;" class="yzm">
+				<a id="sx">换一张</a>
+			</div>
+			
 			<div class="input-group">
   				<button type="submit" class="btn btn-primary" id="button"> &nbsp;&nbsp;登&nbsp;&nbsp;录&nbsp;&nbsp;</button>
   			</div>

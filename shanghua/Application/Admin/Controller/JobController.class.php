@@ -2,14 +2,24 @@
 namespace Admin\Controller;
 use Think\Controller;
 class JobController extends Controller {
+	public function __construct(){
+        parent::__construct();
+        if(!isLogin()){
+            $this->error("请先登录",U("Admin/login"));
+        }
+    }
      public function lists(){
     	$jobModel = D("job");
 		$job = $jobModel->select();
 		$this->assign('job',$job);
 		$this->display();  
     }
+    public function get_time(){
+    	return date("Y-m-d");
+    }
     public function add(){
-
+    	$time = $this->get_time();
+    	$this->assign('time',$time);
     	$this->display();
     }
     public function doAdd(){
@@ -44,12 +54,15 @@ class JobController extends Controller {
 	        }       
     	}
     public function edit() {
+
 	        $id = intval($_GET['id']);
 	        if ($id == '') {
 	            exit("error param");
 	        }
 	        $job = M("job")->find($id);
 	        $this->assign("job", $job);
+	        $time = $this->get_time();
+    		$this->assign('time',$time);
 	        $this->display();
     	}
 

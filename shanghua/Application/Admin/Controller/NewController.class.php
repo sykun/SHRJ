@@ -2,14 +2,24 @@
 namespace Admin\Controller;
 use Think\Controller;
 class NewController extends Controller {
+	public function __construct(){
+        parent::__construct();
+        if(!isLogin()){
+            $this->error("请先登录",U("Admin/login"));
+        }
+    }
 	    public function lists(){
 	    	$newsModel = D("news");
 	        $news = $newsModel->select();
 	        $this->assign('news',$news);
 			$this->display();  
 	    }
-
+	    public function get_time(){
+        	return date("Y-m-d");
+    }
          public function add(){
+         	$time = $this->get_time();
+         	$this->assign('time',$time);
             $this->display();
          }
          public function doAdd(){
