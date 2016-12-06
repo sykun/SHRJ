@@ -12,11 +12,12 @@
 }
 /*登陆*/
 .admin-login{
+	/*background-color: red;*/
 	width: 300px;
 	height: auto;
 	position: absolute;
-	top:50%;
-	left:30%;
+	top:30%;
+	left:31%;
 }
 .admin-login span{
 	/*background-color: red;*/
@@ -30,6 +31,9 @@
 	float: right;
 	/*background-color: red;*/
 	margin-top: 10px;
+}
+.input-group img,.input-group a{
+	margin-right: 30px;
 }
 #button{
 	margin-top: 20px;
