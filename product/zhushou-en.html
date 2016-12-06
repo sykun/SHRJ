@@ -1,0 +1,231 @@
+<html>
+<head>
+  <title>设计助手-en</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link href="css/nav.css" type="text/css" rel="stylesheet" />
+  <link href="css/zhushou.css" type="text/css" rel="stylesheet" />
+  <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+  <link href="css/touch.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="js/touch.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(e) {
+      var ImgsTObj = $('.EnlargePhoto');//class=EnlargePhoto的都是需要放大的图像
+      if(ImgsTObj){
+        $.each(ImgsTObj,function(){
+          $(this).click(function(){
+            var currImg = $(this);
+            CoverLayer(1);
+            var TempContainer = $('<div class=TempContainer></div>');
+            with(TempContainer){
+              appendTo("body");
+              css('top',currImg.offset().top);
+              html('<img border=0 src=' + currImg.attr('src') + '>');
+            }
+            TempContainer.click(function(){
+              $(this).remove();
+              CoverLayer(0);
+            });
+          });
+        });
+      }
+      else{
+        return false;
+      }
+      //====== 使用/禁用蒙层效果 ========
+      function CoverLayer(tag){
+        with($('#Over')){
+          if(tag==1){
+            css('height',$(document).height());
+            css('display','block');
+            css('opacity',0.9);
+            css("background-color","#000");
+          }
+          else{
+            css('display','none');
+          }
+        }
+      }
+    });
+  </script>
+</head>
+<body>
+
+  <div id="nav-header">
+    <div id="img">
+       <img src="images/logo.jpg" width="100%" height="45px">
+    </div>
+    <div id="nav-center">
+    <div class="nav">
+        <ul>
+            <li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home</a></li>
+        </ul>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="#">About&nbsp;SH</a>
+              <ul>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Culture</a></li>
+                <li><a href="#">Honor</a></li>
+                <li><a href="#">Join&nbsp;Us</a></li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="#">Products</a>
+              <ul>
+                <li><a href="#">Integrated</a></li>
+                <li><a href="#">Maintenance</a></li>
+                <li><a href="#">Green&nbsp;Building</a></li>
+                <li><a href="#">DWGHelp</a></li>
+                <li><a href="#">PDMS&nbsp;Composite</a></li>
+                <li><a href="#">PDMS&nbsp;Wind</a></li>
+                <li><a href="#">Process</a></li>
+               </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="#">News</a>
+               <ul>
+                <li><a href="#">Company</a></li>
+                <li><a href="#">Industry</a></li> 
+               </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="#">Successful</a>
+               <ul>
+                <li><a href="#">Pipe&nbsp;Sallery</a></li>
+                <li><a href="#">VE</a></li>
+               </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="#">Consulting</a>
+               <ul>
+                <li><a href="#">Apply</a></li>
+                <li><a href="#">Advice</a></li>
+               </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    </div>
+    <div id="nav-right">
+      <p><a href="#">中文&nbsp;</a>|<a href="#">&nbsp;English</a></p>
+    </div>
+  </div>
+  <div id="nav-banner">
+    <img src="images/b8.png">
+  </div>
+  <div id="bread">
+    <div id="bread-left">Products</div>
+      <div id="bread-right"><a href="">Home&nbsp;</a>>><a href="">&nbsp;Products&nbsp;</a>>><a href="">&nbsp;DWHelp</a></div>
+  </div>
+  
+<div class="product-content">
+    <div class="product-v1">
+      <h2>DESIGN ASSISTANT DWHELP</h2>
+      <h3>设计助手DWHelp</h3>
+    </div>
+    
+    <div class="product-v2">
+      <h2>GENERAL INTRODUCTION</h2>
+      <h3>总体介绍</h3><br/>
+      <p>
+        Design assistant DWGHelp (or name: drawing assistant DWGHelp) is a specialized research and development of professional tools for digital drawing, main function modules including: drawings protection, security, drawing drawings signature, electronic signature, intelligent printing watermark, drawings, etc. The units can be completed quickly, such as: stamp figure sign, personal chop sign, qr code and other intelligent drawing implant. Second, DWGHelp research and development of intelligent based on ACE industry designer to create, drawing tools, tools layer, drawing ratio and drawing notation, viewport tools such as single point of function module to improve the design process, collaborative (collaboration), communication and figure whose work efficiency.
+<br/>DWGHelp AutoCAD platform with the survey and design unit is widely used and highly integrated CAD secondary development software, can automatically realize batch, automatic signature and signed the drawings of the following characteristics: do not edit, on the basis of meet the digital drawing, also protect the enterprise's intellectual property rights, building design enterprise's good helper.
+      </p>
+    </div>
+    <div class="product-v3">
+      <h2>SOFTWARE MAIN INTERFACE</h2>
+      <h3>软件主界面</h3><br/>
+      <p>Design assistant main functions are listed on the menu screen, and the main menu, main menu and the screen menu. Main interface of the software are as follows: < p class = "tu" > (click the picture to view the original image)</p></p><br/>         
+      <!-- <div class="img">
+          <img src="images/助手1.png"><img src="images/助手2.png" >
+      </div>  -->
+      <div class="product-v3-img">
+        <img class="img EnlargePhoto" src="images/zs1.png">
+    
+    </div>
+</div>
+
+    <div class="product-v4">
+      <h2>SOFTWARE FUNCTIONAL CHARACTERISTICS</h2>
+      <h3>软件功能特点</h3><br/>
+      <p>
+        Intelligent identification enterprise standard drawing frame, realizing the rapid digital figure out;<br/>Provide enterprise to stamp, all kinds of drawings to sign management functions, convenient and flexible application;<br/>Outgoing DWG drawings of security protection, the watermark encryption function;<br/>Digital signature drawings of security protection, protection level according to drawings important level Settings; < br / > when the printing signature knowledge of enterprise intellectual property rights (ipr) protection drawing features.<br/>
+      </p>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+  <div id="footer">
+  <div id="footer1">
+    <div class="footer-top">
+      <h5>About&nbsp;SH</h5>
+      <hr class="footer-hr">
+      <p>&nbsp;&nbsp;Beijing Shanghua Software Co., Ltd. is a new high-tech information company, a service in the field of development survey and design information.</p>
+    </div>
+    <div id="footer-top2">
+        <ul>
+          <li style="list-style-type:none"><h5>Industry link</h5></li>
+          <hr class="footer-hr">
+          <li><a href="#">China Municipal Engineering Association</a></li>
+          <li><a href="#">Survey and design of China</a></li>
+          <li><a href="#">Shanghai Planning Bureau</a></li>
+          <li><a href="#">China BIM portal</a></li>
+          
+        </ul>
+    </div>
+    <div class="footer-top3">
+        <ul>
+          <li><h5>Contact</h5></li>
+          <hr class="footer-hr">
+          <li><img src="images/footer1.png"height="12px"width="12px">&nbsp;Beijing City, Fengtai District Jianhua Street</li>
+          <li><img src="images/footer2.png"height="12px"width="12px">&nbsp;15289016539</li>
+          <li><img src="images/footer3.png"height="12px"width="12px">&nbsp;802742100</li>
+          <li><img src="images/footer4.png"height="12px"width="12px">&nbsp;www.shanghua.com</li>
+          
+        </ul>
+    </div>
+    <div class="footer-top4" >
+        <ul>
+          <li><h5>Product</h5></li>
+          <hr class="footer-hr">
+          <li class="footer-img"><img src="images/1.jpg" width="50px" height="50px"></li>
+          <li class="footer-img"><img src="images/3.jpg" width="50px" height="50px"></li>
+          <li class="footer-img"><img src="images/4.jpg" width="50px" height="50px"></li>
+          <li class="footer-img"><img src="images/5.png" width="50px" height="50px"></li>
+          <li class="footer-img"><img src="images/6.png" width="50px" height="50px"></li>
+          <li class="footer-img"><img src="images/7.png" width="50px" height="50px"></li>
+        </ul>
+    </div>
+    </div>
+    <div id="footer-bottom">
+      <div id="footer-bottom1"><p>My website copyright all 2008-2014 Xiang 8888888<br/> for ICP This page content for the website demonstration data, front page content can be modified in the background.<br/>
+      Powered by MetInfo</p></div>
+    </div>
+    </div>
+    <div id="top"></div>
+  </body>
+</html>

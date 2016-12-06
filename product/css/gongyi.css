@@ -1,0 +1,61 @@
+.product-content{
+    padding: 10px 70px;
+    padding-bottom: 90px;
+    font-family: "微软雅黑";
+    height:650px;
+}
+.product-v1 h2{
+    padding-right: 100px;
+}
+.fl{
+    float:left;
+    display: block;
+}
+.fr{
+    float:right;
+    display: block;
+}
+.product-v2 {
+    width: 100%;
+    display: block;
+    
+}
+.product-v2 .fl {
+    width: 60%;
+}
+.product-v2 .fr {
+    width: 35%;
+    
+}
+.product-v2 .extP_div {
+    padding-top: 70px;
+   
+}
+.product-v3{
+    width:100%;
+    height:455px;
+}
+/*.product-v3 {
+    width: 100%;
+    display: block;
+    
+}*/
+/*.lf {
+    float:left;
+    padding-top:130px;
+    width: 49%;*/
+   
+    /* background-color: red;*/
+/*}
+.rf {
+     /*float:right;*/
+     /*float:left;
+    margin-top:10px;
+    width: 49%;
+}*/
+/*.P_div {
+   float:left;
+    padding-top: 90px;
+    background-color: orange;
+}
+*/
