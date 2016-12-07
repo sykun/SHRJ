@@ -19,9 +19,15 @@
                                 </td>
                             </tr>
                             <tr>
+                                <th>新闻配图：</th>
+                                <td>
+                                <img src="__PUBLIC__/{$news.thumb}" width="60px" height="60px">
+                                <input name="thumb" id="" type="file"></td>
+                            </tr>
+                            <tr>
                                 <th>发布时间：</th>
                                 <td>
-                                    <input class="common-text required" id="read-style" size="50" value="{$news.time}" type="text" readonly>
+                                    <input class="common-text required" id="read-style" size="50" name="time" value="{$time}" type="text" readonly>
                                 </td>
                             </tr>
                             <tr>

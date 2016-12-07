@@ -17,15 +17,17 @@
                     <table class="result-tab" width="100%">
                         <tr>
                             <th class="tc" width="6%"><input class="allChoose" name="" type="checkbox"></th>
+                            <th width="15%">新闻配图</th>
                             <th width="20%">新闻标题</th>
-                            <th width="30%">新闻内容</th>
-                            <th width="10%">添加时间</th>
+                            <th width="20%">新闻内容</th>
+                            <th width="15%">添加时间</th>
                             <th width="10%">点击量</th>
                             <th width="12%">操作</th>
                         </tr>
                         <volist name="news" id="data">
                         <tr>
                             <td><input type="checkbox" name="newsId[]" id="checkbox" value="{$data.news_id}"><label for="checkbox"></label></td>
+                            <td><img src="__PUBLIC__/{$data.thumb}" width="60px" height="60px"></td>
                             <td>{$data.title}</td>
                             <td>{$data.content}</td>
                             <td>{$data.time}</td>
