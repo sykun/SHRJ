@@ -17,7 +17,6 @@
         </div>
         <div class="top-info-wrap">
             <ul class="top-info-list clearfix">
-                <li><a href="#" class="top-a">欢迎：admin</a></li>
                 <li><a href="/shanghua/index.php/Admin/Index/index" class="top-a">后台首页</a></li>
                 <li><a href="#" class="top-a">前台首页</a></li>
                 <li><a href="#" class="top-a">退出</a></li>
@@ -35,42 +34,43 @@
                 <li>
                     <a href="#"><i class="icon-font">&#xe051;</i>账户管理</a>
                     <ul class="sub-menu">
-                        <li><a href="/shanghua/index.php/Admin/Users/lists"><i class="icon-font">&#xe008;</i>用户管理</a></li>
+                        <li><a href="/shanghua/index.php/Admin/Users/lists"><i class="icon-font">&#xe050;</i>用户管理</a></li>
                         <li><a href="/shanghua/index.php/Admin/Users/add"><i class="icon-font">&#xe026;</i>添加用户</a></li>
+                        <li><a href="/shanghua/index.php/Admin/Users/pass"><i class="icon-font">&#xe051;</i>修改个人密码</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="#"><i class="icon-font">&#xe001;</i>新闻管理</a>
                     <ul class="sub-menu">
-                        <li><a href="/shanghua/index.php/Admin/New/lists"><i class="icon-font">&#xe008;</i>新闻列表</a></li>
+                        <li><a href="/shanghua/index.php/Admin/New/lists"><i class="icon-font">&#xe050;</i>新闻列表</a></li>
                         <li><a href="/shanghua/index.php/Admin/New/add"><i class="icon-font">&#xe026;</i>添加新闻</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="#"><i class="icon-font">&#xe018;</i>产品管理</a>
                     <ul class="sub-menu">
-                        <li><a href="/shanghua/index.php/Admin/Product/lists"><i class="icon-font">&#xe008;</i>产品列表</a></li>
+                        <li><a href="/shanghua/index.php/Admin/Product/lists"><i class="icon-font">&#xe050;</i>产品列表</a></li>
                         <li><a href="/shanghua/index.php/Admin/Product/add"><i class="icon-font">&#xe026;</i>添加产品</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="#"><i class="icon-font">&#xe060;</i>成功案例</a>
                     <ul class="sub-menu">
-                        <li><a href="/shanghua/index.php/Admin/Case/lists"><i class="icon-font">&#xe008;</i>成功案列列表</a></li>
+                        <li><a href="/shanghua/index.php/Admin/Case/lists"><i class="icon-font">&#xe050;</i>成功案列列表</a></li>
                         <li><a href="/shanghua/index.php/Admin/Case/add"><i class="icon-font">&#xe026;</i>新增成功案列</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="#"><i class="icon-font">&#xe002;</i>申请试用</a>
                     <ul class="sub-menu">
-                        <li><a href="/shanghua/index.php/Admin/Apply/lists"><i class="icon-font">&#xe008;</i>申请列表</a></li>
+                        <li><a href="/shanghua/index.php/Admin/Apply/lists"><i class="icon-font">&#xe050;</i>申请列表</a></li>
                         
                     </ul>
                 </li>
                 <li>
                     <a href="#"><i class="icon-font">&#xe051;</i>荣誉管理</a>
                     <ul class="sub-menu">
-                        <li><a href="/shanghua/index.php/Admin/Honor/lists"><i class="icon-font">&#xe008;</i>荣誉列表</a></li>
+                        <li><a href="/shanghua/index.php/Admin/Honor/lists"><i class="icon-font">&#xe050;</i>荣誉列表</a></li>
                         <li><a href="/shanghua/index.php/Admin/Honor/add"><i class="icon-font">&#xe026;</i>新增荣誉</a></li>
                         
                     </ul>
@@ -78,7 +78,7 @@
                 <li>
                     <a href="#"><i class="icon-font">&#xe003;</i>职位管理</a>
                     <ul class="sub-menu">
-                        <li><a href="/shanghua/index.php/Admin/Job/lists"><i class="icon-font">&#xe008;</i>职位列表</a></li>
+                        <li><a href="/shanghua/index.php/Admin/Job/lists"><i class="icon-font">&#xe050;</i>职位列表</a></li>
                         <li><a href="/shanghua/index.php/Admin/Job/add"><i class="icon-font">&#xe026;</i>新增职位</a></li>
                         
                     </ul>
@@ -86,7 +86,7 @@
                 <li>
                     <a href="#"><i class="icon-font">&#xe014;</i>咨询管理</a>
                     <ul class="sub-menu">
-                        <li><a href="/shanghua/index.php/Admin/Advice/lists"><i class="icon-font">&#xe008;</i>咨询列表</a></li>
+                        <li><a href="/shanghua/index.php/Admin/Advice/lists"><i class="icon-font">&#xe050;</i>咨询列表</a></li>
                         
                     </ul>
                 </li>
@@ -114,7 +114,7 @@
                             <tr>
                                 <th>发布时间：</th>
                                 <td>
-                                    <input class="common-text required" id="title" name="time" size="50" value="" type="text" placeholder="2016-11-30">
+                                    <input class="common-text required" id="read-style" size="50" name="time" value="<?php echo ($time); ?>" type="text" readonly>
                                 </td>
                             </tr>
                             <tr>

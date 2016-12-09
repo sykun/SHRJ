@@ -23,7 +23,6 @@ class NewController extends Controller {
             $this->display();
          }
          public function doAdd(){
-
     		$upload = new \Think\Upload();// 实例化上传类
 		    $upload->maxSize   =     3145728 ;// 设置附件上传大小
 		    $upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
