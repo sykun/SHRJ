@@ -14,22 +14,7 @@ class AdviceController extends Controller {
 	    $this->assign('advice',$advice);
 		$this->display();  
     }
-    // public function delete(){
-	   //      $id = $_GET['adviceId'];
-	   //      if(is_array($id))
-	   //      {
-	   //          foreach($id as $value)
-	   //          {
-	   //              M("advice")->delete($value);
-	   //          }  
-	   //          $this->success("删除成功！",U('Advice/lists'));
-	   //      } 
-	   //      else{
-	   //          if(M("advice")->delete($id)){
-	   //              $this->success("删除成功！",U('Advice/lists'));
-	   //          }
-	   //      }       
-    // 	}
+
 
     public function delete() {
           //全部删除
