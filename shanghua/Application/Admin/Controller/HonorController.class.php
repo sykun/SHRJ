@@ -46,22 +46,33 @@ class HonorController extends Controller {
 		    	}
 		    }
     	}
-    public function delete(){
-	        $id = $_GET['honorId'];
-	        if(is_array($id))
-	        {
-	            foreach($id as $value)
-	            {
-	                M("honor")->delete($value);
-	            }  
-	            $this->success("删除成功！",U('Honor/lists'));
-	        } 
-	        else{
-	            if(M("honor")->delete($id)){
-	                $this->success("删除成功！",U('Honor/lists'));
-	            }
-	        }       
-    	}
+    
+    	public function delete() {
+          //全部删除
+            $id = $_GET['honorId'];
+            if(is_array($id)){
+                foreach($id as $value){
+                    D("honor")->delete($value);
+                }  
+                $this->success("批量删除成功！",U("lists"));
+            } 
+        //单个删除
+        else{
+            $honorModel = D("honor");
+             if($honorModel->where("id=$id")->delete())
+                    {
+                        $this->success("删除成功",U("Honor/lists"));
+                    }
+                else
+                    {
+                        $this->error($honorModel->geterror());
+                    }
+           
+        }      
+
+}
+
+ 
     	public function edit() {
 	        
 			$id=I('id');
