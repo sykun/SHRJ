@@ -48,17 +48,6 @@ td{
 #read-style{
 	background-color: #F0F0F0;
 }
-.short-list{
-	float:left;
+#alldelete button{
+	margin-top:1%;
 }
-.result-wrap{
-	height:320px;
-}
-.short-list li{
-	margin-top:20px;
-}
-.result-content1{
-	margin-left: 80px;
-	line-height: 35px;
-	margin-top:0px;
-} 
