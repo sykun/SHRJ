@@ -49,21 +49,25 @@ class UsersController extends Controller {
             $this->success("新用户添加成功",U("lists"));
         }
     }
-    public function delete(){
+    public function delete() {
+        //全部删除
         $id = $_GET['usersId'];
-        if(is_array($id))
-        {
-            foreach($id as $value)
-            {
-                M("adminUser")->delete($value);
+        if(is_array($id)){
+            foreach($id as $value){
+                D("adminUser")->delete($value);
             }  
-            $this->success("删除成功！",U('Users/lists'));
+            $this->success("批量删除成功！",U("lists"));
         } 
+        //单个删除
         else{
-            if(M("adminUser")->delete($id)){
-                $this->success("删除成功！",U('Users/lists'));
+            $userModel = D("adminUser");
+            if($userModel->where("id=$id")->delete()){
+                 $this->success("删除成功",U("Users/lists"));
             }
-        }       
+            else{
+                $this->error($userModel->geterror());
+            }
+        }      
     }
     public function edit() {
         $username = I("Session.username");
