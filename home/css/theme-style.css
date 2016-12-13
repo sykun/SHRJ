@@ -36,26 +36,29 @@ h3{
 	padding: 0;
 	color:#FFF;
 	border-radius:0.3em;
+	margin-top: 20px;
 }
-.blog h3 {
+.blog h3{
 	font-size: 2.2em;
 	font-weight: 900;
 	color: #506369;
-	text-align: left;
+	text-align: center;
 	margin: 0.8em 0 0.8em;
 	text-transform: uppercase;
 }
-.blog h3 label {
-	background: #506369;
-	height: 2px;
-	display: block;
-	width: 5%;
-	margin-top: 0.2em;
+.blog h5{
+	font-size: 1.8em;
+	font-weight: 900;
+	color: #506369;
+	text-align: center;
+	margin: 0.8em 0 0.8em;
+	text-transform: uppercase;
 }
+
 .post-head-left{
 	float:left;
 	width:70%;
-	margin-top: 1.2em;
+	margin-top: 1.5em;
 }
 .post-head-left h4{
 	margin:0;
