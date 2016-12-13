@@ -2,10 +2,12 @@
    /* font-family: "微软雅黑";*/
     color:#3c3c3c;
 }
-p{
+.product-v2 p{
     font-size: 15px;
 }
-
+.product-v3 p{
+    font-size: 15px;
+}
 .product-content{
     padding: 10px 70px;
     padding-bottom: 90px;
