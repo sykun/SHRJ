@@ -10,26 +10,24 @@ Target Server Type    : MYSQL
 Target Server Version : 50173
 File Encoding         : 65001
 
-Date: 2016-12-13 20:07:18
+Date: 2016-12-13 20:08:09
 */
 
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
--- Table structure for advice
+-- Table structure for product
 -- ----------------------------
-DROP TABLE IF EXISTS `advice`;
-CREATE TABLE `advice` (
+DROP TABLE IF EXISTS `product`;
+CREATE TABLE `product` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(255) DEFAULT NULL,
-  `unit` varchar(255) DEFAULT NULL,
-  `email` varchar(255) DEFAULT NULL,
-  `phone` varchar(255) DEFAULT NULL,
-  `question` varchar(255) DEFAULT NULL,
+  `title` varchar(255) DEFAULT NULL,
+  `content` varchar(255) DEFAULT NULL,
+  `thumb` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Records of advice
+-- Records of product
 -- ----------------------------
-INSERT INTO `advice` VALUES ('1', '小明', '北京', '123@qq.com', '123**', '软件的使用方法');
+INSERT INTO `product` VALUES ('1', '智慧', '管廊内容管廊内容1', '../Public/uploads/2016-12-07/58475962a2347.png');
