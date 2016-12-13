@@ -45,6 +45,12 @@ img{
 p{
   font-family: "微软雅黑";
   color:#3c3c3c;
+  /*font-size: 15px;*/
+}
+.product-v2{
+  font-size: 15px;
+}
+.product-v5{
   font-size: 15px;
 }
 .product-v3{
