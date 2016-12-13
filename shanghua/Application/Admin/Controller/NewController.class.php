@@ -49,31 +49,22 @@ class NewController extends Controller {
 		    	}
 		    }
     	}
-    	
-    	public function delete() {
-          //全部删除
-            $id = $_GET['newsId'];
-            if(is_array($id)){
-                foreach($id as $value){
-                    D("News")->delete($value);
-                }  
-                $this->success("批量删除成功！",U("lists"));
-            } 
-        //单个删除
-        else{
-            $newsModel = D("News");
-             if($newsModel->where("id=$id")->delete())
-                    {
-                        $this->success("删除成功",U("New/lists"));
-                    }
-                else
-                    {
-                        $this->error($newsModel->geterror());
-                    }
-           
-        }      
-
-}
+    	public function delete(){
+	        $id = $_GET['newsId'];
+	        if(is_array($id))
+	        {
+	            foreach($id as $value)
+	            {
+	                M("News")->delete($value);
+	            }  
+	            $this->success("删除成功！",U('New/lists'));
+	        } 
+	        else{
+	            if(M("News")->delete($id)){
+	                $this->success("删除成功！",U('New/lists'));
+	            }
+	        }
+    	}
 
     	 public function edit() {
 	        
@@ -114,4 +105,13 @@ class NewController extends Controller {
 		    }
 
 		 }
-	}
+
+		  public function find(){
+	    	$newsModel = M("news");
+	    	$date['title']='新闻'; 
+			$liset=$newsModel->where($date)->select();
+			echo $newsModel;
+			exit;
+			
+	    }
+}

@@ -46,32 +46,22 @@ class ProductController extends Controller {
 		    	}
 		    }
     	}
-   
-    	public function delete() {
-          //全部删除
-            $id = $_GET['productId'];
-            if(is_array($id)){
-                foreach($id as $value){
-                    D("product")->delete($value);
-                }  
-                $this->success("批量删除成功！",U("lists"));
-            } 
-
-        //单个删除
-        else{
-            $productModel = D("product");
-             if($productModel->where("id=$id")->delete())
-                    {
-                        $this->success("删除成功",U("Product/lists"));
-                    }
-                else
-                    {
-                        $this->error($productModel->geterror());
-                    }
-           
-        }      
-
-}
+    public function delete(){
+	        $id = $_GET['productId'];
+	        if(is_array($id))
+	        {
+	            foreach($id as $value)
+	            {
+	                M("product")->delete($value);
+	            }  
+	            $this->success("删除成功！",U('Product/lists'));
+	        } 
+	        else{
+	            if(M("product")->delete($id)){
+	                $this->success("删除成功！",U('Product/lists'));
+	            }
+	        }       
+    	}
     public function edit() {
 	        
 			$id=I('id');
