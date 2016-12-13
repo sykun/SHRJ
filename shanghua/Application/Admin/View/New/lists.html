@@ -34,8 +34,8 @@
                         <tr>
                             <td><input type="checkbox" name="newsId[]" id="checkbox" value="{$data.id}"><label for="checkbox"></label></td>
                             <td><img src="__PUBLIC__/{$data.thumb}" width="60px" height="60px"></td>
-                            <td>{$data.title}</td>
-                            <td>{$data.content}</td>
+                            <td>{$data.title|msubstr=0,8,'utf-8',ture}</td>
+                            <td>{$data.content|msubstr=0,8,'utf-8',ture}</td>
                             <td>{$data.time}</td>
                             <td>{$data.click}</td>
                             <td>

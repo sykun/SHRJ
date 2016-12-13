@@ -24,7 +24,7 @@
                         <tr>
                             <td><input type="checkbox" name="honorId[]" id="checkbox" value="{$data.id}"><label for="checkbox"></label></td>
                             <td><img src="__PUBLIC__/{$data.thumb}" width="60px" height="60px"></td>
-                            <td>{$data.content}</td>
+                            <td>{$data.content|msubstr=0,10,'utf-8',ture}</td>
                             <td>
                                 <a class="link-update" href="__MODULE__/Honor/edit/id/{$data.id}">修改</a>
                                 <a class="link-del" href="__MODULE__/Honor/delete/honorId/{$data.id}">删除</a>

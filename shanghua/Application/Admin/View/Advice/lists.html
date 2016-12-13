@@ -16,10 +16,10 @@
                         <tr>
                             <th class="tc" width="6%"><input class="allChoose" name="checkall[]" type="checkbox" id="chkall" onclick='selectcheckbox(this.form)'></th>
                             <th width="10%">姓名</th>
-                            <th width="10%">单位名称</th>
+                            <th width="15%">单位名称</th>
                             <th width="17%">email</th>
                             <th width="17%">电话</th>
-                            <th width="20%">所咨询的问题</th>
+                            <th width="15%">咨询的问题</th>
                             <th width="12%">操作</th>
                         </tr>
                         <volist name="advice" id="data">
@@ -29,7 +29,7 @@
                             <td>{$data.unit}</td>
                             <td>{$data.email}</td>
                             <td>{$data.phone}</td>
-                            <td>{$data.question}</td>
+                            <td>{$data.question|msubstr=0,5,'utf-8',ture}</td>
                             <td>
                                 <a class="link-del" href="__MODULE__/Advice/delete/adviceId/{$data.id}">删除</a>
                             </td>

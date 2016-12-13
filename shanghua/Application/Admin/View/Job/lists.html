@@ -31,8 +31,8 @@
                             <td>{$data.time}</td>
                             <td>{$data.place}</td>
                             <td>{$data.num}</td>
-                            <td>{$data.content}</td>
-                            <td>{$data.demand}</td>
+                            <td>{$data.content|msubstr=0,5,'utf-8',ture}</td>
+                            <td>{$data.demand|msubstr=0,5,'utf-8',ture}</td>
                             <td>
                                 <a class="link-update" href="__MODULE__/Job/edit/id/{$data.id}">修改</a>
                                 <a class="link-del" href="__MODULE__/Job/delete/jobId/{$data.id}">删除</a>

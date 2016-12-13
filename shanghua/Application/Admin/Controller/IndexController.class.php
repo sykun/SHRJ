@@ -11,5 +11,9 @@ class IndexController extends Controller {
     public function index(){
         $this->display();
     }
+    public function loginout(){
+    	session('username',null);
+        $this->success('退出成功',U("Admin/login"));
+    }
 
 }
