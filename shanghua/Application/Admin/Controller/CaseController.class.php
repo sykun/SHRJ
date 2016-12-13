@@ -46,22 +46,33 @@ class CaseController extends Controller {
 		    	}
 		    }
     	}
-    public function delete(){
-	        $id = $_GET['caseId'];
-	        if(is_array($id))
-	        {
-	            foreach($id as $value)
-	            {
-	                M("case")->delete($value);
-	            }  
-	            $this->success("删除成功！",U('Case/lists'));
-	        } 
-	        else{
-	            if(M("case")->delete($id)){
-	                $this->success("删除成功！",U('Case/lists'));
-	            }
-	        }       
-    	}
+    
+    	public function delete() {
+          //全部删除
+            $id = $_GET['caseId'];
+            if(is_array($id)){
+                foreach($id as $value){
+                    D("case")->delete($value);
+                }  
+                $this->success("批量删除成功！",U("lists"));
+            } 
+        //单个删除
+        else{
+            $caseModel = D("case");
+             if($caseModel->where("id=$id")->delete())
+                    {
+                        $this->success("删除成功",U("case/lists"));
+                    }
+                else
+                    {
+                        $this->error($caseModel->geterror());
+                    }
+           
+        }      
+
+}
+
+ 
     public function edit() {
 	        
 			$id=I('id');

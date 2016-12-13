@@ -50,22 +50,31 @@ class IndustryController extends Controller {
 		    	}
 		    }
     	}
-    	public function delete(){
-	        $id = $_GET['industryId'];
-	        if(is_array($id))
-	        {
-	            foreach($id as $value)
-	            {
-	                M("industry")->delete($value);
-	            }  
-	            $this->success("删除成功！",U('New/lists'));
-	        } 
-	        else{
-	            if(M("industry")->delete($id)){
-	                $this->success("删除成功！",U('New/lists'));
-	            }
-	        }       
-    	}
+    	public function delete() {
+          //全部删除
+            $id = $_GET['industryId'];
+            if(is_array($id)){
+                foreach($id as $value){
+                    D("industry")->delete($value);
+                }  
+                $this->success("批量删除成功！",U("lists"));
+            } 
+        //单个删除
+        else{
+            $industryModel = D("industry");
+             if($industryModel->where("id=$id")->delete())
+                    {
+                        $this->success("删除成功",U("Industry/lists"));
+                    }
+                else
+                    {
+                        $this->error($industryModel->geterror());
+                    }
+           
+        }      
+
+}
+
 
     	 public function edit() {
 	        

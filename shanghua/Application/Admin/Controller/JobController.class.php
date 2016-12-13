@@ -37,22 +37,32 @@ class JobController extends Controller {
 	            $this->error("添加失败");
 	        }
     	}
-    public function delete(){
-	        $id = $_GET['jobId'];
-	        if(is_array($id))
-	        {
-	            foreach($id as $value)
-	            {
-	                M("job")->delete($value);
-	            }  
-	            $this->success("删除成功！",U('Job/lists'));
-	        } 
-	        else{
-	            if(M("job")->delete($id)){
-	                $this->success("删除成功！",U('Job/lists'));
-	            }
-	        }       
-    	}
+    
+    	public function delete() {
+          //全部删除
+            $id = $_GET['jobId'];
+            if(is_array($id)){
+                foreach($id as $value){
+                    D("job")->delete($value);
+                }  
+                $this->success("批量删除成功！",U("lists"));
+            } 
+
+        //单个删除
+        else{
+            $jobModel = D("job");
+             if($jobModel->where("id=$id")->delete())
+                    {
+                        $this->success("删除成功",U("Job/lists"));
+                    }
+                else
+                    {
+                        $this->error($jobModel->geterror());
+                    }
+           
+        }      
+
+}
     public function edit() {
 
 	        $id = intval($_GET['id']);
