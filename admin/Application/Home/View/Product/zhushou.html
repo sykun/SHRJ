@@ -1,0 +1,224 @@
+<html>
+<head>
+  <title>设计助手</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link href="__PUBLIC__/home/css/nav.css" type="text/css" rel="stylesheet" />
+  <link href="__PUBLIC__/home/css/zhushou.css" type="text/css" rel="stylesheet" />
+  <script type="text/javascript" src="__PUBLIC__/home/js/jquery-1.8.3.min.js"></script>
+  <link href="__PUBLIC__/home/css/touch.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="__PUBLIC__/home/js/touch.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(e) {
+      var ImgsTObj = $('.EnlargePhoto');//class=EnlargePhoto的都是需要放大的图像
+      if(ImgsTObj){
+        $.each(ImgsTObj,function(){
+          $(this).click(function(){
+            var currImg = $(this);
+            CoverLayer(1);
+            var TempContainer = $('<div class=TempContainer></div>');
+            with(TempContainer){
+              appendTo("body");
+              css('top',currImg.offset().top);
+              html('<img border=0 src=' + currImg.attr('src') + '>');
+            }
+            TempContainer.click(function(){
+              $(this).remove();
+              CoverLayer(0);
+            });
+          });
+        });
+      }
+      else{
+        return false;
+      }
+      //====== 使用/禁用蒙层效果 ========
+      function CoverLayer(tag){
+        with($('#Over')){
+          if(tag==1){
+            css('height',$(document).height());
+            css('display','block');
+            css('opacity',0.9);
+            css("background-color","#000");
+          }
+          else{
+            css('display','none');
+          }
+        }
+      }
+    });
+  </script>
+</head>
+<body>
+
+  <div id="nav-header">
+    <div id="img">
+       <img src="__PUBLIC__/home/images/logo.jpg" height="50px">
+    </div>
+    <div id="nav-center">
+    <div class="nav">
+        <ul>
+            <li><a href="index.html">首页</a></li>
+        </ul>
+    </div>
+   <div class="nav">
+        <ul>
+            <li><a href="jianjie.html">关于上华</a>
+              <ul>
+                <li><a href="jianjie.html">公司简介</a></li>
+                <li><a href="wenhua.html">公司文化</a></li>
+                <li><a href="rongyu.html">公司荣誉</a></li>
+                <li><a href="jiaruwomen.html">加入我们</a></li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="product.html">产品服务</a>
+              <ul>
+                <li><a href="intergrade_cn.html">设计软件</a></li>
+                <li><a href="operation.html">运维系统</a></li>
+                <li><a href="lvse.html">绿色建筑</a></li>
+                <li><a href="zhushou.html">DWGHelp</a></li>
+                <li><a href="zonghe.html">PDMS综合</a></li>
+                <li><a href="fengli.html">PDMS风力</a></li>
+                <li><a href="gongyi.html">工艺设计</a></li>
+               </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="new-company.html">新闻中心</a>
+               <ul>
+                <li><a href="new-company.html">公司新闻</a></li>
+                <li><a href="new-industry.html">行业资讯</a></li> 
+               </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="gl-cn.html">成功案例</a>
+               <ul>
+                <li><a href="gl-cn.html">管廊</a></li>
+                <li><a href="VE.html">VE</a></li>
+               </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="apply_cn.html">在线咨询</a>
+               <ul>
+                <li><a href="apply_cn.html">申请试用</a></li>
+                <li><a href="suggest.html">咨询或建议</a></li>
+               </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="contact_cn.html">联系我们</a></li>
+        </ul>
+    </div>
+    </div>
+    <div id="nav-right">
+      <p><a href="zhushou.html">中文&nbsp;</a>|<a href="zhushou-en.html">&nbsp;English</a></p>
+    </div>
+  </div>
+  <div id="nav-banner">
+    <img src="__PUBLIC__/home/images/b8.png">
+  </div>
+  <div id="bread">
+    <div id="bread-left">产品服务</div>
+      <div id="bread-right"><a href="">首页&nbsp;</a>>><a href="intergrade_cn.html">&nbsp;产品服务&nbsp;</a>>>&nbsp;设计助手DWHelp</div>
+  </div>
+  
+<div class="product-content">
+    <div class="product-v1">
+      <h2>DESIGN ASSISTANT DWHELP</h2>
+      <h3>设计助手DWHelp</h3>
+    </div>
+    
+    <div class="product-v2">
+      <h2>GENERAL INTRODUCTION</h2>
+      <h3>总体介绍</h3><br/>
+      <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;设计助手DWGHelp（或名称：图纸助手DWGHelp）是专门为数字化出图而研发的专业工具，主要功能模块包括：图纸保护、图纸安全、图纸水印、图纸签章、电子签名、智能打印等。可快速完成诸如：单位图章图签、个人图章图签、二维码等的智能化图纸植入。其次，DWGHelp立足ACE行业设计者的角度研发智能创建、提图工具、图层工具、图纸比对、图纸批注、视口工具等功能模块提高设计过程中单点、协同（协作）、交流及图审等工作效率。<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DWGHelp与目前勘察设计单位广泛使用的AutoCAD平台及CAD二次开发软件高度集成，可自动实现批量、自动签章以及签名后图纸的不可编辑性等特点，在满足数字化出图的基础上，也保护了企业的知识产权，打造设计企业的好帮手。
+      </p>
+    </div>
+    <div class="product-v3">
+      <h2>SOFTWARE MAIN INTERFACE</h2>
+      <h3>软件主界面</h3><br/>
+      <p>设计助手的主要功能都列在屏幕菜单和主菜单上，主菜单和屏幕菜单一致。软件的主界面如下:<p class="tu">(单击图片可查看原图)</p></p><br/>         
+      <div class="product-v3-img">
+        <img class="img EnlargePhoto" src="__PUBLIC__/home/images/zs1.png">
+    </div>
+</div>
+
+    <div class="product-v4">
+      <h2>SOFTWARE FUNCTIONAL CHARACTERISTICS</h2>
+      <h3>软件功能特点</h3><br/>
+      <p>
+        (1)智能识别企业标准图框，实现快速数字化出图；<br/>(2)提供企业各类图纸图章、图签的管理功能，方便灵活应用；<br/>(3)外发DWG图纸的安全保护，水印加密功能；<br/>(4)数字签名图纸的安全保护，保护等级可根据图纸重要等级设置；<br/>(5)打印时签名的企业级知识知识产权保护出图特色功能。<br/>
+      </p>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+  <div id="footer">
+    <div class="footer-top">
+      <h5>关于上华</h5>
+      <hr class="footer-hr">
+      <p>&nbsp;&nbsp;北京上华软件有限公司是一家服务于勘察设计信息化发展领域的新型高科技信息化公司。其团队核心工程师拥有本行业十余年的资历,曾经开发过在市面上具备垄断水平的多款软件产品。</p>
+    </div>
+    <div id="footer-top2">
+        <ul>
+          <li style="list-style-type:none"><h5>行业链接</h5></li>
+          <hr class="footer-hr">
+          <li><a href="http://www.chszxh.org/">中国市政工程行业协会</a></li>
+          <li><a href="http://www.chinaeda.org/">中国勘察设计</a></li>
+          <li><a href="http://www.supec.org/">上海规划局</a></li>
+          <li><a href="http://www.chinabim.com/">中国BIM门户</a></li>
+          <li><a href="http://www.planning.org.cn/">中国城市规划学会</a></li>
+        </ul>
+    </div>
+    <div class="footer-top3">
+        <ul>
+          <li><h5>联系我们</h5></li>
+          <hr class="footer-hr">
+          <li><img src="__PUBLIC__/home/images/footer1.png"height="12px"width="12px">&nbsp;北京市丰台区建华街道</li>
+          <li><img src="__PUBLIC__/home/images/footer2.png"height="12px"width="12px">&nbsp;15289016539</li>
+          <li><img src="__PUBLIC__/home/images/footer3.png"height="12px"width="12px">&nbsp;802742100</li>
+          <li><img src="__PUBLIC__/home/images/footer4.png"height="12px"width="12px">&nbsp;www.shanghua.com</li>
+          <li><img src="__PUBLIC__/home/images/footer4.png"height="12px"width="12px">&nbsp;shanghua@163.com</li>
+        </ul>
+    </div>
+    <div class="footer-top4" >
+        <ul>
+          <li><h5>产品展示</h5></li>
+          <hr class="footer-hr">
+          <li class="footer-img"><img src="__PUBLIC__/home/images/1.jpg" width="50px" height="50px"></li>
+          <li class="footer-img"><img src="__PUBLIC__/home/images/3.jpg" width="50px" height="50px"></li>
+          <li class="footer-img"><img src="__PUBLIC__/home/images/4.jpg" width="50px" height="50px"></li>
+          <li class="footer-img"><img src="__PUBLIC__/home/images/5.png" width="50px" height="50px"></li>
+          <li class="footer-img"><img src="__PUBLIC__/home/images/6.png" width="50px" height="50px"></li>
+          <li class="footer-img"><img src="__PUBLIC__/home/images/7.png" width="50px" height="50px"></li>
+        </ul>
+    </div>
+    <div id="footer-bottom">
+      <div id="footer-bottom1"><p><br/>
+     本页面内容为网站演示数据，前台页面内容都可以在后台修改。</p></div>
+    </div>
+    </div>
+    <div id="top"></div>
+  </body>
+</html>
