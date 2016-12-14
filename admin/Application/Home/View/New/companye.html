@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Company&nbsp;News</title>
+	<link href="__PUBLIC__/home/css/new-company.css" type="text/css" rel="stylesheet" />
+	<link href="__PUBLIC__/home/css/nav.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" href="__PUBLIC__/home/css/pagnation.css" type="text/css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<link href="__PUBLIC__/home/css/touch.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="__PUBLIC__/home/js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/home/js/touch.js"></script>
+	<script>
+$(function () {
+$(".box ul li").hover(
+	function () {
+		$(this).find(".dask").stop().delay(50).animate({"top":0,opacity:0.6},300)
+	 },
+	function () {
+		$(this).find(".dask").stop().animate({"top":-200,opacity:0},300)
+	}
+	
+)
+});
+</script>
+  <style type="text/css">
+  .nav ul li a{
+    color: white;
+    text-decoration: none;
+  }
+  </style>
+</head>
+<body>
+
+	<div id="nav-header">
+    <div id="img">
+       <img src="__PUBLIC__/home/images/logo.jpg" width="100%" height="45px">
+    </div>
+    <div id="nav-center">
+    <div class="nav">
+        <ul>
+            <li><a href="__MODULE__/Index/indexe">Home</a></li>
+        </ul>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="__MODULE__/Honor/jianjiee">About&nbsp;SH</a>
+              <ul>
+                <li><a href="__MODULE__/Honor/jianjiee">Profile</a></li>
+                <li><a href="__MODULE__/Honor/wenhuae">Culture</a></li>
+                <li><a href="__MODULE__/Honor/rongyue">Honor</a></li>
+                <li><a href="__MODULE__/Job/join1e">Join&nbsp;Us</a></li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="__MODULE__/Product/producte">Products</a>
+              <ul>
+                <li><a href="__MODULE__/Product/intergradee">Integrated</a></li>
+                <li><a href="__MODULE__/Product/operatione">Maintenance</a></li>
+                <li><a href="__MODULE__/Product/lvsee">Green&nbsp;Building</a></li>
+                <li><a href="__MODULE__/Product/zhushoue">DWGHelp</a></li>
+                <li><a href="__MODULE__/Product/zonghee">PDMS&nbsp;Synthetic</a></li>
+                <li><a href="__MODULE__/Product/fenglie">PDMS&nbsp;Wind</a></li>
+                <li><a href="__MODULE__/Product/gongyie">Process</a></li>
+               </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="__MODULE__/New/companye">News</a>
+               <ul>
+                <li><a href="__MODULE__/New/companye">Company</a></li>
+                <li><a href="__MODULE__/Industry/industrye">Industry</a></li> 
+               </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="__MODULE__/Success/gle">Success</a>
+               <ul>
+                <li><a href="__MODULE__/Success/gle">Pipe&nbsp;Sallery</a></li>
+                <li><a href="__MODULE__/Success/VEe">VE</a></li>
+               </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="__MODULE__/Apply/applye">Consulting</a>
+               <ul>
+                <li><a href="__MODULE__/Apply/applye">Apply</a></li>
+                <li><a href="__MODULE__/Advice/suggeste">Advice</a></li>
+               </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="__MODULE__/Contact/contacte">Contact</a></li>
+        </ul>
+    </div>
+    </div>
+    <div id="nav-right">
+      <p><a href="__MODULE__/New/company">中文&nbsp;</a>|<a href="__MODULE__/New/companye">&nbsp;English</a></p>
+    </div>
+     
+  </div>
+  <div id="nav-banner">
+    <img src="__PUBLIC__/home/images/z12.png">
+  </div>
+  <div id="bread">
+    <div id="bread-left">News</div>
+      <div id="bread-right"><a href="__MODULE__/Index/indexe">Home&nbsp;</a>>><a href="__MODULE__/New/companye">&nbsp;News&nbsp;</a>>>&nbsp;Company</div>
+  </div>
+
+	<div id="new-company">
+		<div id="new-company-left">
+      <div id="new-company-new">
+        <h4>News</h4>
+        <HR align="left" width="10%" color="#FFBB77" SIZE="3" style="margin-top:10px;">
+        <ul class="new">
+          <li><a href="__MODULE__/New/companye" class='active' style="color:#FFBB77"><em class='em1'></em>Company</a></li>
+          <li><a href="__MODULE__/Industry/industrye"><em class="em2"></em>Industry</a></li>
+        </ul>
+      </div>
+      <div id="new-company-product">
+        <h4>Recommended products</h4>
+        <HR align="left" width="10%" color="#FFBB77" SIZE="3" style="margin-top:10px;">
+        <ul>
+          <li class="new-company-img1"><a href="__MODULE__/Product/zonghee"><img src="__PUBLIC__/home/images/4.jpg"></a>
+            <p class="new-goods">Intelligent</p>
+            <p class="new-more"><a href="__MODULE__/Product/zonghee" id="product1">MORE</a></p>
+          </li>
+          <li class="new-company-img2"><a href="__MODULE__/Product/lvsee"><img src="__PUBLIC__/home/images/5.png"></a>
+            <p class="new-goods">Building</p>
+            <p class="new-more"><a href="__MODULE__/Product/lvsee" id="product2">MORE</a><p>
+          </li>
+          <li class="new-company-img3"><a href="__MODULE__/Product/zhushoue"><img src="__PUBLIC__/home/images/7.png"></a>
+            <p class="new-goods">Design</p>
+            <p class="new-more"><a href="__MODULE__/Product/zhushoue" id="product2">MORE</a></p>
+          </li>
+        </ul>
+      </div>
+      <div id="new-company-hot">
+         <h4>Hot key words</h4>
+         <HR align="left" width="10%" color="#FFBB77" SIZE="3" style="margin-top:10px;">
+          <ul class="p0 clouds">
+              <li><a href="__MODULE__/Success/VEe" target='_self'>VE</a></li>
+              <li><a href="__MODULE__/Success/gle" target='_self'>Intelligent pipe gallery</a></li>
+              <li><a href="__MODULE__/Product/gongyie" target='_self'>Process design software</a></li>
+              <li><a href="__MODULE__/Product/lvsee" target='_self'>Green building</a></li>
+              <li><a href="__MODULE__/Product/zhushoue" target='_self'>Design assistant</a></li>
+              <li><a href="__MODULE__/Product/fenglie" target='_self'>Hydraulic calculation of wind pipe</a></li>
+          </ul>
+      </div>
+    </div>
+		<div id="new-company-right">
+			<h2>Company</h2>
+			<HR align="left" width="5%" color="#FFBB77" SIZE="3" style="margin-top:10px;">
+				<div id="new-company-content">
+					<div class="box">
+						<ul>
+							<li>
+								<a href="__MODULE__/New/c1e"><img src="__PUBLIC__/home/images/new1.jpg" alt="" /></a>
+								<div class="dask">
+								</div>
+								<div>
+									<div class="new-company-article-time">
+										<p>25<br/>Nov</p>
+									</div>
+									<div class="new-company-article-title">
+										<h4><a href="__MODULE__/New/c1e">National excellent engineering survey and design of declaration Design Association</a></h4>
+										<p>2016-11-25&nbsp;/&nbsp;Click: 123</p>
+									</div>
+									<div class="new-company-article-content" style="width:100%">
+										<p>All localities and departments of survey and Design Association, directly under the branch and working committee member unit: according to the "national survey and design industry award selection method in engineering survey and design industry outstanding project" (a co word 2015 No. twenty-third, hereinafter referred to as the "selection method") is carried out, 2015 outstanding engineering investigation the industry design Award (hereinafter referred to as the industry awards)...</p>
+									</div>
+									<div class="new-company-btn">
+										
+										<a href="__MODULE__/New/c1e" id="more1">See more&nbsp;>></a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="box">
+						<ul>
+							<li >
+								<a href="__MODULE__/New/c2e"><img src="__PUBLIC__/home/images/new3.jpg" alt="" /></a>
+								<div class="dask" style="background-color:#F0F0F0;">
+									<!-- <a href="#">公司新闻</a> -->
+								</div>
+								<div>
+									<div class="new-company-article-time">
+										<p>24<br/>Nov</p>
+									</div>
+									<div class="new-company-article-title">
+										<h4><a href="__MODULE__/New/c2e">My company won the ten major software companies Innovation Award</a></h4>
+										<p>2016-11-24&nbsp;/&nbsp;Click: 234</p>
+									</div>
+									<div class="new-company-article-content">
+										<p>Responsibility identity development planning of the enterprise and make a good performance for the enterprise leaders of a number of enterprise employees need the guidance of the leadership and a clear plan of innovation is not easy, first, innovation means change, innovation, new weather, the so-called no telling not take on an altogether new aspect, a "change"; second innovation, which means to pay, because of inertia, no external force is not possible to change, this force is the innovator of pay; third, innovation means risk, never say work a harvest, and innovative pay may gain a reward failure....</p>
+									</div>
+									<div class="new-company-btn">
+										
+										<a href="__MODULE__/New/c2e" id="more2">See more&nbsp;>></a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="box">
+						<ul>
+							<li>
+								<a href="__MODULE__/New/c3e"><img src="__PUBLIC__/home/images/new2.jpg" alt="" /></a>
+								<div class="dask" style="background-color:#E1C4C4">
+									<!-- <a href="#">公司新闻</a> -->
+								</div>
+								<div>
+									<div class="new-company-article-time">
+										<p>23<br/>Nov</p>
+									</div>
+									<div class="new-company-article-title">
+										<h4><a href="__MODULE__/New/c3e">Recommendations for the design of new people in the courtyard</a></h4>
+										<p>2016-11-23&nbsp;/&nbsp;Click: 125</p>
+									</div>
+									<div class="new-company-article-content">
+										<p>According to the classification of design categories, design institutes can be divided into civil design institutes and industrial design institutes. According to the qualification can be divided into: A, B, C, D four. Grade a best, and so on, the difference is to undertake the project size category is not the same. Some of the heavyweight works can only be done in a hospital, such as the National Grand Theater, of course, lightweight works can be done, such as the 150 layer of 2 square meters of small shops. Industrial Design Institute of the general government, such as light industry design institute, Design Institute of Posts and telecommunications, metallurgy, Chemical Engineering Design Institute of Design Institute, is also in accordance with the quality classification, generally divided into a and B 2, the difference is not the same category can undertake the project...</p>
+									</div>
+									<div class="new-company-btn">
+										
+										<a href="__MODULE__/New/c3e" id="more3">See more&nbsp;>></a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+        <div class="pagnation" id="pagnation">
+          <a href="#" target="_blank" class="page-prev">上一页</a>
+          <a href="#" target="_blank" class="current">1</a>
+          <a href="#" target="_blank">2</a>
+          <a href="#" target="_blank">3</a>
+          <a href="#" target="_blank" class="page-next">下一页</a>
+        </div>
+		</div>
+	</div>
+
+  
+
+
+
+    <div id="footer">
+  <div id="footer1">
+    <div class="footer-top">
+      <h5>About&nbsp;SH</h5>
+      <hr class="footer-hr">
+      <p>&nbsp;&nbsp;Beijing Shanghua Software Co., Ltd. is a new high-tech information company, a service in the field of development survey and design information.</p>
+    </div>
+    <div id="footer-top2">
+        <ul>
+          <li style="list-style-type:none"><h5>Industry link</h5></li>
+          <hr class="footer-hr">
+          <li><a href="http://www.chszxh.org/">China Municipal Engineering Association</a></li>
+          <li><a href="http://www.chinaeda.org/">Survey and design of China</a></li>
+          <li><a href="http://www.supec.org/">Shanghai Planning Bureau</a></li>
+          <li><a href="http://www.chinabim.com/">China BIM portal</a></li>
+          
+        </ul>
+    </div>
+    <div class="footer-top3">
+        <ul>
+          <li><h5>Contact</h5></li>
+          <hr class="footer-hr">
+          <li><img src="__PUBLIC__/home/images/footer1.png"height="12px"width="12px">&nbsp;Beijing City, Fengtai District Jianhua Street</li>
+          <li><img src="__PUBLIC__/home/images/footer2.png"height="12px"width="12px">&nbsp;15289016539</li>
+          <li><img src="__PUBLIC__/home/images/footer3.png"height="12px"width="12px">&nbsp;802742100</li>
+          <li><img src="__PUBLIC__/home/images/footer4.png"height="12px"width="12px">&nbsp;www.shanghua.com</li>
+          
+        </ul>
+    </div>
+    <div class="footer-top4" >
+        <ul>
+          <li><h5>Product</h5></li>
+          <hr class="footer-hr">
+          <li class="footer-img"><img src="__PUBLIC__/home/images/1.jpg" width="50px" height="50px"></li>
+          <li class="footer-img"><img src="__PUBLIC__/home/images/3.jpg" width="50px" height="50px"></li>
+          <li class="footer-img"><img src="__PUBLIC__/home/images/4.jpg" width="50px" height="50px"></li>
+          <li class="footer-img"><img src="__PUBLIC__/home/images/5.png" width="50px" height="50px"></li>
+          <li class="footer-img"><img src="__PUBLIC__/home/images/6.png" width="50px" height="50px"></li>
+          <li class="footer-img"><img src="__PUBLIC__/home/images/7.png" width="50px" height="50px"></li>
+        </ul>
+    </div>
+    </div>
+    <div id="footer-bottom">
+      <div id="footer-bottom1"><p><br/>This page content for the website demonstration data, front page content can be modified in the background.</p></div>
+    </div>
+    </div>
+    <div id="top"></div>
+
+
+
+<div id="top"></div>
+</body>
+<script>
+  var pagnation=$("#pagnation");
+  $(document).on("keydown",function(event){
+    switch(event.keyCode){
+       case 37 : window.location.href = pagnation.find(".page-prev").attr("href");break;
+       case 39 : window.location.href = pagnation.find(".page-next").attr("href");break
+    }
+  });
+</script>
+</html>
