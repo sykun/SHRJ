@@ -175,17 +175,18 @@
               <h1>加入我们</h1>
               <hr style="border:none;border-top:3px ridge orange;width:50px;margin-top:5px;position:absolute;" /><br/>
             </div>  
-          <div class="clearfix resshowjob">
-  <h2 class="h1">电子商务专员</h2>
+            <volist name="job" id="vo" offset="4" length="1">
+            <div class="clearfix resshowjob">
+  <h2 class="h1">{$vo.title}</h2>
 
   <div class="panel panel-default">
 
     <ul class="list-group">
-      <li class="list-group-item">招聘人数：10</li>
-      <li class="list-group-item">工作地点：长沙市</li>
-      <li class="list-group-item">工资待遇：面议</li>
-      <li class="list-group-item">发布日期：2016-11-25</li>
-      <li class="list-group-item">有效期：不限 </li>
+      <li class="list-group-item">招聘人数：{$vo.num}</li>
+      <li class="list-group-item">工作地点：{$vo.place}</li>
+      <li class="list-group-item">工资待遇：{$vo.afford}</li>
+      <li class="list-group-item">发布日期：{$vo.time}</li>
+      <li class="list-group-item">有效期：{$vo.deadline} </li>
       
     </ul>
 
@@ -196,8 +197,9 @@
     </div>
 
     <div class="panel-body met_editor">
-      <div><span style="font-size:14px;"><strong>主要工作内容：</strong></span>负责Shanghua企业网站管理系统在线销售工作，向客户提供迅速、准确、周到的服务。<div><span style="font-size:14px;"><strong>岗位要求：</strong></span></div><ol><li>熟悉互联网销售与推广；</li><li>能熟练操作网站管理系统后台，了解基本的建站知识；</li><li>能敏锐把握网站建设行业市场动向，善于把握客户心理；</li><li>沟通能力强，勤奋耐劳，办事认真严谨细致；</li><li>具有较强的学习能力，愿意同公司共同发展；</li><li>有网站建设相关产品工作经验者优先，电子商务、市场营销等相关专业优先。</li></ol></div><div class="clearfix"></div>
+      <span style="font-size:16px;"><strong>主要工作内容：</strong></span><div>{$vo.content}</div><div>&nbsp;</div><div><span style="font-size:16px;"><strong>岗位要求：&nbsp;</strong></span></div><ol>{$vo.demand}</ol>
     </div>
+</volist>
 
 
 
