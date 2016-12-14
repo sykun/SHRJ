@@ -177,10 +177,37 @@
             </div>  
             <div class="clearfix resjob">
 
-
+<volist name="job" id="vo" offset="3" length="2">
 <div class="panel panel-default">
    <div class="panel-heading">
-      <a href='__MODULE__/Job/xiangqing4' title='Web前端开发人员' target='_self'><strong>Web前端开发人员</strong></a>
+      <a href='__MODULE__/Job/detail{$vo.id}' title='{$vo.title}' target='_self'><strong>{$vo.title}</strong></a>
+
+   </div>
+  <div class="list-group">
+        <span class="list-group-item">
+
+      <ul class="list-inline">
+        <li>发布日期：{$vo.time}</li>
+        <li>工作地点：{$vo.place}</li>
+        <li>招聘人数：{$vo.num}</li>
+      </ul>
+        </span>
+    </div>
+   <div class="panel-body met_editor">
+      <span style="font-size:16px;"><strong>主要工作内容：</strong></span><div>{$vo.content}</div><div>&nbsp;</div><div><span style="font-size:16px;"><strong>岗位要求：</strong></span></div><ol>{$vo.demand}</ol>
+   </div>
+   <div class="panel-footer">
+    <ul class="list-inline">
+      <li><a href='__MODULE__/Job/detail{$vo.id}' class="btn btn-primary" title='查看详细' target='_self'>查看详细</a></li>
+    </ul>
+      
+   </div>
+</div>
+</volist>
+<!--
+<div class="panel panel-default">
+   <div class="panel-heading">
+      <a href='__MODULE__/Job/detail5' title='电子商务专员' target='_self'><strong>电子商务专员</strong></a>
 
    </div>
   <div class="list-group">
@@ -194,43 +221,16 @@
         </span>
     </div>
    <div class="panel-body met_editor">
-      <div><span style="font-size:14px;"><strong>主要工作内容：</strong></span>负责MetInfo企业网站管理系统前台模板功能设计、用户体验提升和Web界面技术优化。</div><div><span style="font-size:14px;"><strong>岗位要求：</strong></span></div><ol><li>熟悉JavaScript、Ajax、JQuery等前端开发脚本技能；</li><li>精通HTML/XHTML、CSS，能够快速手写CSS代码，熟悉页面架构和布局。</li><li>熟悉Web网站以及Web应用的可用性及用户分析方法，深入理解产品流程、用户体验和用户需求，对提升用户体验有一定经验及造诣。</li><li>对Web技术发展有强烈兴趣，有良好的学习能力和强烈的进取心，愿意同公司共同发展。</li><li>能跟踪最新的WEB前端设计、懂PHP基本语言者优先。</li></ol>
+      <div><span style="font-size:14px;"><strong>主要工作内容：</strong></span>负责Shanghua企业网站管理系统在线销售工作，向客户提供迅速、准确、周到的服务。</div><div><span style="font-size:14px;"><strong>岗位要求：</strong></span></div><ol><li>熟悉互联网销售与推广；</li><li>能熟练操作网站管理系统后台，了解基本的建站知识；</li><li>能敏锐把握网站建设行业市场动向，善于把握客户心理；</li><li>沟通能力强，勤奋耐劳，办事认真严谨细致；</li><li>具有较强的学习能力，愿意同公司共同发展；</li><li>有网站建设相关产品工作经验者优先，电子商务、市场营销等相关专业优先。</li></ol>
    </div>
    <div class="panel-footer">
     <ul class="list-inline">
-      <li><a href='__MODULE__/Job/xiangqing4' class="btn btn-primary" title='查看详细' target='_self'>查看详细</a></li>
+      <li><a href='__MODULE__/Job/detail5' class="btn btn-primary" title='查看详细' target='_self'>查看详细</a></li>
     </ul>
       
    </div>
 </div>
-
-
-<div class="panel panel-default">
-   <div class="panel-heading">
-      <a href='__MODULE__/Job/xiangqing5' title='电子商务专员' target='_self'><strong>电子商务专员</strong></a>
-
-   </div>
-  <div class="list-group">
-        <span class="list-group-item">
-
-      <ul class="list-inline">
-        <li>发布日期：2016-11-25</li>
-        <li>工作地点：北京市</li>
-        <li>招聘人数：10</li>
-      </ul>
-        </span>
-    </div>
-   <div class="panel-body met_editor">
-      <div><span style="font-size:14px;"><strong>主要工作内容：</strong></span>负责MetInfo企业网站管理系统在线销售工作，向客户提供迅速、准确、周到的服务。</div><div><span style="font-size:14px;"><strong>岗位要求：</strong></span></div><ol><li>熟悉互联网销售与推广；</li><li>能熟练操作网站管理系统后台，了解基本的建站知识；</li><li>能敏锐把握网站建设行业市场动向，善于把握客户心理；</li><li>沟通能力强，勤奋耐劳，办事认真严谨细致；</li><li>具有较强的学习能力，愿意同公司共同发展；</li><li>有网站建设相关产品工作经验者优先，电子商务、市场营销等相关专业优先。</li></ol>
-   </div>
-   <div class="panel-footer">
-    <ul class="list-inline">
-      <li><a href='__MODULE__/Job/xiangqing5' class="btn btn-primary" title='查看详细' target='_self'>查看详细</a></li>
-    </ul>
-      
-   </div>
-</div>
-
+-->
 
       <div id="flip">
         <div class='met_pager'>

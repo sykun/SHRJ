@@ -168,24 +168,25 @@
           </div>
           </div>
 
-
+          
             <div class="col-md-7 shop-page-content">
           
             <div class="section-title-style-2">
               <h1>加入我们</h1>
               <hr style="border:none;border-top:3px ridge orange;width:50px;margin-top:5px;position:absolute;" /><br/>
             </div>  
+            <volist name="job" id="vo" offset="0" length="1">
             <div class="clearfix resshowjob">
-  <h2 class="h1">PHP技术支持</h2>
+  <h2 class="h1">{$vo.title}</h2>
 
   <div class="panel panel-default">
 
     <ul class="list-group">
-      <li class="list-group-item">招聘人数：10</li>
-      <li class="list-group-item">工作地点：北京市</li>
-      <li class="list-group-item">工资待遇：面议</li>
-      <li class="list-group-item">发布日期：2016-11-25</li>
-      <li class="list-group-item">有效期：不限 </li>
+      <li class="list-group-item">招聘人数：{$vo.num}</li>
+      <li class="list-group-item">工作地点：{$vo.place}</li>
+      <li class="list-group-item">工资待遇：{$vo.afford}</li>
+      <li class="list-group-item">发布日期：{$vo.time}</li>
+      <li class="list-group-item">有效期：{$vo.deadline} </li>
       
     </ul>
 
@@ -196,9 +197,9 @@
     </div>
 
     <div class="panel-body met_editor">
-      <div><span style="font-size:14px;"><strong>主要工作内容：</strong></span><div>1. 负责MetInfo企业网站管理系统技术支持；</div><div>2. 为客服人员提供技术支持；</div><div>&nbsp;</div><div><span style="font-size:14px;"><strong>岗位要求：</strong>&nbsp;</span></div><ol><li>php能看懂且对PHP感兴趣，理解面向对象基本概念，写过一些小程序；</li><li>懂MySql数据库备份、恢复等基本操作，熟悉PHP环境的搭建和配置；</li><li>javascript能看懂，了解jquery等js框架；</li><li>html/css会写，懂linux的优先；</li><li>擅长网上查找资料解决问题；</li><li>有PHP作品（留言板，blog等）的优先；</li><li>做事要有耐心，性格谦和，学习能力强，能吃苦耐劳，愿意同公司共同发展。</li></ol><div>如果你对我们的职位感兴趣，且符合我们的基本要求，请将个人简历投递至shanghua@163.com，或者直接与我们取得联系！</div></div><div class="clearfix"></div>
+      <span style="font-size:16px;"><strong>主要工作内容：</strong></span><div>{$vo.content}</div><div>&nbsp;</div><div><span style="font-size:16px;"><strong>岗位要求：&nbsp;</strong></span></div><ol>{$vo.demand}</ol>
     </div>
-
+</volist>
 
 
     <div class="panel-footer">

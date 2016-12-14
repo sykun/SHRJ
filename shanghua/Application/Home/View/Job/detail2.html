@@ -175,17 +175,18 @@
               <h1>加入我们</h1>
               <hr style="border:none;border-top:3px ridge orange;width:50px;margin-top:5px;position:absolute;" /><br/>
             </div>  
+            <volist name="job" id="vo" offset="1" length="1">
            <div class="clearfix resshowjob">
-  <h2 class="h1">网络销售</h2>
+  <h2 class="h1">{$vo.title}</h2>
 
   <div class="panel panel-default">
 
     <ul class="list-group">
-      <li class="list-group-item">招聘人数：10</li>
-      <li class="list-group-item">工作地点：北京市</li>
-      <li class="list-group-item">工资待遇：面议</li>
-      <li class="list-group-item">发布日期：2016-11-25</li>
-      <li class="list-group-item">有效期：不限 </li>
+      <li class="list-group-item">招聘人数：{$vo.num}</li>
+      <li class="list-group-item">工作地点：{$vo.place}</li>
+      <li class="list-group-item">工资待遇：{$vo.afford}</li>
+      <li class="list-group-item">发布日期：{$vo.time}</li>
+      <li class="list-group-item">有效期：{$vo.deadline} </li>
       
     </ul>
 
@@ -196,9 +197,9 @@
     </div>
 
     <div class="panel-body met_editor">
-      <div><ol><li>大专以上学历，一年以上网络销售经验；</li><li>熟悉网络推广，熟悉网站建设基本流程；</li><li>有网站制作相关工作经验者优先；</li><li>学习能力强，能吃苦耐劳，愿意同公司共同发展；</li><li>本岗位招收兼职，投递简历时请说明自己的工作意愿；</li></ol><div>如果你对我们的职位感兴趣，且符合我们的基本要求，请将个人简历投递至shanghua@163.com，或者直接与我们取得联系！</div></div><div class="clearfix"></div>
+      <span style="font-size:16px;"><strong>主要工作内容：</strong></span><div>{$vo.content}</div><div>&nbsp;</div><div><span style="font-size:16px;"><strong>岗位要求：&nbsp;</strong></span></div><ol>{$vo.demand}</ol>
     </div>
-
+    </volist>
 
 
     <div class="panel-footer">
