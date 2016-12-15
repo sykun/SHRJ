@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>北京上华软件</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/mycss.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/style.css">
+    <script type="text/javascript" src="__PUBLIC__/admin/js/modernizr.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/admin/js/showdate.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/admin/js/quanxuan.js"></script>
+</head>
+<body>
+<div class="topbar-wrap white">
+    <div class="topbar-inner clearfix">
+        <div class="topbar-logo-wrap clearfix">
+            <!-- <h1 class="topbar-logo none"><a href="#" class="navbar-brand">后台管理</a></h1> -->
+            <img src="__PUBLIC__/admin/images/logo.jpg" height="45px;" >
+        </div>
+        <div class="top-info-wrap">
+            <ul class="top-info-list clearfix">
+                <li><a href="__MODULE__/Indexen/index" class="top-a">Back home</a></li>
+                <li><a href="{:U('Home/Index/indexe')}" class="top-a">Front page</a></li>
+                <li><a href="{:U('Admin/Index/index')}" class="top-a">Chinese version</a></li>
+                <li><a href="__MODULE__/Indexen/loginouten" class="top-a">Sign out</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+    <aside class="accordion" style="float:left">
+        <h1><i class="icon-font">&#xe051;</i>Account</h1>
+        <div class="opened-for-codepen">
+            <h2><a href="__MODULE__/Usersen/listsen"><i class="icon-font">&#xe050;</i>User</a></h2>
+            <h2><a href="__MODULE__/Usersen/adden"><i class="icon-font">&#xe026;</i>Add user</a></h2>
+            <h2><a href="__MODULE__/Usersen/passen"><i class="icon-font">&#xe051;</i>Password</a></h2>
+        </div>
+
+        <h1><i class="icon-font">&#xe001;</i>News</h1>
+        <div>
+            <h2><a href="__MODULE__/Newen/listsen"><i class="icon-font">&#xe050;</i>News list</a></h2>
+            <h2><a href="__MODULE__/Newen/adden"><i class="icon-font">&#xe026;</i>Add news</a></h2>
+        </div>
+
+        <h1><i class="icon-font">&#xe005;</i>Industry</h1>
+        <div>
+            <h2><a href="__MODULE__/Industryen/listsen"><i class="icon-font">&#xe050;</i>Consulting list</a></h2>
+            <h2><a href="__MODULE__/Industryen/adden"><i class="icon-font">&#xe026;</i>Add</a></h2>
+        </div>
+
+        <h1><i class="icon-font">&#xe018;</i>Product</h1>
+        <div>
+            <h2><a href="__MODULE__/Producten/listsen"><i class="icon-font">&#xe050;</i>Product list</a></h2>
+            <h2><a href="__MODULE__/Producten/adden"><i class="icon-font">&#xe026;</i>Add product</a></h2>
+        </div>
+
+        <h1><i class="icon-font">&#xe060;</i>Successful case</h1>
+        <div>
+            <h2><a href="__MODULE__/Caseen/listsen"><i class="icon-font">&#xe050;</i>Case list</a></h2>
+            <h2><a href="__MODULE__/Caseen/adden"><i class="icon-font">&#xe026;</i>New case</a></h2>
+        </div>
+
+        <h1><i class="icon-font">&#xe002;</i>Application</h1>
+        <div>
+            <h2><a href="__MODULE__/Applyen/listsen"><i class="icon-font">&#xe050;</i>Application</a></h2>
+        </div>
+
+        <h1><i class="icon-font">&#xe051;</i>Honor</h1>
+        <div>
+            <h2><a href="__MODULE__/Honoren/listsen"><i class="icon-font">&#xe050;</i>Honor list</a></h2>
+            <h2><a href="__MODULE__/Honoren/adden"><i class="icon-font">&#xe026;</i>Add honor</a></h2>
+        </div>
+
+        <h1><i class="icon-font">&#xe003;</i>Position</h1>
+        <div>
+            <h2><a href="__MODULE__/Joben/listsen"><i class="icon-font">&#xe050;</i>Position list</a></h2>
+            <h2><a href="__MODULE__/Joben/adden"><i class="icon-font">&#xe026;</i>New job</a></h2>
+        </div>
+
+        <h1><i class="icon-font">&#xe014;</i>Consulting</h1>
+        <div>
+            <h2><a href="__MODULE__/Adviceen/listsen"><i class="icon-font">&#xe050;</i>Consulting list</a></h2>
+        </div>
+    </aside>
+    <div class="main-wrap">
+        <div class="crumb-wrap">
+            <div class="crumb-list">
+                <i class="icon-font"></i>
+                <span>Home page</span>
+            </div>
+        </div>
+        <div class="result-wrap">
+            <div class="result-title">
+                <h1>Shortcut operation</h1>
+            </div>
+            <div class="result-content">
+                <div class="short-wrap">
+                    <ul class="short-list">
+                        <li><div class="short-img"><img src="__PUBLIC__/admin/images/010.png" height="40px" width="50px"></div><div class="short-list1"><a href="__MODULE__/New/lists">User&nbsp;management </a></div></li>
+                        <li><div class="short-img"><img src="__PUBLIC__/admin/images/011.png" height="40px" width="50px"></div><div class="short-list1"><a href="__MODULE__/New/lists">News list</a></div></li>
+                        <li><div class="short-img"><img src="__PUBLIC__/admin/images/006.png" height="40px" width="50px"></div><div class="short-list1"><a href="__MODULE__/New/lists">Industry</a></div></li>
+                    </ul>
+                    <ul class="short-list">
+                        <li><div class="short-img"><img src="__PUBLIC__/admin/images/008.png" height="40px" width="50px"></div><div class="short-list1"><a href="__MODULE__/Prodect/lists">Product list</a></div></li>
+                        <li><div class="short-img"><img src="__PUBLIC__/admin/images/001.png" height="40px" width="50px"></div><div class="short-list1"><a href="__MODULE__/Success/lists">Successful case</a></div></li>
+                        <li><div class="short-img"><img src="__PUBLIC__/admin/images/012.png" height="40px" width="50px"></div><div class="short-list1"><a href="__MODULE__/Apply/lists">Apply</a></div></li>
+                    </ul>
+                    <ul class="short-list">
+                        <li><div class="short-img"><img src="__PUBLIC__/admin/images/003.png" height="40px" width="50px"></div><div class="short-list1"><a href="__MODULE__/Honor/lists">Honor list</a></div></li>
+                        <li><div class="short-img"><img src="__PUBLIC__/admin/images/013.png" height="40px" width="50px"></div><div class="short-list1"><a href="__MODULE__/Job/lists">Job list</a></div></li>
+                        <li><div class="short-img"><img src="__PUBLIC__/admin/images/005.png" height="40px" width="50px"></div><div class="short-list1"><a href="__MODULE__/Advice/lists">Consulting list</a></div></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="result-wrap">
+            <div class="result-title">
+                <h1>Introduction</h1>
+            </div>
+            <div class="result-content1">
+                <h6>Introduction</h6>
+                <p>Beijing Shanghua Software Co., Ltd. is a new high-tech information company, a service in the field of development survey and <br/>design information.</p>
+                <h6>Main products</h6>
+                <p>Various software</p>
+                <h6>Address</h6>
+                <p>Beijing City, Fengtai District Jianhua Street Shanghua Software Co. Ltd.</p>
+                <h6>Contact information</h6>
+                <p>400-700-3609</p>
+                <h6>Website</h6>
+                <p>www.shanghua.com</p> 
+            </div>
+        </div>
+        
+    </div>
+
+
+<script src="__PUBLIC__/admin/js/jquery-1.8.3.min.js"></script>
+<script src="__PUBLIC__/admin/js/index.js"></script>
+</body>
+</html>
