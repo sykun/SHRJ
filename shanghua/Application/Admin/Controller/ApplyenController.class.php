@@ -8,6 +8,7 @@ class ApplyenController extends Controller {
             $this->error("请先登录",U("Admin/login"));
         }
     }
+
      public function lists(){
     	$applyenModel = D("applyen");
 		$applyen = $applyenModel->select();
