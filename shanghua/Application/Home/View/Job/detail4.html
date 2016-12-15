@@ -175,17 +175,18 @@
               <h1>加入我们</h1>
               <hr style="border:none;border-top:3px ridge orange;width:50px;margin-top:5px;position:absolute;" /><br/>
             </div>  
-           <div class="clearfix resshowjob">
-  <h2 class="h1">Web前端开发人员</h2>
+            <volist name="job" id="vo" offset="3" length="1">
+            <div class="clearfix resshowjob">
+  <h2 class="h1">{$vo.title}</h2>
 
   <div class="panel panel-default">
 
     <ul class="list-group">
-      <li class="list-group-item">招聘人数：10</li>
-      <li class="list-group-item">工作地点：北京市</li>
-      <li class="list-group-item">工资待遇：面议</li>
-      <li class="list-group-item">发布日期：2016-11-25</li>
-      <li class="list-group-item">有效期：不限 </li>
+      <li class="list-group-item">招聘人数：{$vo.num}</li>
+      <li class="list-group-item">工作地点：{$vo.place}</li>
+      <li class="list-group-item">工资待遇：{$vo.afford}</li>
+      <li class="list-group-item">发布日期：{$vo.time}</li>
+      <li class="list-group-item">有效期：{$vo.deadline} </li>
       
     </ul>
 
@@ -196,8 +197,9 @@
     </div>
 
     <div class="panel-body met_editor">
-      <div><div><span style="font-size:14px;"><strong>主要工作内容：</strong></span>负责Shanghua企业网站管理系统前台模板功能设计、用户体验提升和Web界面技术优化。</div><div><span style="font-size:14px;"><strong>岗位要求：</strong></span></div><ol><li>熟悉JavaScript、Ajax、JQuery等前端开发脚本技能；</li><li>精通HTML/XHTML、CSS，能够快速手写CSS代码，熟悉页面架构和布局。</li><li>熟悉Web网站以及Web应用的可用性及用户分析方法，深入理解产品流程、用户体验和用户需求，对提升用户体验有一定经验及造诣。</li><li>对Web技术发展有强烈兴趣，有良好的学习能力和强烈的进取心，愿意同公司共同发展。</li><li>能跟踪最新的WEB前端设计、懂PHP基本语言者优先。</li></ol></div><div class="clearfix"></div>
+      <span style="font-size:16px;"><strong>主要工作内容：</strong></span><div>{$vo.content}</div><div>&nbsp;</div><div><span style="font-size:16px;"><strong>岗位要求：&nbsp;</strong></span></div><ol>{$vo.demand}</ol>
     </div>
+</volist>
 
 
 

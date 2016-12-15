@@ -175,17 +175,18 @@
               <h1>加入我们</h1>
               <hr style="border:none;border-top:3px ridge orange;width:50px;margin-top:5px;position:absolute;" /><br/>
             </div>  
-           <div class="clearfix resshowjob">
-  <h2 class="h1">网页UI设计师</h2>
+            <volist name="job" id="vo" offset="2" length="1">
+            <div class="clearfix resshowjob">
+  <h2 class="h1">{$vo.title}</h2>
 
   <div class="panel panel-default">
 
     <ul class="list-group">
-      <li class="list-group-item">招聘人数：10</li>
-      <li class="list-group-item">工作地点：北京市</li>
-      <li class="list-group-item">工资待遇：面议</li>
-      <li class="list-group-item">发布日期：2016-11-25</li>
-      <li class="list-group-item">有效期：不限 </li>
+      <li class="list-group-item">招聘人数：{$vo.num}</li>
+      <li class="list-group-item">工作地点：{$vo.place}</li>
+      <li class="list-group-item">工资待遇：{$vo.afford}</li>
+      <li class="list-group-item">发布日期：{$vo.time}</li>
+      <li class="list-group-item">有效期：{$vo.deadline} </li>
       
     </ul>
 
@@ -196,8 +197,9 @@
     </div>
 
     <div class="panel-body met_editor">
-      <div><span style="font-size: 14px; "><strong>主要工作内容：</strong></span>负责Shanghua界面和公司网站的界面设计等，重视用户体验。<div><span style="font-size:14px;"><strong>岗位要求：</strong></span></div><ol><li>视觉设计、平面设计或美术相关专业，大专以上学历。</li><li>具有良好的创意设计能力及良好的色彩感，有较高的美术功底，较强的网页设计能力和整体布局感。</li><li>精通photoshop、Illustrator、Fireworks、Dreamweaver等图形设计工具中至少两种。</li><li>了解网页交互设计知识，对作品有不断追求完美的精神特质。</li><li>有网站UI设计同等职位工作经验、能提供过往作品者优先。</li></ol></div><div class="clearfix"></div>
+      <span style="font-size:16px;"><strong>主要工作内容：</strong></span><div>{$vo.content}</div><div>&nbsp;</div><div><span style="font-size:16px;"><strong>岗位要求：&nbsp;</strong></span></div><ol>{$vo.demand}</ol>
     </div>
+</volist>
 
 
 
