@@ -10,7 +10,7 @@ class HonorenController extends Controller {
     }
      public function lists(){
     	$honorenModel = D("honoren");
-		$honor = $honorenModel->select();
+		$honoren = $honorenModel->select();
 		$this->assign('honoren',$honoren);
 		$this->display();  
     }
