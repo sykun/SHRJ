@@ -1,7 +1,7 @@
 <?php
 namespace Admin\Controller;
 use Think\Controller;
-class ProductController extends Controller {
+class ProductenController extends Controller {
 	public function __construct(){
         parent::__construct();
         if(!isLogin()){
@@ -9,9 +9,9 @@ class ProductController extends Controller {
         }
     }
      public function lists(){
-	    	$productModel = D("product");
-		    $product = $productModel->select();
-		    $this->assign('product',$product);
+	    	$productModel = D("producten");
+		    $producten = $productModel->select();
+		    $this->assign('producten',$producten);
 			$this->display();  
     }
     public function add(){
@@ -33,13 +33,13 @@ class ProductController extends Controller {
 		        $this->error($upload->getError());
 		    }else{// 上传成功
 		        //$this->success('上传成功！');
-		       $productModel = M('product');
+		       $productModel = M('producten');
 		    	$data =$productModel ->create();
 		    	//$productModel->add($data);
 		    	
 		        $data['thumb']=$info['thumb']['savepath'].$info['thumb']['savename'];
 		    	if($productModel->add($data)){
-		    		$this->success('数据添加成功','lists');
+		    		$this->success('数据添加成功','listsen');
 
 		    }else{
 		    	$this->showError('数据添加失败');
@@ -48,18 +48,18 @@ class ProductController extends Controller {
     	}
     public function delete() {
         //全部删除
-        $id = $_GET['productId'];
+        $id = $_GET['productenId'];
         if(is_array($id)){
             foreach($id as $value){
-                D("product")->delete($value);
+                D("producten")->delete($value);
             }  
-            $this->success("批量删除成功！",U("lists"));
+            $this->success("批量删除成功！",U("listsen"));
         } 
         //单个删除
         else{
-            $productModel = D("product");
+            $productModel = D("producten");
             if($productModel->where("id=$id")->delete()){
-                $this->success("删除成功",U("Product/lists"));
+                $this->success("删除成功",U("Producten/listsen"));
             }
             else{
                 $this->error($productModel->geterror());
@@ -70,10 +70,10 @@ class ProductController extends Controller {
 	        
 			$id=I('id');
 			//获取数据
-			$productModel = M('product');
+			$productModel = M('producten');
 			$data =$productModel ->find($id);
 			//分配数据
-			$this->assign('product',$data);
+			$this->assign('producten',$data);
 			$this->display();
     	}
 
@@ -89,13 +89,13 @@ class ProductController extends Controller {
 		        $this->error($upload->getError());
 		    }else{// 上传成功
 		        //$this->success('上传成功！');
-		       $productModel = M('product');
+		       $productModel = M('producten');
 		    	$data =$productModel ->create();
 		    	//$productModel->add($data);
 		    	
 		        $data['thumb']=$info['thumb']['savepath'].$info['thumb']['savename'];
 		    	if($productModel->save($data)){
-		    		$this->success('数据修改成功','lists');
+		    		$this->success('数据修改成功','listsen');
 
 		    }else{
 		    	$this->showError('数据修改失败');

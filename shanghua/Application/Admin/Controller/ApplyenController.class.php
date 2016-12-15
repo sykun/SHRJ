@@ -1,7 +1,7 @@
 <?php
 namespace Admin\Controller;
 use Think\Controller;
-class ApplyController extends Controller {
+class ApplyenController extends Controller {
 	public function __construct(){
         parent::__construct();
         if(!isLogin()){
@@ -9,28 +9,28 @@ class ApplyController extends Controller {
         }
     }
      public function lists(){
-    	$applyModel = D("apply");
-		$apply = $applyModel->select();
-		$this->assign('apply',$apply);
+    	$applyenModel = D("applyen");
+		$applyen = $applyenModel->select();
+		$this->assign('applyen',$applyen);
 		$this->display();  
     }
      public function delete() {
         //全部删除
-        $id = $_GET['applyId'];
+        $id = $_GET['applyenId'];
         if(is_array($id)){
             foreach($id as $value){
-                D("apply")->delete($value);
+                D("applyen")->delete($value);
             }  
             $this->success("批量删除成功！",U("lists"));
         } 
         //单个删除
         else{
-            $applyModel = D("apply");
-            if($applyModel->where("id=$id")->delete()){
-                $this->success("删除成功",U("Apply/lists"));
+            $applyenModel = D("applyen");
+            if($applyenModel->where("id=$id")->delete()){
+                $this->success("删除成功",U("Applyen/lists"));
             }
             else{
-                $this->error($applyModel->geterror());
+                $this->error($applyenModel->geterror());
             }           
         }      
     }

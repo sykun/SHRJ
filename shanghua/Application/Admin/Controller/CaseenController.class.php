@@ -1,7 +1,7 @@
 <?php
 namespace Admin\Controller;
 use Think\Controller;
-class CaseController extends Controller {
+class CaseenController extends Controller {
 	public function __construct(){
         parent::__construct();
         if(!isLogin()){
@@ -9,9 +9,9 @@ class CaseController extends Controller {
         }
     }
      public function lists(){
-    	$caseModel = D("case");
-		$case = $caseModel->select();
-		$this->assign('case',$case);
+    	$caseenModel = D("caseen");
+		$caseen = $caseenModel->select();
+		$this->assign('caseen',$case);
 		$this->display();  
     }
     public function add(){
@@ -33,13 +33,13 @@ class CaseController extends Controller {
 		        $this->error($upload->getError());
 		    }else{// 上传成功
 		        //$this->success('上传成功！');
-		       $caseModel = M('case');
-		    	$data =$caseModel ->create();
+		       $caseenModel = M('caseen');
+		    	$data =$caseenModel ->create();
 		    	//$caseModel->add($data);
 		    	
 		        $data['thumb']=$info['thumb']['savepath'].$info['thumb']['savename'];
-		    	if($caseModel->add($data)){
-		    		$this->success('数据添加成功','lists');
+		    	if($caseenModel->add($data)){
+		    		$this->success('数据添加成功','listsen');
 
 		    }else{
 		    	$this->showError('数据添加失败');
@@ -48,21 +48,21 @@ class CaseController extends Controller {
     	}
     public function delete() {
           //全部删除
-            $id = $_GET['caseId'];
+            $id = $_GET['caseenId'];
             if(is_array($id)){
                 foreach($id as $value){
-                    D("case")->delete($value);
+                    D("caseen")->delete($value);
                 }  
-                $this->success("批量删除成功！",U("lists"));
+                $this->success("批量删除成功！",U("listsen"));
             } 
         //单个删除
         else{
-            $caseModel = D("case");
-            if($caseModel->where("id=$id")->delete()){
-                    $this->success("删除成功",U("case/lists"));
+            $caseenModel = D("caseen");
+            if($caseenModel->where("id=$id")->delete()){
+                    $this->success("删除成功",U("caseen/listsen"));
             }
             else{
-                $this->error($caseModel->geterror());
+                $this->error($caseenModel->geterror());
             } 
         }      
     }
@@ -70,10 +70,10 @@ class CaseController extends Controller {
 	        
 			$id=I('id');
 			//获取数据
-			$caseModel = M('case');
-			$data =$caseModel ->find($id);
+			$caseModel = M('caseen');
+			$data =$caseenModel ->find($id);
 			//分配数据
-			$this->assign('case',$data);
+			$this->assign('caseen',$data);
 			$this->display();
     	}
 
@@ -89,13 +89,13 @@ class CaseController extends Controller {
 		        $this->error($upload->getError());
 		    }else{// 上传成功
 		        //$this->success('上传成功！');
-		       $caseModel = M('case');
-		    	$data =$caseModel ->create();
+		       $caseenModel = M('caseen');
+		    	$data =$caseenModel ->create();
 		    	//$caseModel->add($data);
 		    	
 		        $data['thumb']=$info['thumb']['savepath'].$info['thumb']['savename'];
-		    	if($caseModel->save($data)){
-		    		$this->success('数据修改成功','lists');
+		    	if($caseenModel->save($data)){
+		    		$this->success('数据修改成功','listsen');
 
 		    }else{
 		    	$this->showError('数据修改失败');

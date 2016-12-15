@@ -1,7 +1,7 @@
 <?php
 namespace Admin\Controller;
 use Think\Controller;
-class JobController extends Controller {
+class JobenController extends Controller {
 	public function __construct(){
         parent::__construct();
         if(!isLogin()){
@@ -9,9 +9,9 @@ class JobController extends Controller {
         }
     }
      public function lists(){
-    	$jobModel = D("job");
-		$job = $jobModel->select();
-		$this->assign('job',$job);
+    	$jobenModel = D("joben");
+		$joben = $jobenModel->select();
+		$this->assign('joben',$joben);
 		$this->display();  
     }
     public function get_time(){
@@ -26,11 +26,11 @@ class JobController extends Controller {
 	        if(!IS_POST){
 	            exit("bad request");
 	        }
-	        $jobModel = D("job");
-	        if(!$jobModel->create()){
-	            $this->error($jobModel->getError());          
+	        $jobenModel = D("joben");
+	        if(!$jobenModel->create()){
+	            $this->error($jobenModel->getError());          
 	        }
-	        if($jobModel->add()){
+	        if($jobenModel->add()){
 	            $this->success("添加成功",U("lists"));
 	        }
 	        else{
@@ -39,7 +39,7 @@ class JobController extends Controller {
     	}
     public function delete() {
         //全部删除
-        $id = $_GET['jobId'];
+        $id = $_GET['jobenId'];
         if(is_array($id)){
             foreach($id as $value){
                 D("job")->delete($value);
@@ -48,12 +48,12 @@ class JobController extends Controller {
         } 
         //单个删除
         else{
-            $jobModel = D("job");
-            if($jobModel->where("id=$id")->delete()){
+            $jobenModel = D("joben");
+            if($jobenModel->where("id=$id")->delete()){
                 $this->success("删除成功",U("Job/lists"));
             }
             else{
-                $this->error($jobModel->geterror());
+                $this->error($jobenModel->geterror());
             }       
         }      
     }
@@ -63,8 +63,8 @@ class JobController extends Controller {
 	        if ($id == '') {
 	            exit("error param");
 	        }
-	        $job = M("job")->find($id);
-	        $this->assign("job", $job);
+	        $joben = M("joben")->find($id);
+	        $this->assign("joben", $joben);
 	        $time = $this->get_time();
     		$this->assign('time',$time);
 	        $this->display();
@@ -74,9 +74,9 @@ class JobController extends Controller {
 	        if (!IS_POST) {
 	            exit("error param");
 	        }
-	        $jobModel = D("job");
-	        if ($jobModel->create() && $jobModel->save()) {
-	            $this->success("修改成功!", U('Job/lists'));
+	        $jobenModel = D("joben");
+	        if ($jobenModel->create() && $jobenModel->save()) {
+	            $this->success("修改成功!", U('Joben/lists'));
 	        }
 	        else {
 	            // $this->error($jobModel->getError());

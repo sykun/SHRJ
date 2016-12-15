@@ -1,7 +1,7 @@
 <?php
 namespace Admin\Controller;
 use Think\Controller;
-class IndexController extends Controller {
+class IndexenController extends Controller {
     public function __construct(){
         parent::__construct();
         if(!isLogin()){

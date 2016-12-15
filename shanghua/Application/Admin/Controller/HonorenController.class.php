@@ -1,7 +1,7 @@
 <?php
 namespace Admin\Controller;
 use Think\Controller;
-class HonorController extends Controller {
+class HonorenController extends Controller {
 	public function __construct(){
         parent::__construct();
         if(!isLogin()){
@@ -9,9 +9,9 @@ class HonorController extends Controller {
         }
     }
      public function lists(){
-    	$honorModel = D("honor");
-		$honor = $honorModel->select();
-		$this->assign('honor',$honor);
+    	$honorenModel = D("honoren");
+		$honoren = $honorenModel->select();
+		$this->assign('honoren',$honoren);
 		$this->display();  
     }
     public function add(){
@@ -33,12 +33,12 @@ class HonorController extends Controller {
 		        $this->error($upload->getError());
 		    }else{// 上传成功
 		        //$this->success('上传成功！');
-		       $honorModel = M('honor');
-		    	$data =$honorModel ->create();
+		       $honorenModel = M('honoren');
+		    	$data =$honorenModel ->create();
 		    	//$honorModel->add($data);
 		    	
 		        $data['thumb']=$info['thumb']['savepath'].$info['thumb']['savename'];
-		    	if($honorModel->add($data)){
+		    	if($honorenModel->add($data)){
 		    		$this->success('数据添加成功','lists');
 
 		    }else{
@@ -48,21 +48,21 @@ class HonorController extends Controller {
     	}
     	public function delete() {
             //全部删除
-            $id = $_GET['honorId'];
+            $id = $_GET['honorenId'];
             if(is_array($id)){
                 foreach($id as $value){
-                    D("honor")->delete($value);
+                    D("honoren")->delete($value);
                 }  
                 $this->success("批量删除成功！",U("lists"));
             } 
         	//单个删除
         	else{
-            	$honorModel = D("honor");
-             	if($honorModel->where("id=$id")->delete()){
-                    $this->success("删除成功",U("Honor/lists"));
+            	$honorenModel = D("honoren");
+             	if($honorenModel->where("id=$id")->delete()){
+                    $this->success("删除成功",U("Honoren/lists"));
                 }
                 else{
-                    $this->error($honorModel->geterror());
+                    $this->error($honorenModel->geterror());
                 }   
             }      
         }
@@ -70,10 +70,10 @@ class HonorController extends Controller {
 	        
 			$id=I('id');
 			//获取数据
-			$honorModel = M('honor');
-			$data =$honorModel ->find($id);
+			$honorenModel = M('honoren');
+			$data =$honorenModel ->find($id);
 			//分配数据
-			$this->assign('honor',$data);
+			$this->assign('honoren',$data);
 			$this->display();
     	}
 
@@ -89,12 +89,12 @@ class HonorController extends Controller {
 		        $this->error($upload->getError());
 		    }else{// 上传成功
 		        //$this->success('上传成功！');
-		       $honorModel = M('honor');
-		    	$data =$honorModel ->create();
+		       $honorenModel = M('honoren');
+		    	$data =$honorenModel ->create();
 		    	//$honorModel->add($data);
 		    	
 		        $data['thumb']=$info['thumb']['savepath'].$info['thumb']['savename'];
-		    	if($honorModel->save($data)){
+		    	if($honorenModel->save($data)){
 		    		$this->success('数据修改成功','lists');
 
 		    }else{

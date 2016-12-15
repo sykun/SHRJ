@@ -84,55 +84,50 @@
             <h2><a href="__MODULE__/Adviceen/listsen"><i class="icon-font">&#xe050;</i>Consulting list</a></h2>
         </div>
     </aside>
+
     <div class="main-wrap">
+
         <div class="crumb-wrap">
-            <div class="crumb-list">
-                <i class="icon-font"></i>
-                <span>Home page</span>
-            </div>
+            <div class="crumb-list"><i class="icon-font"></i><a href="__MODULE__/Indexen/index">Home page</a><span class="crumb-step">&gt;</span><span class="crumb-name">Case management</span></div>
         </div>
         <div class="result-wrap">
-            <div class="result-title">
-                <h1>Shortcut operation</h1>
-            </div>
-            <div class="result-content">
-                <div class="short-wrap">
-                    <ul class="short-list">
-                        <li><div class="short-img"><img src="__PUBLIC__/admin/images/010.png" height="40px" width="50px"></div><div class="short-list1"><a href="__MODULE__/New/lists">User&nbsp;management </a></div></li>
-                        <li><div class="short-img"><img src="__PUBLIC__/admin/images/011.png" height="40px" width="50px"></div><div class="short-list1"><a href="__MODULE__/New/lists">News list</a></div></li>
-                        <li><div class="short-img"><img src="__PUBLIC__/admin/images/006.png" height="40px" width="50px"></div><div class="short-list1"><a href="__MODULE__/New/lists">Industry</a></div></li>
-                    </ul>
-                    <ul class="short-list">
-                        <li><div class="short-img"><img src="__PUBLIC__/admin/images/008.png" height="40px" width="50px"></div><div class="short-list1"><a href="__MODULE__/Prodect/lists">Product list</a></div></li>
-                        <li><div class="short-img"><img src="__PUBLIC__/admin/images/001.png" height="40px" width="50px"></div><div class="short-list1"><a href="__MODULE__/Success/lists">Successful case</a></div></li>
-                        <li><div class="short-img"><img src="__PUBLIC__/admin/images/012.png" height="40px" width="50px"></div><div class="short-list1"><a href="__MODULE__/Apply/lists">Apply</a></div></li>
-                    </ul>
-                    <ul class="short-list">
-                        <li><div class="short-img"><img src="__PUBLIC__/admin/images/003.png" height="40px" width="50px"></div><div class="short-list1"><a href="__MODULE__/Honor/lists">Honor list</a></div></li>
-                        <li><div class="short-img"><img src="__PUBLIC__/admin/images/013.png" height="40px" width="50px"></div><div class="short-list1"><a href="__MODULE__/Job/lists">Job list</a></div></li>
-                        <li><div class="short-img"><img src="__PUBLIC__/admin/images/005.png" height="40px" width="50px"></div><div class="short-list1"><a href="__MODULE__/Advice/lists">Consulting list</a></div></li>
-                    </ul>
+            <form name="myform" id="myform" action="__MODULE__/caseen/delete">
+                <div class="result-title">
+                    <div class="result-list">
+                        <a href="__MODULE__/Caseen/adden"><i class="icon-font"></i>Add case</a>
+                        <a id="updateOrd" href="javascript:void(0)"><i class="icon-font"></i>更新排序</a>
+                    </div>
                 </div>
-            </div>
+                <div class="result-content">
+                    <table class="result-tab" width="100%">
+                        <tr>
+                            <th class="tc" width="6%"><input class="allChoose" name="checkall[]" type="checkbox" id="chkall" onclick='selectcheckbox(this.form)'></th>
+                            <th width="20%">PICTURE</th>
+                            <th width="20%">TITLE</th>
+                            <th width="40%">CONTENT</th>
+                            <th width="12%">OPERATE</th>
+                        </tr>
+                        <volist name="case" id="data">
+                        <tr>
+                            <td><input type="checkbox" name="caseenId[]" id="checkbox" value="{$data.id}"><label for="checkbox"></label></td>
+                            <td><img src="__PUBLIC__/{$data.thumb}" width="60px" height="60px"></td>
+                            <td>{$data.title|msubstr=0,8,'utf-8',ture}</td>
+                            <td>{$data.content|msubstr=0,10,'utf-8',ture}</td>
+                            <td>
+                                <a class="link-update" href="__MODULE__/Caseen/editeb/id/{$data.id}">revise</a>
+                                <a class="link-del" href="__MODULE__/Caseen/delete/caseenId/{$data.id}">delete</a>
+                            </td>
+                        </tr>
+                        </volist>
+                    </table>
+                    <div id="alldelete">
+
+                    <button type="submit" id="batchDel" class="btn btn-danger " href="__MODULE__/caseen/delete">Batch delete</button> 
+                     </div>
+                    <div class="list-page"> 2 条 1/1 页</div>
+                </div>
+            </form>
         </div>
-        <div class="result-wrap">
-            <div class="result-title">
-                <h1>Introduction</h1>
-            </div>
-            <div class="result-content1">
-                <h6>Introduction</h6>
-                <p>Beijing Shanghua Software Co., Ltd. is a new high-tech information company, a service in the field of development survey and <br/>design information.</p>
-                <h6>Main products</h6>
-                <p>Various software</p>
-                <h6>Address</h6>
-                <p>Beijing City, Fengtai District Jianhua Street Shanghua Software Co. Ltd.</p>
-                <h6>Contact information</h6>
-                <p>400-700-3609</p>
-                <h6>Website</h6>
-                <p>www.shanghua.com</p> 
-            </div>
-        </div>
-        
     </div>
 
 

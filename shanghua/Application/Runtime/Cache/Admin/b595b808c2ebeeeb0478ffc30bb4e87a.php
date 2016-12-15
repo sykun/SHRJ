@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="/shanghua/Public/admin/css/mycss.css"/>
     <link rel="stylesheet" href="/shanghua/Public/admin/css/style.css">
     <script type="text/javascript" src="/shanghua/Public/admin/js/modernizr.min.js"></script>
+    <script type="text/javascript" src="/shanghua/Public/admin/js/showdate.js"></script>
+    <script type="text/javascript" src="/shanghua/Public/admin/js/quanxuan.js"></script>
 </head>
 <body>
 <div class="topbar-wrap white">
@@ -19,8 +21,8 @@
         <div class="top-info-wrap">
             <ul class="top-info-list clearfix">
                 <li><a href="/shanghua/index.php/Admin/Index/index" class="top-a">后台首页</a></li>
-                <li><a href="#" class="top-a">前台首页</a></li>
-                <li><a href="#" class="top-a">退出</a></li>
+                <li><a href="<?php echo U('Home/Index/index');?>" class="top-a">前台首页</a></li>
+                <li><a href="/shanghua/index.php/Admin/Index/loginout" class="top-a">退出</a></li>
             </ul>
         </div>
     </div>
