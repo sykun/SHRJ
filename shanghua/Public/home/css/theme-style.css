@@ -14,14 +14,15 @@ a{
   color: #fff;
   text-decoration: none;
 }
-h3{
-  font: 20px/30px "Helvetica Neue", Helvetica, Arial, sans-serif;
+h2{
+  /*font: 20px/30px "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  font-family: "微软雅黑";
   text-align: center;
-  color: #fff;
+  color: #3c3c3c;
 }
 /*----start-blog-----*/
 .blog{
-	
+	padding-top: 5%;
 }
 .post-pic img{
 	width:100%;
@@ -38,20 +39,20 @@ h3{
 	border-radius:0.3em;
 }
 .blog h3{
-	font-size: 2.2em;
+	/*font-size: 2.2em;
 	font-weight: 900;
 	color: #506369;
 	text-align: center;
 	margin: 0.8em 0 0.8em;
-	text-transform: uppercase;
+	text-transform: uppercase;*/
 }
 .blog h5{
-	font-size: 1.8em;
+	/*font-size: 1.8em;
 	font-weight: 900;
 	color: #506369;
 	text-align: center;
 	margin: 0.8em 0 0.8em;
-	text-transform: uppercase;
+	text-transform: uppercase;*/
 }
 
 .post-head-left{
