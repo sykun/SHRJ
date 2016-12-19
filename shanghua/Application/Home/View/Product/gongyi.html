@@ -6,6 +6,9 @@
    <link rel="stylesheet" href="__PUBLIC__/home/css/gongyi.css" />
    <link href="__PUBLIC__/home/css/touch.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="__PUBLIC__/home/js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript">
+    var img = '__PUBLIC__/home/images/weixin.jpg';
+  </script>
   <script type="text/javascript" src="__PUBLIC__/home/js/touch.js"></script>
 </head>
 <body>
@@ -17,74 +20,74 @@
     <div id="nav-center">
     <div class="nav">
         <ul>
-          <li><a href="__MODULE__/Index/index">首页</a></li>
+            <li><a href="{:U('Index/index')}">首页</a></li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Honor/jianjie">关于上华</a>
+            <li><a href="{:U('Honor/jianjie')}">关于上华</a>
               <ul>
-                <li><a href="__MODULE__/Honor/jianjie">公司简介</a></li>
-                <li><a href="__MODULE__/Honor/wenhua">公司文化</a></li>
-                <li><a href="__MODULE__/Honor/rongyu">公司荣誉</a></li>
-                <li><a href="__MODULE__/Job/join1">加入我们</a></li>
+                <li><a href="{:U('Honor/jianjie')}">公司简介</a></li>
+                <li><a href="{:U('Honor/wenhua')}">公司文化</a></li>
+                <li><a href="{:U('Honor/rongyu')}">公司荣誉</a></li>
+                <li><a href="{:U('Job/join1')}">加入我们</a></li>
               </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Product/product">产品服务</a>
+            <li><a href="{:U('Product/product')}">产品服务</a>
               <ul>
-                <li><a href="__MODULE__/Product/intergrade">设计软件</a></li>
-                <li><a href="__MODULE__/Product/operation">运维系统</a></li>
-                <li><a href="__MODULE__/Product/lvse">绿色建筑</a></li>
-                <li><a href="__MODULE__/Product/zhushou">DWGHelp</a></li>
-                <li><a href="__MODULE__/Product/zonghe">PDMS综合</a></li>
-                <li><a href="__MODULE__/Product/fengli">PDMS风力</a></li>
-                <li><a href="__MODULE__/Product/gongyi">工艺设计</a></li>
+                <li><a href="{:U('Product/intergrade')}">设计软件</a></li>
+                <li><a href="{:U('Product/operation')}">运维系统</a></li>
+                <li><a href="{:U('Product/lvse')}">绿色建筑</a></li>
+                <li><a href="{:U('Product/zhushou')}">DWGHelp</a></li>
+                <li><a href="{:U('Product/zonghe')}">PDMS综合</a></li>
+                <li><a href="{:U('Product/fengli')}">PDMS风力</a></li>
+                <li><a href="{:U('Product/gongyi')}">工艺设计</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/New/company">新闻中心</a>
+            <li><a href="{:U('New/company?p=1')}">新闻中心</a>
                <ul>
-                <li><a href="__MODULE__/New/company">公司新闻</a></li>
-                <li><a href="__MODULE__/Industry/industry">行业资讯</a></li> 
+                <li><a href="{:U('New/company?p=1')}">公司新闻</a></li>
+                <li><a href="{:U('Industry/industry?p=1')}">行业资讯</a></li> 
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Success/gl">成功案例</a>
+            <li><a href="{:U('Success/gl')}">成功案例</a>
                <ul>
-                <li><a href="__MODULE__/Success/gl">管廊</a></li>
-                <li><a href="__MODULE__/Success/VE">VE</a></li>
+                <li><a href="{:U('Success/gl')}">管廊</a></li>
+                <li><a href="{:U('Success/VE')}">VE</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Apply/apply">在线咨询</a>
+            <li><a href="{:U('Apply/apply')}">在线咨询</a>
                <ul>
-                <li><a href="__MODULE__/Apply/apply">申请试用</a></li>
-                <li><a href="__MODULE__/Advice/suggest">咨询或建议</a></li>
+                <li><a href="{:U('Apply/apply')}">申请试用</a></li>
+                <li><a href="{:U('Apply/suggest')}">咨询或建议</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-          <li><a href="__MODULE__/Contact/contact">联系我们</a></li>
+            <li><a href="{:U('Contact/contact')}">联系我们</a></li>
         </ul>
     </div>
     </div>
     <div id="nav-right">
-      <p><a href="__MODULE__/Product/gongyi">中文&nbsp;</a>|<a href="__MODULE__/Product/gongyie">&nbsp;English</a></p>
+      <p><a href="{:U('Product/gongyi')}">中文&nbsp;</a>|<a href="{:U('Product/gongyie')}">&nbsp;English</a></p>
     </div>
   </div>
   <div id="nav-banner">
@@ -92,50 +95,40 @@
   </div>
   <div id="bread">
     <div id="bread-left">产品服务</div>
-      <div id="bread-right"><a href="__MODULE__/Index/index">首页&nbsp;</a>>><a href="__MODULE__/Product/product">&nbsp;产品服务&nbsp;</a>>>&nbsp;PDMS风管阻力计算</div>
+      <div id="bread-right"><a href="{:U('Index/index')}">首页&nbsp;</a>>><a href="{:U('Product/product')}">&nbsp;产品服务&nbsp;</a>>>&nbsp;工艺设计软件</div>
   </div>
 
 <div class="product-content">
             <div class="product-v1" style="text-align: center;" >
-                <h2>PROCESS DESIGN SOFTWARE</h2>
-                <h3>工艺设计软件</h3>
+                 <volist name="product" id="vo" offset="33" length="1">
+                    <h2>{$vo.title}</h2>
+                  </volist>
             </div>
             <div class="product-v2 clearfix">
+            <volist name="product" id="vo" offset="34" length="2">
                 <div class="fl">
-                 <img src="__PUBLIC__/home/images/gy1.png" width="80%"/>
+                 <img src='__PUBLIC__/{$vo.thumb}' width="80%"/>
                 </div>
                 <div class="fr">
                   <div class="extP_div">
-                  <h2>Absolute security of data</h2>
-                  <h3>绝对的数据安全</h3><br/>
-                  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;具备数据服务访问权限、数据操作权限和数据内容过滤等多种权限控制机制，完全按需分发的三维地理信息服务。 严谨的客户端缓存数据加密机制，确保数据安全不留死角。</p>
+                  
+                  <h3>{$vo.title}</h3><br/>
+                  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$vo.content}</p>
                   </div>
                 </div>
-            </div>
-             <div class="product-v2 clearfix" >
-                <div class="fl" style="padding-top:125px">
-                 <img src="__PUBLIC__/home/images/gy2.png"width="80%"/>
-                </div>
-                <div class="fr" style="padding-top:40px">
-                  <div class="extP_div" >
-                  <h2>CADPS excellent network service performance</h2>
-                  <h3>CADPS优异的网络服务性能</h3><br/>
-                  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CADPS是面向管道设计领域推出的集二维管道设计、材料管理为一体的综合管道设计系统。CADPS由P&ID流程图设计软件、2D PIPE管道设计软件、BOM材料统计软件、SPECEDIT管道等级设计软件四个部分组成。如左图所示：
-                  </p>
-                  </div>
-                </div>
+                </volist>
             </div>
             <div class="product-v3 " >
+            <volist name="product" id="vo" offset="36" length="1">
                 <div class="fl"style="padding-top:80px" >
-                  
-                    <h2>General introduction process software</h2>
-                    <h3>工艺软件总体介绍</h3><br/>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一个项目从工艺流程设计，工艺管道布置到最终的材料统计。繁重的绘图工作和材料统计的过程，使工程师花费了大量的时间和精力。为了提供工作效率，缩短设计周期，CADPS二维管道设计系列软件，从流程设计，配管设计到材料统计为你提供全方面的设计工具。</p>
+                    <h3>{$vo.title}</h3><br/>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$vo.content}</p>
                    
                 </div>
                 <div class="fr" style="float:left">
-                   <img src="__PUBLIC__/home/images/gy4.png" /><!-- <img src="images/gy3.png"width="49%" /> -->
+                   <img src='__PUBLIC__/{$vo.thumb}' />
                 </div>
+                </volist>
             </div>  
         </div>
 

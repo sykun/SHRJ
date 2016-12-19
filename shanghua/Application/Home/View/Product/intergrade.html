@@ -10,6 +10,9 @@
   <link href="__PUBLIC__/home/css/zzsc.css" type="text/css" rel="stylesheet" />
   <script src="__PUBLIC__/home/js/zzsc.js"></script>
   <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript">
+    var img = '__PUBLIC__/home/images/weixin.jpg';
+  </script>
   <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
     </script>
   <link rel="stylesheet" href="__PUBLIC__/home/fonts/css/font-awesome.min.css">
@@ -38,74 +41,74 @@
     <div id="nav-center">
     <div class="nav">
         <ul>
-          <li><a href="__MODULE__/Index/index">首页</a></li>
+            <li><a href="{:U('Index/index')}">首页</a></li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Honor/jianjie">关于上华</a>
+            <li><a href="{:U('Honor/jianjie')}">关于上华</a>
               <ul>
-                <li><a href="__MODULE__/Honor/jianjie">公司简介</a></li>
-                <li><a href="__MODULE__/Honor/wenhua">公司文化</a></li>
-                <li><a href="__MODULE__/Honor/rongyu">公司荣誉</a></li>
-                <li><a href="__MODULE__/Job/join1">加入我们</a></li>
+                <li><a href="{:U('Honor/jianjie')}">公司简介</a></li>
+                <li><a href="{:U('Honor/wenhua')}">公司文化</a></li>
+                <li><a href="{:U('Honor/rongyu')}">公司荣誉</a></li>
+                <li><a href="{:U('Job/join1')}">加入我们</a></li>
               </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Product/product">产品服务</a>
+            <li><a href="{:U('Product/product')}">产品服务</a>
               <ul>
-                <li><a href="__MODULE__/Product/intergrade">设计软件</a></li>
-                <li><a href="__MODULE__/Product/operation">运维系统</a></li>
-                <li><a href="__MODULE__/Product/lvse">绿色建筑</a></li>
-                <li><a href="__MODULE__/Product/zhushou">DWGHelp</a></li>
-                <li><a href="__MODULE__/Product/zonghe">PDMS综合</a></li>
-                <li><a href="__MODULE__/Product/fengli">PDMS风力</a></li>
-                <li><a href="__MODULE__/Product/gongyi">工艺设计</a></li>
+                <li><a href="{:U('Product/intergrade')}">设计软件</a></li>
+                <li><a href="{:U('Product/operation')}">运维系统</a></li>
+                <li><a href="{:U('Product/lvse')}">绿色建筑</a></li>
+                <li><a href="{:U('Product/zhushou')}">DWGHelp</a></li>
+                <li><a href="{:U('Product/zonghe')}">PDMS综合</a></li>
+                <li><a href="{:U('Product/fengli')}">PDMS风力</a></li>
+                <li><a href="{:U('Product/gongyi')}">工艺设计</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/New/company">新闻中心</a>
+            <li><a href="{:U('New/company?p=1')}">新闻中心</a>
                <ul>
-                <li><a href="__MODULE__/New/company">公司新闻</a></li>
-                <li><a href="__MODULE__/Industry/industry">行业资讯</a></li> 
+                <li><a href="{:U('New/company?p=1')}">公司新闻</a></li>
+                <li><a href="{:U('Industry/industry?p=1')}">行业资讯</a></li> 
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Success/gl">成功案例</a>
+            <li><a href="{:U('Success/gl')}">成功案例</a>
                <ul>
-                <li><a href="__MODULE__/Success/gl">管廊</a></li>
-                <li><a href="__MODULE__/Success/VE">VE</a></li>
+                <li><a href="{:U('Success/gl')}">管廊</a></li>
+                <li><a href="{:U('Success/VE')}">VE</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Apply/apply">在线咨询</a>
+            <li><a href="{:U('Apply/apply')}">在线咨询</a>
                <ul>
-                <li><a href="__MODULE__/Apply/apply">申请试用</a></li>
-                <li><a href="__MODULE__/Advice/suggest">咨询或建议</a></li>
+                <li><a href="{:U('Apply/apply')}">申请试用</a></li>
+                <li><a href="{:U('Apply/suggest')}">咨询或建议</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-          <li><a href="__MODULE__/Contact/contact">联系我们</a></li>
+            <li><a href="{:U('Contact/contact')}">联系我们</a></li>
         </ul>
     </div>
     </div>
     <div id="nav-right">
-      <p><a href="__MODULE__/Product/intergrade">中文&nbsp;</a>|<a href="__MODULE__/Product/intergradee">&nbsp;English</a></p>
+      <p><a href="{:U('Product/intergrade')}">中文&nbsp;</a>|<a href="{:U('Product/intergradee')}">&nbsp;English</a></p>
     </div>
   </div>
   <div id="nav-banner">
@@ -113,28 +116,32 @@
   </div>
   <div id="bread">
     <div id="bread-left">设计软件</div>
-     <div id="bread-right"><a href="__MODULE__/Index/index">首页&nbsp;</a>>><a href="__MODULE__/Product/product">&nbsp;产品服务&nbsp;</a>>>&nbsp;PDMS风管阻力计算</div>
+     <div id="bread-right"><a href="{:U('Index/index')}">首页&nbsp;</a>>><a href="{:U('Product/product')}">&nbsp;产品服务&nbsp;</a>>>&nbsp;设计软件</div>
   </div>
      <div id="blog" class="blog">
       <div class="container">
-          <h3>WISDOM PIPE GALLERY</h3><h5>上华管廊设计Sh-Utp</h5><label> </label>
+        <volist name="product" id="vo" offset="45" length="1">
+            <h2>{$vo.title}</h2>
+        </volist>
+        <label> </label>
         <div class="blog-grids">
           <div class="col-md-4 blog-grid-row frist-row">
-            <a class="post-pic"><img src="__PUBLIC__/home/images/product6.png" title="pic-name" /></a>
+          <volist name="product" id="vo" offset="46" length="1">
+            <a class="post-pic"><img src='__PUBLIC__/{$vo.thumb}' title="pic-name" /></a>
             <div class="artical-info">
               <div class="post-head">
                 <div class="post-head-left">
                   <h4><a>总体介绍：</a></h4>
                   <p class="author">By <a> Shanghua</a></p>
                 </div>
-                <div class="post-head-right">
+                <!-- <div class="post-head-right">
                   <span>17</span><label>December 2016</label>
-                </div>
+                </div> -->
                 <div class="clearfix"> </div>
               </div>
-              <p class="post-text">上华软件针对立足于工程建设信息化领域，重点推进城市综合管廊（”共同沟”）建设建设，针对地下管廊建设规划设计复杂、施工难度大、运营管理及后期维护信息量大等困难，联合中冶京城、中国市政华北院等，结合国内设计、施工、运维现状，借鉴国外地区经验，通过软件技术实现地下管廊的设计与运营管理。 采用GIS技术与BIM技术相结合开发的数字化综合管廊运维系统，借鉴了国外先进的管廊运维管理经验，可以有效地实现综合管廊后期数字标准化运维管理。
-
-</p>
+              <p class="post-text">
+              {$vo.content}
+              </p>
               <div class="post-bottom">
                 <div class="post-bottom-left">
                   
@@ -145,20 +152,21 @@
                 <div class="clearfix"> </div>
               </div>
             </div>
+            </volist>
           </div>
           <div class="col-md-4 artical-row2">
-            <div class="artical-info">
+          <!--  -->
+          <volist name="product" id="vo" offset="47" length="2">
+                  <div class="artical-info">
               <div class="post-head post-head1">
                 <div class="post-head-left">
-                  <h4><a>设计特点：</a></h4>
+                  <h4><a>{$vo.title}</a></h4>
                   <p class="author">By <a> Shanghua</a></p>
                 </div>
-                <div class="post-head-right post-head-right-C">
-                  <span>20</span><label>December 2016</label>
-                </div>
+                
                 <div class="clearfix"> </div>
               </div>
-              <p class="post-text"> 上华软件立足于工程建设信息化领域，重点推进城市地下综合管廊建设建设（地下“高速公路”），针对地下管廊建设规划设计复杂、施工难度大、运营管理及后期维护信息量大等困难，结合国内设计、施工、运维现状，借鉴国外地区经验，通过软件技术实现地下管廊的设计，提高设计效益、便于施工运维。</p>
+              <p class="post-text"> {$vo.content}</p>
               <div class="post-bottom">
                 <div class="post-bottom-left">    
                 </div>
@@ -168,75 +176,37 @@
                 <div class="clearfix"> </div>
               </div>
             </div>
-            <div class="artical-info">
-              <div class="post-head post-head1">
-                <div class="post-head-left">
-                  <h4><a>功能特点：</a></h4>
-                  <p class="author">By <a> Shanghua</a></p>
-                </div>
-                <div class="post-head-right post-head-right-C">
-                  <span>23</span><label>December 2016</label>
-                </div>
-                <div class="clearfix"> </div>
-              </div>
-              <p class="post-text"> 实现综合管廊工程进行方案、施工图设计；给水、雨水、污水、再生水、天然气、热力、电力、通信等工程管线在管廊中的设计；雨水、污水等入水口设计，纵断面图等；雨水管道综合管廊敷设设计；污水管综合管廊敷设设计；上华软件立足于工程建设信息化领域，重点推进城市地下综合管廊建设建设（地下“高速公路”），针对地下管廊建设规划设计复杂、施工难度大、运营管理及后期维护信息量大等困难，结合国内设计、施工、运维现状，借鉴国外地区经验，通过软件技术实现地下管廊的设计，提高设计效益、便于施工运维。</p>
-              <div class="post-bottom">
-                <div class="post-bottom-left">                  
-                </div>
-                <div class="post-bottom-right">
-                  特点星级：<i class="fa fa-star"> </i><i class="fa fa-star"> </i><i class="fa fa-star"> </i><i class="fa fa-star"> </i><i class="fa fa-star"> </i>
-                </div>
-                <div class="clearfix"> </div>
-              </div>
-            </div>
+          </volist>
+          <!--  -->
           </div>
+          <!-- 2 -->
           <div class="col-md-4 artical-row2">
-            <div class="artical-info">
+          <!--  -->
+          <volist name="product" id="vo" offset="49" length="2">
+                  <div class="artical-info">
               <div class="post-head post-head1">
                 <div class="post-head-left">
-                  <h4><a>技术特点：</a></h4>
+                  <h4><a>{$vo.title}</a></h4>
                   <p class="author">By <a> Shanghua</a></p>
                 </div>
-                <div class="post-head-right post-head-right-C">
-                  <span>28</span><label>December 2016</label>
-                </div>
+                
                 <div class="clearfix"> </div>
               </div>
-              <p class="post-text"> 上华软件立足于工程建设信息化领域，重点推进城市地下综合管廊建设建设（地下“高速公路”），针对地下管廊建设规划设计复杂、施工难度大、运营管理及后期维护信息量大等困难，结合国内设计、施工、运维现状，借鉴国外地区经验，通过软件技术实现地下管廊的设计，提高设计效益、便于施工运维。</p>
+              <p class="post-text"> {$vo.content}</p>
               <div class="post-bottom">
-                <div class="post-bottom-left">
-                  
+                <div class="post-bottom-left">    
                 </div>
                 <div class="post-bottom-right">
-                  特点星级：<i class="fa fa-star"> </i><i class="fa fa-star"> </i><i class="fa fa-star"> </i>
+                 特点星级：<i class="fa fa-star"> </i><i class="fa fa-star"> </i><i class="fa fa-star"> </i>
                 </div>
                 <div class="clearfix"> </div>
               </div>
             </div>
-            <div class="artical-info">
-              <div class="post-head post-head1">
-                <div class="post-head-left">
-                  <h4><a>产品特点：</a></h4>
-                  <p class="author">By <a> Shanghua</a></p>
-                </div>
-                <div class="post-head-right post-head-right-C">
-                  <span>30</span><label>December 2016</label>
-                </div>
-                <div class="clearfix"> </div>
-              </div>
-              <p class="post-text"> 实现综合管廊工程进行方案、施工图设计；给水、雨水、污水、再生水、天然气、热力、电力、通信等工程管线在管廊中的设计；雨水、污水等入水口设计，纵断面图等；雨水管道综合管廊敷设设计；污水管综合管廊敷设设计；上华软件立足于工程建设信息化领域，重点推进城市地下综合管廊建设建设（地下“高速公路”），针对地下管廊建设规划设计复杂、施工难度大、运营管理及后期维护信息量大等困难，结合国内设计、施工、运维现状，借鉴国外地区经验，通过软件技术实现地下管廊的设计，提高设计效益、便于施工运维。</p>
-              <div class="post-bottom">
-                <div class="post-bottom-left">
-                  
-                </div>
-                <div class="post-bottom-right">
-                  特点星级：<i class="fa fa-star"> </i><i class="fa fa-star"> </i><i class="fa fa-star"> </i><i class="fa fa-star"> </i>
-                </div>
-                <div class="clearfix"> </div>
-              </div>
-            </div>
+          </volist>
+          <!--  -->
           </div>
-        </div>
+          <!-- 2 -->
+         
       </div>
     </div>
 

@@ -6,6 +6,9 @@
   <link href="__PUBLIC__/home/css/zonghe.css" type="text/css" rel="stylesheet" />
   <link href="__PUBLIC__/home/css/touch.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="__PUBLIC__/home/js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript">
+    var img = '__PUBLIC__/home/images/weixin.jpg';
+  </script>
   <script type="text/javascript" src="__PUBLIC__/home/js/touch.js"></script>
 </head>
 <body>
@@ -17,74 +20,74 @@
     <div id="nav-center">
     <div class="nav">
         <ul>
-          <li><a href="__MODULE__/Index/index">首页</a></li>
+            <li><a href="{:U('Index/index')}">首页</a></li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Honor/jianjie">关于上华</a>
+            <li><a href="{:U('Honor/jianjie')}">关于上华</a>
               <ul>
-                <li><a href="__MODULE__/Honor/jianjie">公司简介</a></li>
-                <li><a href="__MODULE__/Honor/wenhua">公司文化</a></li>
-                <li><a href="__MODULE__/Honor/rongyu">公司荣誉</a></li>
-                <li><a href="__MODULE__/Job/join1">加入我们</a></li>
+                <li><a href="{:U('Honor/jianjie')}">公司简介</a></li>
+                <li><a href="{:U('Honor/wenhua')}">公司文化</a></li>
+                <li><a href="{:U('Honor/rongyu')}">公司荣誉</a></li>
+                <li><a href="{:U('Job/join1')}">加入我们</a></li>
               </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Product/product">产品服务</a>
+            <li><a href="{:U('Product/product')}">产品服务</a>
               <ul>
-                <li><a href="__MODULE__/Product/intergrade">设计软件</a></li>
-                <li><a href="__MODULE__/Product/operation">运维系统</a></li>
-                <li><a href="__MODULE__/Product/lvse">绿色建筑</a></li>
-                <li><a href="__MODULE__/Product/zhushou">DWGHelp</a></li>
-                <li><a href="__MODULE__/Product/zonghe">PDMS综合</a></li>
-                <li><a href="__MODULE__/Product/fengli">PDMS风力</a></li>
-                <li><a href="__MODULE__/Product/gongyi">工艺设计</a></li>
+                <li><a href="{:U('Product/intergrade')}">设计软件</a></li>
+                <li><a href="{:U('Product/operation')}">运维系统</a></li>
+                <li><a href="{:U('Product/lvse')}">绿色建筑</a></li>
+                <li><a href="{:U('Product/zhushou')}">DWGHelp</a></li>
+                <li><a href="{:U('Product/zonghe')}">PDMS综合</a></li>
+                <li><a href="{:U('Product/fengli')}">PDMS风力</a></li>
+                <li><a href="{:U('Product/gongyi')}">工艺设计</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/New/company">新闻中心</a>
+            <li><a href="{:U('New/company?p=1')}">新闻中心</a>
                <ul>
-                <li><a href="__MODULE__/New/company">公司新闻</a></li>
-                <li><a href="__MODULE__/Industry/industry">行业资讯</a></li> 
+                <li><a href="{:U('New/company?p=1')}">公司新闻</a></li>
+                <li><a href="{:U('Industry/industry?p=1')}">行业资讯</a></li> 
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Success/gl">成功案例</a>
+            <li><a href="{:U('Success/gl')}">成功案例</a>
                <ul>
-                <li><a href="__MODULE__/Success/gl">管廊</a></li>
-                <li><a href="__MODULE__/Success/VE">VE</a></li>
+                <li><a href="{:U('Success/gl')}">管廊</a></li>
+                <li><a href="{:U('Success/VE')}">VE</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Apply/apply">在线咨询</a>
+            <li><a href="{:U('Apply/apply')}">在线咨询</a>
                <ul>
-                <li><a href="__MODULE__/Apply/apply">申请试用</a></li>
-                <li><a href="__MODULE__/Advice/suggest">咨询或建议</a></li>
+                <li><a href="{:U('Apply/apply')}">申请试用</a></li>
+                <li><a href="{:U('Apply/suggest')}">咨询或建议</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-          <li><a href="__MODULE__/Contact/contact">联系我们</a></li>
+            <li><a href="{:U('Contact/contact')}">联系我们</a></li>
         </ul>
     </div>
     </div>
     <div id="nav-right">
-      <p><a href="__MODULE__/Product/zonghe">中文&nbsp;</a>|<a href="__MODULE__/Product/zonghee">&nbsp;English</a></p>
+      <p><a href="{:U('Product/zonghe')}">中文&nbsp;</a>|<a href="{:U('Product/zonghee')}">&nbsp;English</a></p>
     </div>
   </div>
   <div id="nav-banner">
@@ -92,38 +95,47 @@
   </div>
   <div id="bread">
     <div id="bread-left">产品服务</div>
-      <div id="bread-right"><a href="__MODULE__/Index/index">首页&nbsp;</a>>><a href="__MODULE__/Product/product">&nbsp;产品服务&nbsp;</a>>>&nbsp;PDMS综合材料自动排版</div>
+      <div id="bread-right"><a href="{:U('Index/index')}">首页&nbsp;</a>>><a href="{:U('Product/product')}">&nbsp;产品服务&nbsp;</a>>>&nbsp;PDMS综合材料自动排版</div>
   </div>
   
 
   <div class="product-content">
     <div class="product-v1">
-      <h2>PDMS COMPOSITE MATERIAL AUTOMATIC TYPESETTING</h2>
-      <h3>PDMS综合材料自动排版</h3>
+      <volist name="product" id="vo" offset="18" length="1">
+        <h2>{$vo.title}</h2>
+      </volist>
     </div>
     <div class="product-v2">
+     <volist name="product" id="vo" offset="19" length="1">
       <div class="div-a">
         <h2>PRODUCT INTRODUCTION</h2>
         <h3>产品简介</h3>
-        <p> PDMS是工厂设计软件，最主要的功能是三维管道设计。</p>
+        <p>{$vo.content}</p>
       </div>
       <div class="div-b">
-        <img src="__PUBLIC__/home/images/zh5.png" width="100%"height="100%">  
+        <img src='__PUBLIC__/{$vo.thumb}' width="100%"height="100%">  
       </div>
+      </volist>
     </div>
     <div class="product-v3">
       <h2>GENERAL INTRODUCTION</h2>
       <h3>总体介绍</h3><br/>
+      <volist name="product" id="vo" offset="20" length="1">
       <p>&nbsp;&nbsp;&nbsp;&nbsp;
-        PDMS是工厂设计软件，最主要的功能是三维管道设计。能自动 生成设备平面布置图、管道平面布置图、ISO图、综合材料表等。使 用中自动生成的ISO图比较完善，设备平面布置图一般有CAD生成， 管道平面布置图需要适量修改，综合材料表非常混乱， 需要人工手动排版（期间很容易出错），排版后由于各种原因经常需 要修改模型重新出材料，重新排版，因此需要大量时间。为了提高设 计质量和效率，利用EXCEL附属的VBA语言开发了“综合材料自动排版系统(Ver1.0)”。
+        {$vo.content}
       </p>
-      <img src="__PUBLIC__/home/images/zh6.png" width="100%"height="100%"> 
+      <img src='__PUBLIC__/{$vo.thumb}' width="100%"height="80%">
+      </volist> 
     </div>
     <div class="product-v4">
       <h2>MAIN SCREENSHOT</h2>
       <h3>主界面截图</h3><br/>
-      <img src="__PUBLIC__/home/images/zh1.png" width="47%"height="50%"> 
-      <img src="__PUBLIC__/home/images/zh2.png" width="47%"height="50%"style="padding-left:3%">
+      <volist name="product" id="vo" offset="21" length="1">
+      <img src='__PUBLIC__/{$vo.thumb}' width="47%"height="50%"> 
+      </volist>
+      <volist name="product" id="vo" offset="22" length="1">
+      <img src='__PUBLIC__/{$vo.thumb}' width="47%"height="50%"style="padding-left:4%">
+      </volist>
     </div>
     
   </div>

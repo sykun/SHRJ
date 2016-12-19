@@ -6,6 +6,9 @@
   <link rel="stylesheet" href="__PUBLIC__/home/css/styleNews.css">
   <link href="__PUBLIC__/home/css/touch.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="__PUBLIC__/home/js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript">
+    var img = '__PUBLIC__/home/images/weixin.jpg';
+  </script>
   <script type="text/javascript" src="__PUBLIC__/home/js/touch.js"></script>
 </head>
 <style>
@@ -20,74 +23,74 @@
     <div id="nav-center">
     <div class="nav">
         <ul>
-          <li><a href="__MODULE__/Index/index">首页</a></li>
+            <li><a href="{:U('Index/index')}">首页</a></li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Honor/jianjie">关于上华</a>
+            <li><a href="{:U('Honor/jianjie')}">关于上华</a>
               <ul>
-                <li><a href="__MODULE__/Honor/jianjie">公司简介</a></li>
-                <li><a href="__MODULE__/Honor/wenhua">公司文化</a></li>
-                <li><a href="__MODULE__/Honor/rongyu">公司荣誉</a></li>
-                <li><a href="__MODULE__/Job/join1">加入我们</a></li>
+                <li><a href="{:U('Honor/jianjie')}">公司简介</a></li>
+                <li><a href="{:U('Honor/wenhua')}">公司文化</a></li>
+                <li><a href="{:U('Honor/rongyu')}">公司荣誉</a></li>
+                <li><a href="{:U('Job/join1')}">加入我们</a></li>
               </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Product/product">产品服务</a>
+            <li><a href="{:U('Product/product')}">产品服务</a>
               <ul>
-                <li><a href="__MODULE__/Product/intergrade">设计软件</a></li>
-                <li><a href="__MODULE__/Product/operation">运维系统</a></li>
-                <li><a href="__MODULE__/Product/lvse">绿色建筑</a></li>
-                <li><a href="__MODULE__/Product/zhushou">DWGHelp</a></li>
-                <li><a href="__MODULE__/Product/zonghe">PDMS综合</a></li>
-                <li><a href="__MODULE__/Product/fengli">PDMS风力</a></li>
-                <li><a href="__MODULE__/Product/gongyi">工艺设计</a></li>
+                <li><a href="{:U('Product/intergrade')}">设计软件</a></li>
+                <li><a href="{:U('Product/operation')}">运维系统</a></li>
+                <li><a href="{:U('Product/lvse')}">绿色建筑</a></li>
+                <li><a href="{:U('Product/zhushou')}">DWGHelp</a></li>
+                <li><a href="{:U('Product/zonghe')}">PDMS综合</a></li>
+                <li><a href="{:U('Product/fengli')}">PDMS风力</a></li>
+                <li><a href="{:U('Product/gongyi')}">工艺设计</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/New/company">新闻中心</a>
+            <li><a href="{:U('New/company?p=1')}">新闻中心</a>
                <ul>
-                <li><a href="__MODULE__/New/company">公司新闻</a></li>
-                <li><a href="__MODULE__/Industry/industry">行业资讯</a></li> 
+                <li><a href="{:U('New/company?p=1')}">公司新闻</a></li>
+                <li><a href="{:U('Industry/industry?p=1')}">行业资讯</a></li> 
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Success/gl">成功案例</a>
+            <li><a href="{:U('Success/gl')}">成功案例</a>
                <ul>
-                <li><a href="__MODULE__/Success/gl">管廊</a></li>
-                <li><a href="__MODULE__/Success/VE">VE</a></li>
+                <li><a href="{:U('Success/gl')}">管廊</a></li>
+                <li><a href="{:U('Success/VE')}">VE</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Apply/apply">在线咨询</a>
+            <li><a href="{:U('Apply/apply')}">在线咨询</a>
                <ul>
-                <li><a href="__MODULE__/Apply/apply">申请试用</a></li>
-                <li><a href="__MODULE__/Advice/suggest">咨询或建议</a></li>
+                <li><a href="{:U('Apply/apply')}">申请试用</a></li>
+                <li><a href="{:U('Apply/suggest')}">咨询或建议</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-          <li><a href="__MODULE__/Contact/contact">联系我们</a></li>
+            <li><a href="{:U('Contact/contact')}">联系我们</a></li>
         </ul>
     </div>
     </div>
     <div id="nav-right">
-      <p><a href="__MODULE__/Product/lvse">中文&nbsp;</a>|<a href="__MODULE__/Product/lvsee">&nbsp;English</a></p>
+      <p><a href="{:U('Product/lvse')}">中文&nbsp;</a>|<a href="{:U('Product/lvsee')}">&nbsp;English</a></p>
     </div>
   </div>
   <div id="nav-banner">
@@ -95,23 +98,26 @@
   </div>
   <div id="bread">
     <div id="bread-left">产品服务</div>
-      <div id="bread-right"><a href="__MODULE__/Index/index">首页&nbsp;</a>>><a href="__MODULE__/Product/product">&nbsp;产品服务&nbsp;</a>>>&nbsp;<span style="color:#3c3c3c">绿色建筑模拟分析</span></div>
+      <div id="bread-right"><a href="{:U('Index/index')}">首页&nbsp;</a>>><a href="{:U('Product/product')}">&nbsp;产品服务&nbsp;</a>>>&nbsp;<span style="color:#3c3c3c">绿色建筑模拟分析</span></div>
   </div>
 
 
   <div class="product-content">
       <div class="product-v1" >
-          <h2>GREEN CONSTRUCTION SIMULATION ANALYSIS</h2>
-          <h3>绿色建筑模拟分析</h3>
+          <volist name="product" id="vo" offset="7" length="1">
+          <h2>{$vo.title}</h2>
+          </volist>
       </div>
       <div class="product-v2">
+        <volist name="product" id="vo" offset="8" length="1">
           <div class="div-a">
-              <img src="__PUBLIC__/home/images/pro-4.png" width="75%"height="100%">  
+              <img src='__PUBLIC__/{$vo.thumb}' width="75%"height="100%">  
           </div>
           <div class="div-b" >
               <h2>SOFTWARE INTRODUCTION</h2>
-              <h3>软件简介</h3><p> &nbsp;&nbsp;&nbsp;&nbsp;绿色建筑模拟分析软件 (以下简称IES )是由英国IES公司开发的集成化绿色建筑性能模拟分析软件。很多知名的设计公司或工程公司都广泛使用IES <VE>作为他们在国内参与项目竞争的工具，也取得了非常好的效果。</p>
+              <h3>软件简介</h3><p> &nbsp;&nbsp;&nbsp;&nbsp;{$vo.content}</p>
           </div>
+        </volist>
       </div>
       
       <div class="product-v3">
@@ -120,76 +126,62 @@
               <h3>主要功能</h3>   <br/>
           </div>
           <div >
+            <volist name="product" id="vo" offset="9" length="1">
               <div class="product-wrap">
                   <div class="product-photo">
-                      <a href="#"><img src="__PUBLIC__/home/images/pro-5.png" style="width:100% " alt=""/><span><h2>THE MAIN FUNCTION</h2><h2>主要功能特点</h2>（1）建立三维信息化建筑模型，或者导入其它建模工具建立的模型，如Revit或Sketchup等。<br/>（2）ApacheLoad根据ASHRAE（美国采暖、制冷与空调工程是协会）标准进行冷热负荷的计算。<br/>（3）计算建筑物全年能耗、CO2排放量、室内空气品质等，计算空调系统全年能耗。<br/>（4） 模拟建筑物自然通风量，结果用于能耗计算。<br/>（5）计算建筑内外的自然采光，可以将计算结果以直观的效果表现出来。<br/>（6）计算建筑内外的自然采光、人工照明，可以将计算结果以直观的效果表现出来<br/>（7）计算建筑的日光遮挡系数，并可以将遮挡系数用于热模拟计算，可以动态地显示全天的日照变化情况。<br/>（8）以动态模拟的方式计算建筑物内所有人员离开建筑所需要的时间<br/>（9）通过有限容积法，计算建筑物内外3D风环境，模拟室内温度场、流场等；通过后处理，输出速度、温度云图、热舒适性等计算结果。<br/></span></a>
+                      <a href="#"><img src='__PUBLIC__/{$vo.thumb}' style="width:100% " alt=""/><span><h2>THE MAIN FUNCTION</h2><h2>主要功能特点</h2>{$vo.content}</span></a>
                   </div>
               </div>
           </div>
+          </volist>
       </div>
       <div class="product-v4" >
-        <h2>THE WIDE USE OF IES</h2>
-          <h3>IES的广泛使用</h3><br/>
+        <h2>THE WIDE USE OF SOFTWARE</h2>
+        <h3>软件的广泛使用</h3><br/>
         <ul>
+        <volist name="product" id="vo" offset="10" length="2">
           <li> 
             <a href="#" target="_blank" rel="nofollow">
               <div class="thum animate">
-               <img src="__PUBLIC__/home/images/lvse1.png" class="animate" width="100%" alt="绿建"> 
+               <img src='__PUBLIC__/{$vo.thumb}' class="animate" width="100%" alt="{$vo.title}"> 
               </div>
             </a>
             <div class="name animate">
               <p class="animate"></p>
-              <strong class="animate">绿建</strong>
+              <strong class="animate">{$vo.title}</strong>
             </div>
           </li>
-          <li>
-           <a href="#" target="_blank" rel="nofollow">
-              <div class="thum animate"> 
-                <img src="__PUBLIC__/home/images/lvse2.png" class="animate" width="100%" alt="鸟巢"> 
-              </div>
-            </a>
-            <div class="name animate">
-                <p class="animate"></p>
-                <strong class="animate">鸟巢</strong>
-            </div>
-          </li>
+          </volist>
           <li class="three">
+          <volist name="product" id="vo" offset="12" length="1">
             <a href="#" target="_blank" rel="nofollow">
               <div class="thum animate">
-               <img src="__PUBLIC__/home/images/lvse3.png" class="animate" width="100%" alt="水立方"> 
+               <img src='__PUBLIC__/{$vo.thumb}' class="animate" width="100%" alt="{$vo.title}"> 
                </div>
             </a>
             <div class="name animate">
               <p class="animate"></p>
-              <strong class="animate">水立方</strong>
+              <strong class="animate">{$vo.title}</strong>
             </div>
           </li>
+          </volist>
         </ul>
         
       </div>
       <div class="product-v5">
+      <volist name="product" id="vo" offset="13" length="1">
           <div class="div-a" >
               <h2>GENENAL INTRODUCTION</h2>
-              <h3>总体介绍</h3><br/><p>&nbsp;&nbsp;&nbsp;&nbsp; IES被世界上各个知名的设计单位和工程咨询单位所使用，如Arup（奥雅纳）、WSP（科进）、Atkins（阿特金斯）、PB（柏诚）等等。这些知名的设计公司或工程公司广泛使用IES <VE>作为他们在国内参与项目竞争的工具，取得了非常好的效果，知名的项目有水立方、鸟巢、浦东国际机场、首都国际机场、诺基亚大厦等等。IES <VE>带给设计方的不仅仅是漂亮的三维模型，更多的是对建筑性能的理性思考，真正做到了设计感性和分析理性的高度统一。</p>   
+              <h3>总体介绍</h3><br/>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;{$vo.content}</p>  
           </div>
           <div class="div-b">
-              <img src="__PUBLIC__/home/images/pro-9.png" width="90%" >
+              <img src='__PUBLIC__/{$vo.thumb}' width="90%" >
           </div>
+          </volist>
       </div>
-
-
-      
-
-
-
-
-
-
-
   </div>
-
-
-
+  
   <div id="footer">
     <div class="footer-top">
       <h5>关于上华</h5>

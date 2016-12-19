@@ -6,6 +6,9 @@
    <link rel="stylesheet" href="__PUBLIC__/home/css/gongyi.css" />
    <link href="__PUBLIC__/home/css/touch.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="__PUBLIC__/home/js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript">
+    var img = '__PUBLIC__/home/images/weixin.jpg';
+  </script>
   <script type="text/javascript" src="__PUBLIC__/home/js/touch.js"></script>
 </head>
 <body>
@@ -17,74 +20,74 @@
     <div id="nav-center">
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Index/indexe">Home</a></li>
+            <li><a href="{:U('Index/indexe')}">Home</a></li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Honor/jianjiee">About&nbsp;SH</a>
+            <li><a href="{:U('Honor/jianjiee')}">About&nbsp;SH</a>
               <ul>
-                <li><a href="__MODULE__/Honor/jianjiee">Profile</a></li>
-                <li><a href="__MODULE__/Honor/wenhuae">Culture</a></li>
-                <li><a href="__MODULE__/Honor/rongyue">Honor</a></li>
-                <li><a href="__MODULE__/Job/join1e">Join&nbsp;Us</a></li>
+                <li><a href="{:U('Honor/jianjiee')}">Profile</a></li>
+                <li><a href="{:U('Honor/wenhuae')}">Culture</a></li>
+                <li><a href="{:U('Honor/rongyue')}">Honor</a></li>
+                <li><a href="{:U('Job/join1e')}">Join&nbsp;Us</a></li>
               </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Product/producte">Products</a>
+            <li><a href="{:U('Product/producte')}">Products</a>
               <ul>
-                <li><a href="__MODULE__/Product/intergradee">Integrated</a></li>
-                <li><a href="__MODULE__/Product/operatione">Maintenance</a></li>
-                <li><a href="__MODULE__/Product/lvsee">Green&nbsp;Building</a></li>
-                <li><a href="__MODULE__/Product/zhushoue">DWGHelp</a></li>
-                <li><a href="__MODULE__/Product/zonghee">PDMS&nbsp;Synthetic</a></li>
-                <li><a href="__MODULE__/Product/fenglie">PDMS&nbsp;Wind</a></li>
-                <li><a href="__MODULE__/Product/gongyie">Process</a></li>
+                <li><a href="{:U('Product/intergradee')}">Integrated</a></li>
+                <li><a href="{:U('Product/operatione')}">Maintenance</a></li>
+                <li><a href="{:U('Product/lvsee')}">Green&nbsp;Building</a></li>
+                <li><a href="{:U('Product/zhushoue')}">DWGHelp</a></li>
+                <li><a href="{:U('Product/zonghee')}">PDMS&nbsp;Synthetic</a></li>
+                <li><a href="{:U('Product/fenglie')}">PDMS&nbsp;Wind</a></li>
+                <li><a href="{:U('Product/gongyie')}">Process</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/New/companye">News</a>
+            <li><a href="{:U('New/companye?p=1')}">News</a>
                <ul>
-                <li><a href="__MODULE__/New/companye">Company</a></li>
-                <li><a href="__MODULE__/Industry/industrye">Industry</a></li> 
+                <li><a href="{:U('New/companye?p=1')}">Company</a></li>
+                <li><a href="{:U('Industry/industrye?p=1')}">Industry</a></li> 
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Success/gle">Success</a>
+            <li><a href="{:U('Success/gle')}">Success</a>
                <ul>
-                <li><a href="__MODULE__/Success/gle">Pipe&nbsp;Sallery</a></li>
-                <li><a href="__MODULE__/Success/VEe">VE</a></li>
+                <li><a href="{:U('Success/gle')}">Pipe&nbsp;Sallery</a></li>
+                <li><a href="{:U('Success/VEe')}">VE</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Apply/applye">Consulting</a>
+            <li><a href="{:U('Apply/applye')}">Consulting</a>
                <ul>
-                <li><a href="__MODULE__/Apply/applye">Apply</a></li>
-                <li><a href="__MODULE__/Advice/suggeste">Advice</a></li>
+                <li><a href="{:U('Apply/applye')}">Apply</a></li>
+                <li><a href="{:U('Apply/suggeste')}">Advice</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Contact/contacte">Contact</a></li>
+            <li><a href="{:U('Contact/contacte')}">Contact</a></li>
         </ul>
     </div>
     </div>
     <div id="nav-right">
-     <p><a href="__MODULE__/Product/gongyi">中文&nbsp;</a>|<a href="__MODULE__/Product/gongyie">&nbsp;English</a></p>
+     <p><a href="{:U('Product/gongyi')}">中文&nbsp;</a>|<a href="{:U('Product/gongyie')}">&nbsp;English</a></p>
     </div>
   </div>
   <div id="nav-banner">
@@ -92,54 +95,43 @@
   </div>
   <div id="bread">
     <div id="bread-left">Products</div>
-      <div id="bread-right"><a href="__MODULE__/Index/indexe">首页&nbsp;</a>>><a href="__MODULE__/Product/producte">&nbsp;产品服务&nbsp;</a>>>&nbsp;PDMS风管阻力计算</div>
+      <div id="bread-right"><a href="{:U('Index/indexe')}">Home&nbsp;</a>>><a href="{:U('Product/producte')}">&nbsp;Products&nbsp;</a>>>&nbsp;Process</div>
   </div>
   
 
   <div class="product-content">
             <div class="product-v1" style="text-align: center;" >
-                <h2>PROCESS DESIGN SOFTWARE</h2>
-                <h3>工艺设计软件</h3>
+                 <volist name="producten" id="vo" offset="33" length="1">
+                    <h2>{$vo.title}</h2>
+                  </volist>
             </div>
             <div class="product-v2 clearfix">
+            <volist name="producten" id="vo" offset="34" length="2">
                 <div class="fl">
-                 <img src="__PUBLIC__/home/images/gy1.png" width="80%"/>
+                 <img src='__PUBLIC__/{$vo.thumb}' width="80%"/>
                 </div>
                 <div class="fr">
                   <div class="extP_div">
-                  <h2>Absolute security of data</h2>
-                  <h3>绝对的数据安全</h3><br/>
-                  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;With existing data access, data access and data content filtering operation and so on the many kinds of access control mechanism, ensure the data security without blind Angle.</p>
+                  
+                  <h3>{$vo.title}</h3><br/>
+                  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$vo.content}</p>
                   </div>
                 </div>
-            </div>
-             <div class="product-v2 clearfix" >
-                <div class="fl" style="padding-top:125px">
-                 <img src="__PUBLIC__/home/images/gy2.png"width="80%"/>
-                </div>
-                <div class="fr" style="padding-top:40px">
-                  <div class="extP_div" >
-                  <h2>CADPS excellent network service performance</h2>
-                  <h3>CADPS优异的网络服务性能</h3><br/>
-                  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CADPS is introduced in the field of design for pipeline 2 d pipeline design and material management for the integration of comprehensive pipeline design system. CADPS by P&ID BOM material statistics software, SPECEDIT PIPE grade design software four parts. As shown in the:
-                  </p>
-                  </div>
-                </div>
+                </volist>
             </div>
             <div class="product-v3 " >
+            <volist name="producten" id="vo" offset="36" length="1">
                 <div class="fl"style="padding-top:80px" >
-                  
-                    <h2>General introduction process software</h2>
-                    <h3>工艺软件总体介绍</h3><br/>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A project from the process design, process piping to decorate material to the final statistics. Heavy drawing work and the process of the material statistics make engineers spend a lot of time and energy. In order to provide work efficiency, shorten the design cycle, CADPS series of 2 d pipeline design software, from the process design, piping design to material statistics provides you with all aspects of design tools.</p>
+                    <h3>{$vo.title}</h3><br/>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$vo.content}</p>
                    
                 </div>
                 <div class="fr" style="float:left">
-                   <img src="__PUBLIC__/home/images/gy4.png" />
+                   <img src='__PUBLIC__/{$vo.thumb}' />
                 </div>
+                </volist>
             </div>  
         </div>
-
 
 
 

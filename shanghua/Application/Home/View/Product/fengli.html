@@ -1,4 +1,4 @@
-<html>
+ <html>
 <head>
   <title>风管阻力计算</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="__PUBLIC__/home/css/pdms.css" />
   <link href="__PUBLIC__/home/css/touch.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="__PUBLIC__/home/js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript">
+    var img = '__PUBLIC__/home/images/weixin.jpg';
+  </script>
   <script type="text/javascript" src="__PUBLIC__/home/js/touch.js"></script>
 </head>
 <body>
@@ -18,74 +21,74 @@
     <div id="nav-center">
     <div class="nav">
         <ul>
-          <li><a href="__MODULE__/Index/index">首页</a></li>
+            <li><a href="{:U('Index/index')}">首页</a></li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Honor/jianjie">关于上华</a>
+            <li><a href="{:U('Honor/jianjie')}">关于上华</a>
               <ul>
-                <li><a href="__MODULE__/Honor/jianjie">公司简介</a></li>
-                <li><a href="__MODULE__/Honor/wenhua">公司文化</a></li>
-                <li><a href="__MODULE__/Honor/rongyu">公司荣誉</a></li>
-                <li><a href="__MODULE__/Job/join1">加入我们</a></li>
+                <li><a href="{:U('Honor/jianjie')}">公司简介</a></li>
+                <li><a href="{:U('Honor/wenhua')}">公司文化</a></li>
+                <li><a href="{:U('Honor/rongyu')}">公司荣誉</a></li>
+                <li><a href="{:U('Job/join1')}">加入我们</a></li>
               </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Product/product">产品服务</a>
+            <li><a href="{:U('Product/product')}">产品服务</a>
               <ul>
-                <li><a href="__MODULE__/Product/intergrade">设计软件</a></li>
-                <li><a href="__MODULE__/Product/operation">运维系统</a></li>
-                <li><a href="__MODULE__/Product/lvse">绿色建筑</a></li>
-                <li><a href="__MODULE__/Product/zhushou">DWGHelp</a></li>
-                <li><a href="__MODULE__/Product/zonghe">PDMS综合</a></li>
-                <li><a href="__MODULE__/Product/fengli">PDMS风力</a></li>
-                <li><a href="__MODULE__/Product/gongyi">工艺设计</a></li>
+                <li><a href="{:U('Product/intergrade')}">设计软件</a></li>
+                <li><a href="{:U('Product/operation')}">运维系统</a></li>
+                <li><a href="{:U('Product/lvse')}">绿色建筑</a></li>
+                <li><a href="{:U('Product/zhushou')}">DWGHelp</a></li>
+                <li><a href="{:U('Product/zonghe')}">PDMS综合</a></li>
+                <li><a href="{:U('Product/fengli')}">PDMS风力</a></li>
+                <li><a href="{:U('Product/gongyi')}">工艺设计</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/New/company">新闻中心</a>
+            <li><a href="{:U('New/company?p=1')}">新闻中心</a>
                <ul>
-                <li><a href="__MODULE__/New/company">公司新闻</a></li>
-                <li><a href="__MODULE__/Industry/industry">行业资讯</a></li> 
+                <li><a href="{:U('New/company?p=1')}">公司新闻</a></li>
+                <li><a href="{:U('Industry/industry?p=1')}">行业资讯</a></li> 
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Success/gl">成功案例</a>
+            <li><a href="{:U('Success/gl')}">成功案例</a>
                <ul>
-                <li><a href="__MODULE__/Success/gl">管廊</a></li>
-                <li><a href="__MODULE__/Success/VE">VE</a></li>
+                <li><a href="{:U('Success/gl')}">管廊</a></li>
+                <li><a href="{:U('Success/VE')}">VE</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Apply/apply">在线咨询</a>
+            <li><a href="{:U('Apply/apply')}">在线咨询</a>
                <ul>
-                <li><a href="__MODULE__/Apply/apply">申请试用</a></li>
-                <li><a href="__MODULE__/Advice/suggest">咨询或建议</a></li>
+                <li><a href="{:U('Apply/apply')}">申请试用</a></li>
+                <li><a href="{:U('Apply/suggest')}">咨询或建议</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-          <li><a href="__MODULE__/Contact/contact">联系我们</a></li>
+            <li><a href="{:U('Contact/contact')}">联系我们</a></li>
         </ul>
     </div>
     </div>
     <div id="nav-right">
-      <p><a href="__MODULE__/Product/fengli">中文&nbsp;</a>|<a href="__MODULE__/Product/fenglie">&nbsp;English</a></p>
+      <p><a href="{:U('Product/fengli')}">中文&nbsp;</a>|<a href="{:U('Product/fenglie')}">&nbsp;English</a></p>
     </div>
   </div>
   <div id="nav-banner">
@@ -93,61 +96,58 @@
   </div>
   <div id="bread">
     <div id="bread-left">产品服务</div>
-      <div id="bread-right"><a href="__MODULE__/Index/index">首页&nbsp;</a>>><a href="__MODULE__/Product/product">&nbsp;产品服务&nbsp;</a>>>&nbsp;PDMS风管阻力计算</div>
+      <div id="bread-right"><a href="{:U('Index/index')}">首页&nbsp;</a>>><a href="{:U('Product/product')}">&nbsp;产品服务&nbsp;</a>>>&nbsp;PDMS风管阻力计算</div>
   </div>
   
   <div class="product-content">
         <div class="product-v1">
-            <h2>PDMS DUCT RESISTANCE CALCULATION</h2>
-            <h3>PDMS风管阻力计算</h3>
+          <volist name="product" id="vo" offset="23" length="1">
+            <h2>{$vo.title}</h2>
+          </volist>
         </div>
         <div class="product-v2">
             <div class="fl">
+            <volist name="product" id="vo" offset="24" length="1">
                 <ul >
-                 <li>PDMS</li>
-                 <li>PDMS</li>
-                 <li>PDMS</li>
-                 <li>PDMS</li>
-                 <li>PDMS</li>
-                 <li>PDMS</li>
+                 <li>{$vo.content}</li>
+                 <li>{$vo.content}</li>
+                 <li>{$vo.content}</li>
+                 <li>{$vo.content}</li>
+                 <li>{$vo.content}</li>
+                 <li>{$vo.content}</li>
                 </ul><br/><br/>
-                <h3>软件名称</h3>   
+                <h3>{$vo.title}</h3>
+            </volist>   
             </div>
             <div class="fr">
                 <h2>THE SOFTWARE IS INTRODUCED</h2>
                 <h3>软件介绍</h3><br/>
-                <p>本软件基于BIM模型离线导航平台开发，本软件符合国内设计规范的计算功能；解决了国内现有的计算软件无法基于PDMS等BIM软件风管模型进行计算；现有的计算软件无完善的构件参数库。</p>  
+                <volist name="product" id="vo" offset="25" length="1">
+                <p>{$vo.content}</p>
+                </volist>  
             </div>
         </div>
         <div class="product-v3">
             <div class="fr">
                 <h2>SOFTWARE FUNCTIONS</h2>
                 <h3>软件功能</h3><br/>
+                <volist name="product" id="vo" offset="26" length="1">
                 <p>
-                   （1）沿程阻力计算；<br/> 
-                   （2）构件阻力计算；<br/> 
-                   （3）最不利分析；<br/> 
-                   （4）风机运行模式管理、分析；<br/> 
-                   （5）分支管路阻力平衡分析，平衡阀开启计算；<br/> 
-                   （6）自动匹配构件局阻类型；<br/> 
-                   （7）生成计算报告。<br/> 
-                </p>  
+                   {$vo.content}
+                </p> 
+                </volist> 
             </div>
             <div class="fl">
                 <ul >
-                 <li>全面性</li>
-                 <li>规范性</li>
-                 <li>准确性</li>
-                 <li>仿真性</li>
-                 <li>美观性</li>
-                 <li>专业性</li>
+                  <volist name="product" id="vo" offset="27" length="6">
+                   <li>{$vo.content}</li>
+                  </volist>  
                 </ul><br/><br/>
-                <h3>软件特性</h3>          
+                <h3>软件特性</h3>
+            </volist>            
             </div>
         </div>
     </div>
-
-
   <div id="footer">
     <div class="footer-top">
       <h5>关于上华</h5>
