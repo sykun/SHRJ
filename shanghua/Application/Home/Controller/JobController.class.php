@@ -44,7 +44,7 @@ class JobController extends Controller {
         $this->assign("job",$data);
         $this->display();
     }
-    public function detail14e(){
+    public function detail4e(){
         $jobModel=M('job');
         $data=$jobModel->select();
         $this->assign("job",$data);
@@ -56,7 +56,7 @@ class JobController extends Controller {
         $this->assign("job",$data);
         $this->display();
     }
-    public function detail15e(){
+    public function detail5e(){
         $jobModel=M('job');
         $data=$jobModel->select();
         $this->assign("job",$data);
