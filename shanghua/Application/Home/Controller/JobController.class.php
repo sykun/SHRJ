@@ -6,12 +6,12 @@ class JobController extends Controller {
         $jobModel=M('job');
         $data=$jobModel->select();
         $this->assign("job",$data);
-    	$this->display();
+        $this->display();
     }
     public function detail1e(){
-        $jobModel=M('job');
-        $data=$jobModel->select();
-        $this->assign("job",$data);
+        $jobenModel=M('joben');
+        $data=$jobenModel->select();
+        $this->assign("joben",$data);
         $this->display();
     }
     public function detail2(){
@@ -21,9 +21,9 @@ class JobController extends Controller {
         $this->display();
     }
     public function detail2e(){
-        $jobModel=M('job');
-        $data=$jobModel->select();
-        $this->assign("job",$data);
+        $jobenModel=M('joben');
+        $data=$jobenModel->select();
+        $this->assign("joben",$data);
         $this->display();
     }
     public function detail3(){
@@ -33,9 +33,9 @@ class JobController extends Controller {
         $this->display();
     }
     public function detail3e(){
-        $jobModel=M('job');
-        $data=$jobModel->select();
-        $this->assign("job",$data);
+        $jobenModel=M('joben');
+        $data=$jobenModel->select();
+        $this->assign("joben",$data);
         $this->display();
     }
     public function detail4(){
@@ -45,9 +45,9 @@ class JobController extends Controller {
         $this->display();
     }
     public function detail4e(){
-        $jobModel=M('job');
-        $data=$jobModel->select();
-        $this->assign("job",$data);
+        $jobenModel=M('joben');
+        $data=$jobenModel->select();
+        $this->assign("joben",$data);
         $this->display();
     }
     public function detail5(){
@@ -57,9 +57,9 @@ class JobController extends Controller {
         $this->display();
     }
     public function detail5e(){
-        $jobModel=M('job');
-        $data=$jobModel->select();
-        $this->assign("job",$data);
+        $jobenModel=M('joben');
+        $data=$jobenModel->select();
+        $this->assign("joben",$data);
         $this->display();
     }
     public function join1(){
@@ -69,9 +69,9 @@ class JobController extends Controller {
         $this->display();
     }
     public function join1e(){
-        $jobModel=M('job');
-        $data=$jobModel->select();
-        $this->assign("job",$data);
+        $jobenModel=M('joben');
+        $data=$jobenModel->select();
+        $this->assign("joben",$data);
         $this->display();
     }
     public function join2(){
@@ -81,9 +81,9 @@ class JobController extends Controller {
         $this->display();
     }
     public function join2e(){
-        $jobModel=M('job');
-        $data=$jobModel->select();
-        $this->assign("job",$data);
+        $jobenModel=M('joben');
+        $data=$jobenModel->select();
+        $this->assign("joben",$data);
         $this->display();
     }
 }
