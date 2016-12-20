@@ -6,6 +6,9 @@
   <link href="__PUBLIC__/home/css/new-content.css" type="text/css" rel="stylesheet" />
   <link href="__PUBLIC__/home/css/touch.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="__PUBLIC__/home/js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript">
+    var img = '__PUBLIC__/home/images/weixin.jpg';
+  </script>
   <script type="text/javascript" src="__PUBLIC__/home/js/touch.js"></script>
 </head>
 <body>
@@ -16,105 +19,104 @@
     <div id="nav-center">
     <div class="nav">
         <ul>
-            <li><a href="index.html">首页</a></li>
+            <li><a href="{:U('Index/index')}">首页</a></li>
         </ul>
     </div>
-   <div class="nav">
+    <div class="nav">
         <ul>
-            <li><a href="jianjie.html">关于上华</a>
+            <li><a href="{:U('Honor/jianjie')}">关于上华</a>
               <ul>
-                <li><a href="jianjie.html">公司简介</a></li>
-                <li><a href="wenhua.html">公司文化</a></li>
-                <li><a href="rongyu.html">公司荣誉</a></li>
-                <li><a href="jiaruwomen.html">加入我们</a></li>
+                <li><a href="{:U('Honor/jianjie')}">公司简介</a></li>
+                <li><a href="{:U('Honor/wenhua')}">公司文化</a></li>
+                <li><a href="{:U('Honor/rongyu')}">公司荣誉</a></li>
+                <li><a href="{:U('Job/join1')}">加入我们</a></li>
               </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="product.html">产品服务</a>
+            <li><a href="{:U('Product/product')}">产品服务</a>
               <ul>
-                <li><a href="intergrade_cn.html">设计软件</a></li>
-                <li><a href="operation.html">运维系统</a></li>
-                <li><a href="lvse.html">绿色建筑</a></li>
-                <li><a href="zhushou.html">DWGHelp</a></li>
-                <li><a href="zonghe.html">PDMS综合</a></li>
-                <li><a href="fengli.html">PDMS风力</a></li>
-                <li><a href="gongyi.html">工艺设计</a></li>
+                <li><a href="{:U('Product/intergrade')}">设计软件</a></li>
+                <li><a href="{:U('Product/operation')}">运维系统</a></li>
+                <li><a href="{:U('Product/lvse')}">绿色建筑</a></li>
+                <li><a href="{:U('Product/zhushou')}">DWGHelp</a></li>
+                <li><a href="{:U('Product/zonghe')}">PDMS综合</a></li>
+                <li><a href="{:U('Product/fengli')}">PDMS风力</a></li>
+                <li><a href="{:U('Product/gongyi')}">工艺设计</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="new-company.html">新闻中心</a>
+            <li><a href="{:U('New/company?p=1')}">新闻中心</a>
                <ul>
-                <li><a href="new-company.html">公司新闻</a></li>
-                <li><a href="new-industry.html">行业资讯</a></li> 
+                <li><a href="{:U('New/company?p=1')}">公司新闻</a></li>
+                <li><a href="{:U('Industry/industry?p=1')}">行业资讯</a></li> 
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="gl-cn.html">成功案例</a>
+            <li><a href="{:U('Success/gl')}">成功案例</a>
                <ul>
-                <li><a href="gl-cn.html">管廊</a></li>
-                <li><a href="VE.html">VE</a></li>
+                <li><a href="{:U('Success/gl')}">管廊</a></li>
+                <li><a href="{:U('Success/VE')}">VE</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="apply_cn.html">在线咨询</a>
+            <li><a href="{:U('Apply/apply')}">在线咨询</a>
                <ul>
-                <li><a href="apply_cn.html">申请试用</a></li>
-                <li><a href="suggest.html">咨询或建议</a></li>
+                <li><a href="{:U('Apply/apply')}">申请试用</a></li>
+                <li><a href="{:U('Apply/suggest')}">咨询或建议</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="contact_cn.html">联系我们</a></li>
+            <li><a href="{:U('Contact/contact')}">联系我们</a></li>
         </ul>
     </div>
     </div>
     <div id="nav-right">
-      <p><a href="new-content.html">中文&nbsp;</a>|<a href="new-content-en.html">&nbsp;English</a></p>
+      <p><a href="{:U('New/content')}">中文&nbsp;</a>|<a href="{:U('New/contente')}">&nbsp;English</a></p>
     </div>
   </div>
-  <div id="nav-banner">
-    <img src="__PUBLIC__/home/images/b13.png">
+  <div id="nav-banner" >
+    <img src="__PUBLIC__/home/images/b12.png">
   </div>
   <div id="bread">
     <div id="bread-left">News</div>
-      <div id="bread-right"><a href="">首页&nbsp;>></a><a href="new-company.html">&nbsp;新闻中心&nbsp;>></a><a href="new-company.html">&nbsp;公司新闻</a></div>
+      <div id="bread-right"><a href="{:U('Index/index')}">首页&nbsp;>></a><a href="{:U('New/company?p=1')}">&nbsp;新闻中心&nbsp;>></a>&nbsp;公司新闻</div>
   </div>
 
   <div id="new-content-content">
-    <h1>城市规划对建筑设计的要求</h1>
-    <p>&nbsp;&nbsp;规划，意即进行比较全面的长远的发展计划，是对未来整体性、长期性、基本性问题的思考、考量和设计未来整套行动方案。提及规划，部分政府部门工作同志及学者都 会视其为城乡建设规划，把规划与建设紧密联系在一起。因此，提及规划，就要考虑土地征用、规划设计图纸等一系列问题。其实，这是对规划概念以偏概全的理解。</p><br/>
-      <p>1．用地范围及界线<br/>
-      应掌握道路中心线、道路红线、绿化控制线、用地界线、建筑控制线。应试者应清楚掌握几条控制线的含义及与其他控制线的差别。<br/><br/>
-      2．与城市道路的关系<br/>这是每一位从事城市规划、建筑设计人员必须掌握的基本知识。　基地应与道路红线相连接,否则应设通路与道路红线相连接。建筑物的台阶、平台、窗井、地下建筑、建筑基础，均不得突人道路红线。建筑突出物可有条件地突人道路红线。采集者退散<br/><br/>
-      3．场地出入口<br/>
-      对车流量较多的基地及人员密集的建筑基地应符合规范规定当基地通路坡度较大时，应设缓冲段与城市道路连接；与立体交叉口的距离或有其他特殊情况时，应按当地规划主管部门的规定办理。<br/><br/>
-      4.对用地性质的规划。<br/>
-      具体建设项目的选址上，控制性详细规划限定这一项目只能在某一允许区域内选择基地地块；对用地进行开发的场地设计，控制性详细规划限定该地只能做一定性质的使用。<br/><br/>
-      5.对用地范围的控制。<br/>规划是由建筑红线与道路红线共同完成的。<br/><br/>
-      6.对用地强度的控制。<br/>
-      是通过容积率、建筑覆盖率、绿化覆盖率等指标来实现的，通过对容积率、建筑覆盖率最大值及绿化覆盖率最小值来限定，可将基地使用强度控制在一个合适的范围之内。<br/><br/>
-      7.对建筑用地范围的控制。<br/>
-      由建筑范围控制线来限定，即基地允许建造建筑物的区域。规划中一般都要求建筑范围控制线从红线退后一定距离。<br/><br/>
-      8.要求规划中对建筑高度、交通出人口的方位、建筑主要朝向、主人口方位等方面的要求，在场地设计中也应同时予以满足。<br/><br/>
-      9．场地出入口<br/>
-      对车流量较多的基地及人员密集的建筑基地应符合规范规定：距大中城市主干道交叉口的距离，自道路红线交叉点起不应小于70m；距非道路交叉口的过街人行道最边缘不应小于5m；距公共交通站台边缘不应小于10m；距公园、学校、儿童残疾人等建筑物的出入口不应小于20m；当基地通路坡度较大时，应设缓冲段与城市道路连接；与立体交叉口的距离或有其他特殊情况时，应按当地规划主管部门的规定办理。<br/><br/>
-    </p>
+    <h1>{$news.title}</h1>
+    <p>&nbsp;&nbsp; {$news.content}</p>
     <div id="content-foot">
-      <p><a href="new-content.html">上一篇</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="new-content.html">下一篇</a></p>
+      <ul>
+        <li>上一篇：
+            <if condition="$prev eq '没有了'">
+                没有了
+                <else />
+                <a href="__MODULE__/New/content/id/{$prev.id}">{$prev.title}</a>
+            </if>
+        </li>
+        <li>下一篇：
+            <if condition="$next eq '没有了'">
+                没有了
+                <else />
+                <a href="__MODULE__/New/content/id/{$next.id}">{$next.title}</a>
+            </if>
+        </li>
+      </ul>
     </div>
   </div>
 </div>
@@ -159,8 +161,9 @@
         </ul>
     </div>
     <div id="footer-bottom">
-      <div id="footer-bottom1"><p><br/>
-     本页面内容为网站演示数据，前台页面内容都可以在后台修改。</p></div>
+      <div id="footer-bottom1"><p>我的网站 版权所有 2008-2014 湘ICP备8888888<br/>
+     本页面内容为网站演示数据，前台页面内容都可以在后台修改。<br/>
+      Powered by MetInfo</p></div>
     </div>
   </div>
     <div id="top"></div>

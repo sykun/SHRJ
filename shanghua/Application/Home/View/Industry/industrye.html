@@ -33,88 +33,87 @@ $(".box ul li").hover(
 
 	<div id="nav-header">
     <div id="img">
-       <img src="__PUBLIC__/home/images/logo.jpg" width="100%" height="45px">
+       <img src="__PUBLIC__/home/images/logo.jpg" height="50px">
     </div>
     <div id="nav-center">
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Index/indexe">Home</a></li>
+            <li><a href="{:U('Index/indexe')}">Home</a></li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Honor/jianjiee">About&nbsp;SH</a>
+            <li><a href="{:U('Honor/jianjie')}">About&nbsp;SH</a>
               <ul>
-                <li><a href="__MODULE__/Honor/jianjiee">Profile</a></li>
-                <li><a href="__MODULE__/Honor/wenhuae">Culture</a></li>
-                <li><a href="__MODULE__/Honor/rongyue">Honor</a></li>
-                <li><a href="__MODULE__/Job/join1e">Join&nbsp;Us</a></li>
+                <li><a href="{:U('Honor/jianjiee')}">Profile</a></li>
+                <li><a href="{:U('Honor/wenhuae')}">Culture</a></li>
+                <li><a href="{:U('Honor/rongyue')}">Honor</a></li>
+                <li><a href="{:U('Job/join1e')}">Join&nbsp;Us</a></li>
               </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Product/producte">Products</a>
+            <li><a href="{:U('Product/producte')}">Products</a>
               <ul>
-                <li><a href="__MODULE__/Product/intergradee">Integrated</a></li>
-                <li><a href="__MODULE__/Product/operatione">Maintenance</a></li>
-                <li><a href="__MODULE__/Product/lvsee">Green&nbsp;Building</a></li>
-                <li><a href="__MODULE__/Product/zhushoue">DWGHelp</a></li>
-                <li><a href="__MODULE__/Product/zonghee">PDMS&nbsp;Synthetic</a></li>
-                <li><a href="__MODULE__/Product/fenglie">PDMS&nbsp;Wind</a></li>
-                <li><a href="__MODULE__/Product/gongyie">Process</a></li>
+                <li><a href="{:U('Product/intergradee')}">Integrated</a></li>
+                <li><a href="{:U('Product/operatione')}">Maintenance</a></li>
+                <li><a href="{:U('Product/lvsee')}">Green&nbsp;Building</a></li>
+                <li><a href="{:U('Product/zhushoue')}">DWGHelp</a></li>
+                <li><a href="{:U('Product/zonghee')}">PDMS&nbsp;Synthetic</a></li>
+                <li><a href="{:U('Product/fenglie')}">PDMS&nbsp;Wind</a></li>
+                <li><a href="{:U('Product/gongyie')}">Process</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/New/companye">News</a>
+            <li><a href="{:U('New/companye?p=1')}">News</a>
                <ul>
-                <li><a href="__MODULE__/New/companye">Company</a></li>
-                <li><a href="__MODULE__/Industry/industrye">Industry</a></li> 
+                <li><a href="{:U('New/companye?p=1')}">Company</a></li>
+                <li><a href="{:U('Industry/industrye?p=1')}">Industry</a></li> 
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Success/gle">Success</a>
+            <li><a href="{:U('Success/gle')}">Success</a>
                <ul>
-                <li><a href="__MODULE__/Success/gle">Pipe&nbsp;Sallery</a></li>
-                <li><a href="__MODULE__/Success/VEe">VE</a></li>
+                <li><a href="{:U('Success/gle')}">Pipe&nbsp;Sallery</a></li>
+                <li><a href="{:U('Success/VEe')}">VE</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Apply/applye">Consulting</a>
+            <li><a href="{:U('Apply/applye')}">Consulting</a>
                <ul>
-                <li><a href="__MODULE__/Apply/applye">Apply</a></li>
-                <li><a href="__MODULE__/Advice/suggeste">Advice</a></li>
+                <li><a href="{:U('Apply/applye')}">Apply</a></li>
+                <li><a href="{:U('Apply/suggeste')}">Advice</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Contact/contacte">Contact</a></li>
+            <li><a href="{:U('Contact/contacte')}">Contact</a></li>
         </ul>
     </div>
     </div>
     <div id="nav-right">
-      <p><a href="__MODULE__/Industry/industry">中文&nbsp;</a>|<a href="__MODULE__/Industry/industrye">&nbsp;English</a></p>
+      <p><a href="{:U('Industry/industry?p=1')}">中文&nbsp;</a>|<a href="{:U('Industry/industrye?p=1')}">&nbsp;English</a></p>
     </div>
-     
   </div>
   <div id="nav-banner">
     <img src="__PUBLIC__/home/images/z13.png">
   </div>
   <div id="bread">
     <div id="bread-left">News</div>
-      <div id="bread-right"><a href="__MODULE__/Index/indexe">Home&nbsp;</a>>><a href="__MODULE__/New/companye">&nbsp;News&nbsp;</a>>>&nbsp;Industry</div>
+      <div id="bread-right"><a href="{:U('Index/indexe')}">Home&nbsp;</a>>><a href="{:U('New/companye?p=1')}">&nbsp;News&nbsp;</a>>>&nbsp;Industry</div>
   </div>
 
 	<div id="new-company">
@@ -123,25 +122,25 @@ $(".box ul li").hover(
         <h4>News</h4>
         <HR align="left" width="10%" color="#FFBB77" SIZE="3" style="margin-top:10px;">
         <ul class="new">
-          <li><a href="__MODULE__/New/companye" ><em class='em2'></em>Company</a></li>
-          <li><a href="__MODULE__/Industry/industrye" class='active' style="color:#FFBB77"><em class="em1"></em>Industry</a></li>
+          <li><a href="{:U('New/companye?p=1')}" ><em class='em2'></em>Company</a></li>
+          <li><a href="{:U('Industry/industrye?p=1')}" class='active' style="color:#FFBB77"><em class="em1"></em>Industry</a></li>
         </ul>
       </div>
       <div id="new-company-product">
         <h4>Recommended products</h4>
         <HR align="left" width="10%" color="#FFBB77" SIZE="3" style="margin-top:10px;">
         <ul>
-          <li class="new-company-img1"><a href="__MODULE__/Product/zonghee"><img src="__PUBLIC__/home/images/left1.jpg"></a>
+          <li class="new-company-img1"><a href="{:U('Product/zonghee')}"><img src="__PUBLIC__/home/images/left1.jpg"></a>
             <p class="new-goods">PDMS</p>
-            <p class="new-more"><a href="__MODULE__/Product/zonghee" id="product1">MORE</a></p>
+            <p class="new-more"><a href="{:U('Product/zonghee')}" id="product1">MORE</a></p>
           </li>
-          <li class="new-company-img2"><a href="__MODULE__/Product/lvsee"><img src="__PUBLIC__/home/images/left2.jpg"></a>
+          <li class="new-company-img2"><a href="{:U('Product/lvsee')}"><img src="__PUBLIC__/home/images/left2.jpg"></a>
             <p class="new-goods">Green Building</p>
-            <p class="new-more"><a href="__MODULE__/Product/lvsee" id="product2">MORE</a><p>
+            <p class="new-more"><a href="{:U('Product/lvsee')}" id="product2">MORE</a><p>
           </li>
-          <li class="new-company-img3"><a href="__MODULE__/Product/zhushoue"><img src="__PUBLIC__/home/images/left3.png"></a>
+          <li class="new-company-img3"><a href="{:U('Product/intergradee')}"><img src="__PUBLIC__/home/images/left3.png"></a>
             <p class="new-goods">Design</p>
-            <p class="new-more"><a href="__MODULE__/Product/zhushoue" id="product3">MORE</a></p>
+            <p class="new-more"><a href="{:U('Product/intergradee')}" id="product3">MORE</a></p>
           </li>
         </ul>
       </div>
@@ -149,12 +148,12 @@ $(".box ul li").hover(
          <h4>Hot key words</h4>
          <HR align="left" width="10%" color="#FFBB77" SIZE="3" style="margin-top:10px;">
           <ul class="p0 clouds">
-              <li><a href="__MODULE__/Success/VEe" target='_self'>VE</a></li>
-              <li><a href="__MODULE__/Success/gle" target='_self'>Intelligent pipe gallery</a></li>
-              <li><a href="__MODULE__/Product/gongyie" target='_self'>Process design software</a></li>
-              <li><a href="__MODULE__/Product/lvsee" target='_self'>Green building</a></li>
-              <li><a href="__MODULE__/Product/zhushoue" target='_self'>Design assistant</a></li>
-              <li><a href="__MODULE__/Product/fenglie" target='_self'>Hydraulic calculation of wind pipe</a></li>
+              <li><a href="{:U('Success/VEe')}" target='_self'>VE</a></li>
+              <li><a href="{:U('Success/gle')}" target='_self'>Intelligent pipe gallery</a></li>
+              <li><a href="{:U('Success/gongyie')}" target='_self'>Process design software</a></li>
+              <li><a href="{:U('Success/lvsee')}" target='_self'>Green building</a></li>
+              <li><a href="{:U('Success/zhushoue')}" target='_self'>Design assistant</a></li>
+              <li><a href="{:U('Success/fenglie')}" target='_self'>Hydraulic calculation of wind pipe</a></li>
           </ul>
       </div>
     </div>
@@ -162,90 +161,38 @@ $(".box ul li").hover(
 			<h2>Industry</h2>
 			<HR align="left" width="5%" color="#FFBB77" SIZE="3" style="margin-top:10px;">
 				<div id="new-company-content">
+          <volist name="industryen" id="d">    
 					<div class="box">
 						<ul>
 							<li>
-								<a href="__MODULE__/Industry/s1e"><img src="__PUBLIC__/home/images/industry1.png" alt="" /></a>
+								<a href="__MODULE__/Industry/contente/id/{$d.id}"><img src="__PUBLIC__/{$d.thumb}" alt="" /></a>
 								<div class="dask">
 								</div>
 								<div>
 									<div class="new-company-article-time">
-										<p>25<br/>Nov</p>
+										<p>{$d.time|strtotime|date="jS",###}<br/>{$d.time|strtotime|date="F",###}</p>
 									</div>
 									<div class="new-company-article-title">
-										<h4><a href="__MODULE__/Industry/s1e">To carry out the "engine" culture to be a "running man"</a></h4>
-										<p>2016-11-25&nbsp;/&nbsp;Click: 123</p>
+										<h4><a href="__MODULE__/Industry/contente/id/{$d.id}">
+                    {$d.title|msubstr=0,30,'utf-8',false}</a></h4>
+										<p>{$d.time|strtotime|date="Y年m月d日",###}</p>
 									</div>
 									<div class="new-company-article-content" style="width:100%">
-										<p>In November 26th, received a letter of Lenovo Liu total 30 years "to all employees, finance will be the first time the mail to send email to every employee, and organized learning seminars, conscientiously study and implement the spirit of General Liu letter. Meeting chaired by the chairman and President of the company Yu Nenghong, chairman of the company's Office...</p>
+										<p>{$d.content|msubstr=0,120,'utf-8',ture}</p>
 									</div>
-									<div class="new-company-btn">
-										
-										<a href="__MODULE__/Industry/s1e" id="more1">See more&nbsp;>></a>
-									</div>
+									
 								</div>
 							</li>
 						</ul>
+            <div class="new-company-btn">
+                    
+                    <a href="__MODULE__/Industry/contente/id/{$d.id}" id="more1">See more&nbsp;>></a>
+                  </div>
 					</div>
-					<div class="box">
-						<ul>
-							<li >
-								<a href="__MODULE__/Industry/s2e"><img src="__PUBLIC__/home/images/industry3.jpg" alt="" /></a>
-								<div class="dask" style="background-color:#F0F0F0;">
-									<!-- <a href="#">公司新闻</a> -->
-								</div>
-								<div>
-									<div class="new-company-article-time">
-										<p>24<br/>Nov</p>
-									</div>
-									<div class="new-company-article-title">
-										<h4><a href="__MODULE__/Industry/s2e">Help partners seize the new opportunities in Transition Era</a></h4>
-										<p>2016-11-24&nbsp;/&nbsp;Click: 234</p>
-									</div>
-									<div class="new-company-article-content">
-										<p>Nearly 400 from the financial, retail, entrepreneurs and company record executives clothing, education, communication, training, business and other dozens of industries in minimally invasive building, development trend of interpretation of traditional enterprise transformation Internet plus strategic layout and operation mode, the successful practice of sharing Internet thinking in different industries, business process and application in the scene....</p>
-									</div>
-									<div class="new-company-btn">
-										
-										<a href="__MODULE__/Industry/s2e" id="more2">See more&nbsp;>></a>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-					<div class="box">
-						<ul>
-							<li>
-								<a href="__MODULE__/Industry/s3e"><img src="__PUBLIC__/home/images/industry2.jpg" alt="" /></a>
-								<div class="dask" style="background-color:#E1C4C4">
-									<!-- <a href="#">公司新闻</a> -->
-								</div>
-								<div>
-									<div class="new-company-article-time">
-										<p>23<br/>Nov</p>
-									</div>
-									<div class="new-company-article-title">
-										<h4><a href="__MODULE__/Industry/s3e">Opportunities are left to the people of innovation, only innovation can seize the opportunity</a></h4>
-										<p>2016-11-23&nbsp;/&nbsp;Click: 125</p>
-									</div>
-									<div class="new-company-article-content">
-										<p>Comrade Xi Jinping put forward the opportunity is left to the people of innovation, only innovation can seize the opportunity". Our chief designer of Comrade Deng Xiaoping is also proposed "innovation in reform and opening up", to seize the opportunity the trend of global economic development, the China economy has made great progress, and ultimately the China economy has the world's second largest economy position. We want to be a creative worker in the work, only in this way can be good at seizing the opportunity, will be successful....</p>
-									</div>
-									<div class="new-company-btn">
-										
-										<a href="__MODULE__/Industry/s3e" id="more3">See more&nbsp;>></a>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
+          </volist>
 				</div>
         <div class="pagnation" id="pagnation">
-          <a href="#" target="_blank" class="page-prev">上一页</a>
-          <a href="#" target="_blank" class="current">1</a>
-          <a href="#" target="_blank">2</a>
-          <a href="#" target="_blank">3</a>
-          <a href="#" target="_blank" class="page-next">下一页</a>
+          {$page}
         </div>
 		</div>
 	</div>

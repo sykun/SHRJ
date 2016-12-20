@@ -11,6 +11,9 @@
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/set2.css" />
     <link href="__PUBLIC__/home/css/touch.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="__PUBLIC__/home/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript">
+    var img = '__PUBLIC__/home/images/weixin.jpg';
+  </script>
     <script type="text/javascript" src="__PUBLIC__/home/js/touch.js"></script>
   </head>
   <body style="background-color:rgb(249,249,249);">
@@ -22,74 +25,74 @@
     <div id="nav-center">
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Index/indexe">Home</a></li>
+            <li><a href="{:U('Index/indexe')}">Home</a></li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Honor/jianjiee">About&nbsp;SH</a>
+            <li><a href="{:U('Honor/jianjiee')}">About&nbsp;SH</a>
               <ul>
-                <li><a href="__MODULE__/Honor/jianjiee">Profile</a></li>
-                <li><a href="__MODULE__/Honor/wenhuae">Culture</a></li>
-                <li><a href="__MODULE__/Honor/rongyue">Honor</a></li>
-                <li><a href="__MODULE__/Job/join1e">Join&nbsp;Us</a></li>
+                <li><a href="{:U('Honor/jianjiee')}">Profile</a></li>
+                <li><a href="{:U('Honor/wenhuae')}">Culture</a></li>
+                <li><a href="{:U('Honor/rongyue')}">Honor</a></li>
+                <li><a href="{:U('Job/join1e')}">Join&nbsp;Us</a></li>
               </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Product/producte">Products</a>
+            <li><a href="{:U('Product/producte')}">Products</a>
               <ul>
-                <li><a href="__MODULE__/Product/intergradee">Integrated</a></li>
-                <li><a href="__MODULE__/Product/operatione">Maintenance</a></li>
-                <li><a href="__MODULE__/Product/lvsee">Green&nbsp;Building</a></li>
-                <li><a href="__MODULE__/Product/zhushoue">DWGHelp</a></li>
-                <li><a href="__MODULE__/Product/zonghee">PDMS&nbsp;Synthetic</a></li>
-                <li><a href="__MODULE__/Product/fenglie">PDMS&nbsp;Wind</a></li>
-                <li><a href="__MODULE__/Product/gongyie">Process</a></li>
+                <li><a href="{:U('Product/intergradee')}">Integrated</a></li>
+                <li><a href="{:U('Product/operatione')}">Maintenance</a></li>
+                <li><a href="{:U('Product/lvsee')}">Green&nbsp;Building</a></li>
+                <li><a href="{:U('Product/zhushoue')}">DWGHelp</a></li>
+                <li><a href="{:U('Product/zonghee')}">PDMS&nbsp;Synthetic</a></li>
+                <li><a href="{:U('Product/fenglie')}">PDMS&nbsp;Wind</a></li>
+                <li><a href="{:U('Product/gongyie')}">Process</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/New/companye">News</a>
+            <li><a href="{:U('New/companye?p=1')}">News</a>
                <ul>
-                <li><a href="__MODULE__/New/companye">Company</a></li>
-                <li><a href="__MODULE__/Industry/industrye">Industry</a></li> 
+                <li><a href="{:U('New/companye?p=1')}">Company</a></li>
+                <li><a href="{:U('Industry/industrye?p=1')}">Industry</a></li> 
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Success/gle">Success</a>
+            <li><a href="{:U('Success/gle')}">Success</a>
                <ul>
-                <li><a href="__MODULE__/Success/gle">Pipe&nbsp;Sallery</a></li>
-                <li><a href="__MODULE__/Success/VEe">VE</a></li>
+                <li><a href="{:U('Success/gle')}">Pipe&nbsp;Sallery</a></li>
+                <li><a href="{:U('Success/VEe')}">VE</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Apply/applye">Consulting</a>
+            <li><a href="{:U('Apply/applye')}">Consulting</a>
                <ul>
-                <li><a href="__MODULE__/Apply/applye">Apply</a></li>
-                <li><a href="__MODULE__/Advice/suggeste">Advice</a></li>
+                <li><a href="{:U('Apply/applye')}">Apply</a></li>
+                <li><a href="{:U('Apply/suggeste')}">Advice</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Contact/contacte">Contact</a></li>
+            <li><a href="{:U('Contact/contacte')}">Contact</a></li>
         </ul>
     </div>
     </div>
     <div id="nav-right">
-      <p><a href="__MODULE__/Product/operation">中文&nbsp;</a>|<a href="__MODULE__/Product/operatione">&nbsp;English</a></p>
+      <p><a href="{:U('Product/operation')}">中文&nbsp;</a>|<a href="{:U('Product/operatione')}">&nbsp;English</a></p>
     </div>
      
   </div>
@@ -98,13 +101,14 @@
   </div>
   <div id="bread">
     <div id="bread-left">Products</div>
-      <div id="bread-right"><a href="__MODULE__/Index/indexe">Home&nbsp;</a><span style="color:black;">>></span><a href="__MODULE__/Product/producte">&nbsp;Products&nbsp;</a><span style="color:black;">>></span>&nbsp;Maintenance</div>
+      <div id="bread-right"><a href="{:U('Index/indexe')}">Home&nbsp;</a><span style="color:black;">>></span><a href="{:U('Product/producte')}">&nbsp;Products&nbsp;</a><span style="color:black;">>></span>&nbsp;Maintenance</div>
   </div>
     <div class="container">
       <div class="content">
-        <h2 style="text-align:center">PIPE GALLERY OPERATION AND MAINTENANCE</h2>
-        <h3 style="text-align:center;color:black">管廊运维</h3>
-        <div class="grid">
+        <volist name="producten" id="vo" offset="37" length="1">
+        <h2 style="text-align:center;color:#3c3c3c">{$vo.title}</h2>
+        </volist>
+        <div class="grid"style="padding-top:60px">
           <figure class="effect-julia">
             <img src="__PUBLIC__/home/images/operation1.jpg" alt="img21"/>
             <figcaption>
@@ -120,8 +124,8 @@
           <figure class="effect-moses">
             <img src="__PUBLIC__/home/images/operation2.jpg" alt="img24"/>
             <figcaption>
-              <h2>BIM&nbsp;<br/><span>Technical support</span></h2>
-              <p>A three dimensional is built, and real information buildings is simulated by digital.</p>
+              <h2>BIM&nbsp;<br/><span>Techn suport</span></h2>
+              <p>A three dimensional is built.</p>
             </figcaption>     
           </figure>
         </div>
@@ -130,7 +134,7 @@
             <img src="__PUBLIC__/home/images/operation3.jpg" alt="img12"/>
             <figcaption>
               <h2>GIS&nbsp;&nbsp;<span>Technical support</span></h2>
-              <p>Collection, storage, management, analysis and display of the geographical information of the integrated pipe gallery digital standard operation and maintenance management.</p>
+              <p>Collection, storage, management, analysis and display of the geographical information of the integrated pipe management.</p>
               <a href="http://www.htmleaf.com/">View more</a>
             </figcaption>     
           </figure>

@@ -5,6 +5,9 @@
   <link href="__PUBLIC__/home/css/nav.css" type="text/css" rel="stylesheet" />
   <link href="__PUBLIC__/home/css/zhushou.css" type="text/css" rel="stylesheet" />
   <script type="text/javascript" src="__PUBLIC__/home/js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript">
+    var img = '__PUBLIC__/home/images/weixin.jpg';
+  </script>
   <link href="__PUBLIC__/home/css/touch.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="__PUBLIC__/home/js/touch.js"></script>
   <script type="text/javascript">
@@ -50,81 +53,81 @@
 </head>
 <body>
 
-  <div id="nav-header">
+ <div id="nav-header">
     <div id="img">
        <img src="__PUBLIC__/home/images/logo.jpg" height="50px">
     </div>
     <div id="nav-center">
     <div class="nav">
         <ul>
-          <li><a href="__MODULE__/Index/index">首页</a></li>
+            <li><a href="{:U('Index/index')}">首页</a></li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Honor/jianjie">关于上华</a>
+            <li><a href="{:U('Honor/jianjie')}">关于上华</a>
               <ul>
-                <li><a href="__MODULE__/Honor/jianjie">公司简介</a></li>
-                <li><a href="__MODULE__/Honor/wenhua">公司文化</a></li>
-                <li><a href="__MODULE__/Honor/rongyu">公司荣誉</a></li>
-                <li><a href="__MODULE__/Job/join1">加入我们</a></li>
+                <li><a href="{:U('Honor/jianjie')}">公司简介</a></li>
+                <li><a href="{:U('Honor/wenhua')}">公司文化</a></li>
+                <li><a href="{:U('Honor/rongyu')}">公司荣誉</a></li>
+                <li><a href="{:U('Job/join1')}">加入我们</a></li>
               </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Product/product">产品服务</a>
+            <li><a href="{:U('Product/product')}">产品服务</a>
               <ul>
-                <li><a href="__MODULE__/Product/intergrade">设计软件</a></li>
-                <li><a href="__MODULE__/Product/operation">运维系统</a></li>
-                <li><a href="__MODULE__/Product/lvse">绿色建筑</a></li>
-                <li><a href="__MODULE__/Product/zhushou">DWGHelp</a></li>
-                <li><a href="__MODULE__/Product/zonghe">PDMS综合</a></li>
-                <li><a href="__MODULE__/Product/fengli">PDMS风力</a></li>
-                <li><a href="__MODULE__/Product/gongyi">工艺设计</a></li>
+                <li><a href="{:U('Product/intergrade')}">设计软件</a></li>
+                <li><a href="{:U('Product/operation')}">运维系统</a></li>
+                <li><a href="{:U('Product/lvse')}">绿色建筑</a></li>
+                <li><a href="{:U('Product/zhushou')}">DWGHelp</a></li>
+                <li><a href="{:U('Product/zonghe')}">PDMS综合</a></li>
+                <li><a href="{:U('Product/fengli')}">PDMS风力</a></li>
+                <li><a href="{:U('Product/gongyi')}">工艺设计</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/New/company">新闻中心</a>
+            <li><a href="{:U('New/company?p=1')}">新闻中心</a>
                <ul>
-                <li><a href="__MODULE__/New/company">公司新闻</a></li>
-                <li><a href="__MODULE__/Industry/industry">行业资讯</a></li> 
+                <li><a href="{:U('New/company?p=1')}">公司新闻</a></li>
+                <li><a href="{:U('Industry/industry?p=1')}">行业资讯</a></li> 
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Success/gl">成功案例</a>
+            <li><a href="{:U('Success/gl')}">成功案例</a>
                <ul>
-                <li><a href="__MODULE__/Success/gl">管廊</a></li>
-                <li><a href="__MODULE__/Success/VE">VE</a></li>
+                <li><a href="{:U('Success/gl')}">管廊</a></li>
+                <li><a href="{:U('Success/VE')}">VE</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Apply/apply">在线咨询</a>
+            <li><a href="{:U('Apply/apply')}">在线咨询</a>
                <ul>
-                <li><a href="__MODULE__/Apply/apply">申请试用</a></li>
-                <li><a href="__MODULE__/Advice/suggest">咨询或建议</a></li>
+                <li><a href="{:U('Apply/apply')}">申请试用</a></li>
+                <li><a href="{:U('Apply/suggest')}">咨询或建议</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-          <li><a href="__MODULE__/Contact/contact">联系我们</a></li>
+            <li><a href="{:U('Contact/contact')}">联系我们</a></li>
         </ul>
     </div>
     </div>
     <div id="nav-right">
-      <p><a href="__MODULE__/Product/zhushou">中文&nbsp;</a>|<a href="__MODULE__/Product/zhushoue">&nbsp;English</a></p>
+      <p><a href="{:U('Product/zhushou')}">中文&nbsp;</a>|<a href="{:U('Product/zhushou')}">&nbsp;English</a></p>
     </div>
   </div>
   <div id="nav-banner">
@@ -132,47 +135,45 @@
   </div>
   <div id="bread">
     <div id="bread-left">产品服务</div>
-      <div id="bread-right"><a href="__MODULE__/Index/index">首页&nbsp;</a>>><a href="__MODULE__/Product/product">&nbsp;产品服务&nbsp;</a>>>&nbsp;设计助手DWHelp</div>
+      <div id="bread-right"><a href="{:U('Index/index')}">首页&nbsp;</a>>><a href="{:U('Product/product')}">&nbsp;产品服务&nbsp;</a>>>&nbsp;设计助手DWHelp</div>
   </div>
   
 <div class="product-content">
     <div class="product-v1">
-      <h2>DESIGN ASSISTANT DWHELP</h2>
-      <h3>设计助手DWHelp</h3>
+      <volist name="product" id="vo" offset="14" length="1">
+          <h2>{$vo.title}</h2>
+      </volist>
     </div>
     
     <div class="product-v2">
       <h2>GENERAL INTRODUCTION</h2>
       <h3>总体介绍</h3><br/>
       <p>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;设计助手DWGHelp（或名称：图纸助手DWGHelp）是专门为数字化出图而研发的专业工具，主要功能模块包括：图纸保护、图纸安全、图纸水印、图纸签章、电子签名、智能打印等。可快速完成诸如：单位图章图签、个人图章图签、二维码等的智能化图纸植入。其次，DWGHelp立足ACE行业设计者的角度研发智能创建、提图工具、图层工具、图纸比对、图纸批注、视口工具等功能模块提高设计过程中单点、协同（协作）、交流及图审等工作效率。<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DWGHelp与目前勘察设计单位广泛使用的AutoCAD平台及CAD二次开发软件高度集成，可自动实现批量、自动签章以及签名后图纸的不可编辑性等特点，在满足数字化出图的基础上，也保护了企业的知识产权，打造设计企业的好帮手。
+      <volist name="product" id="vo" offset="15" length="1">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$vo.content}</volist>
       </p>
     </div>
     <div class="product-v3">
       <h2>SOFTWARE MAIN INTERFACE</h2>
       <h3>软件主界面</h3><br/>
-      <p>设计助手的主要功能都列在屏幕菜单和主菜单上，主菜单和屏幕菜单一致。软件的主界面如下:<p class="tu">(单击图片可查看原图)</p></p><br/>         
+      <volist name="product" id="vo" offset="16" length="1">
+      <p>{$vo.content}<p class="tu">(单击图片可查看原图)</p></p><br/>         
       <div class="product-v3-img">
-        <img class="img EnlargePhoto" src="__PUBLIC__/home/images/zs1.png">
+        <img class="img EnlargePhoto" src='__PUBLIC__/{$vo.thumb}'>
     </div>
+    </volist>
 </div>
 
     <div class="product-v4">
       <h2>SOFTWARE FUNCTIONAL CHARACTERISTICS</h2>
       <h3>软件功能特点</h3><br/>
+      <volist name="product" id="vo" offset="17" length="1">
       <p>
-        (1)智能识别企业标准图框，实现快速数字化出图；<br/>(2)提供企业各类图纸图章、图签的管理功能，方便灵活应用；<br/>(3)外发DWG图纸的安全保护，水印加密功能；<br/>(4)数字签名图纸的安全保护，保护等级可根据图纸重要等级设置；<br/>(5)打印时签名的企业级知识知识产权保护出图特色功能。<br/>
+        {$vo.content}
       </p>
+      </volist>
     </div>
-
   </div>
-
-
-
-
-
-
-
 
   <div id="footer">
     <div class="footer-top">

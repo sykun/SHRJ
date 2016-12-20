@@ -10,6 +10,9 @@
   <link href="__PUBLIC__/home/css/zzsc.css" type="text/css" rel="stylesheet" />
   <script src="__PUBLIC__/home/js/zzsc.js"></script>
   <script type="text/javascript" src="__PUBLIC__/home/js/jquery-1.8.3.min.__PUBLIC__/home/js"></script>
+  <script type="text/javascript">
+    var img = '__PUBLIC__/home/images/weixin.jpg';
+  </script>
   <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
     </script>
   <link rel="stylesheet" href="__PUBLIC__/home/fonts/css/font-awesome.min.css">
@@ -38,74 +41,74 @@
     <div id="nav-center">
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Index/indexe">Home</a></li>
+            <li><a href="{:U('Index/indexe')}">Home</a></li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Honor/jianjiee">About&nbsp;SH</a>
+            <li><a href="{:U('Honor/jianjiee')}">About&nbsp;SH</a>
               <ul>
-                <li><a href="__MODULE__/Honor/jianjiee">Profile</a></li>
-                <li><a href="__MODULE__/Honor/wenhuae">Culture</a></li>
-                <li><a href="__MODULE__/Honor/rongyue">Honor</a></li>
-                <li><a href="__MODULE__/Job/join1e">Join&nbsp;Us</a></li>
+                <li><a href="{:U('Honor/jianjiee')}">Profile</a></li>
+                <li><a href="{:U('Honor/wenhuae')}">Culture</a></li>
+                <li><a href="{:U('Honor/rongyue')}">Honor</a></li>
+                <li><a href="{:U('Job/join1e')}">Join&nbsp;Us</a></li>
               </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Product/producte">Products</a>
+            <li><a href="{:U('Product/producte')}">Products</a>
               <ul>
-                <li><a href="__MODULE__/Product/intergradee">Integrated</a></li>
-                <li><a href="__MODULE__/Product/operatione">Maintenance</a></li>
-                <li><a href="__MODULE__/Product/lvsee">Green&nbsp;Building</a></li>
-                <li><a href="__MODULE__/Product/zhushoue">DWGHelp</a></li>
-                <li><a href="__MODULE__/Product/zonghee">PDMS&nbsp;Synthetic</a></li>
-                <li><a href="__MODULE__/Product/fenglie">PDMS&nbsp;Wind</a></li>
-                <li><a href="__MODULE__/Product/gongyie">Process</a></li>
+                <li><a href="{:U('Product/intergradee')}">Integrated</a></li>
+                <li><a href="{:U('Product/operatione')}">Maintenance</a></li>
+                <li><a href="{:U('Product/lvsee')}">Green&nbsp;Building</a></li>
+                <li><a href="{:U('Product/zhushoue')}">DWGHelp</a></li>
+                <li><a href="{:U('Product/zonghee')}">PDMS&nbsp;Synthetic</a></li>
+                <li><a href="{:U('Product/fenglie')}">PDMS&nbsp;Wind</a></li>
+                <li><a href="{:U('Product/gongyie')}">Process</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/New/companye">News</a>
+            <li><a href="{:U('New/companye?p=1')}">News</a>
                <ul>
-                <li><a href="__MODULE__/New/companye">Company</a></li>
-                <li><a href="__MODULE__/Industry/industrye">Industry</a></li> 
+                <li><a href="{:U('New/companye?p=1')}">Company</a></li>
+                <li><a href="{:U('Industry/industrye?p=1')}">Industry</a></li> 
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Success/gle">Success</a>
+            <li><a href="{:U('Success/gle')}">Success</a>
                <ul>
-                <li><a href="__MODULE__/Success/gle">Pipe&nbsp;Sallery</a></li>
-                <li><a href="__MODULE__/Success/VEe">VE</a></li>
+                <li><a href="{:U('Success/gle')}">Pipe&nbsp;Sallery</a></li>
+                <li><a href="{:U('Success/VEe')}">VE</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Apply/applye">Consulting</a>
+            <li><a href="{:U('Apply/applye')}">Consulting</a>
                <ul>
-                <li><a href="__MODULE__/Apply/applye">Apply</a></li>
-                <li><a href="__MODULE__/Advice/suggeste">Advice</a></li>
+                <li><a href="{:U('Apply/applye')}">Apply</a></li>
+                <li><a href="{:U('Apply/suggeste')}">Advice</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Contact/contacte">Contact</a></li>
+            <li><a href="{:U('Contact/contacte')}">Contact</a></li>
         </ul>
     </div>
     </div>
     <div id="nav-right">
-      <p><a href="__MODULE__/Product/intergrade">中文&nbsp;</a>|<a href="__MODULE__/Product/intergradee">&nbsp;English</a></p>
+      <p><a href="{:U('Product/intergrade')}">中文&nbsp;</a>|<a href="{:U('Product/intergradee')}">&nbsp;English</a></p>
     </div>
      </div>
   </div>
@@ -114,130 +117,100 @@
   </div>
   <div id="bread">
     <div id="bread-left">Integrated</div>
-      <div id="bread-right"><a href="__MODULE__/Index/indexe">Home&nbsp;</a>>><a href="__MODULE__/Product/producte">&nbsp;Products&nbsp;</a>>>&nbsp;Integrated</div>
+      <div id="bread-right"><a href="{:U('Index/indexe')}">Home&nbsp;</a>>><a href="{:U('Product/producte')}">&nbsp;Products&nbsp;</a>>>&nbsp;Integrated</div>
   </div>
-     <div id="blog" class="blog">
+   <div id="blog" class="blog">
       <div class="container">
-          <h3>WISDOM PIPE GALLERY</h3><h5>上华管廊设计Sh-Utp</h5><label> </label>
+        <volist name="producten" id="vo" offset="45" length="1">
+            <h2>{$vo.title}</h2>
+        </volist>
+        <label> </label>
         <div class="blog-grids">
           <div class="col-md-4 blog-grid-row frist-row">
-            <a class="post-pic"><img src="__PUBLIC__/home/images/product6.png" title="pic-name" /></a>
+          <volist name="producten" id="vo" offset="46" length="1">
+            <a class="post-pic"><img src='__PUBLIC__/{$vo.thumb}' title="pic-name" /></a>
             <div class="artical-info">
               <div class="post-head">
                 <div class="post-head-left">
-                  <h4><a>General introduction:</a></h4>
+                  <h4><a>General introduction</a></h4>
                   <p class="author">By <a> Shanghua</a></p>
                 </div>
-                <div class="post-head-right">
+                <!-- <div class="post-head-right">
                   <span>17</span><label>December 2016</label>
-                </div>
+                </div> -->
                 <div class="clearfix"> </div>
               </div>
-              <p class="post-text">Shanghua software for informatization construction based on the field, focus on promoting the city comprehensive pipe gallery ("common ditch") construction, for the construction of the underground pipe gallery planning and design complex, difficult construction, operation management and maintenance of large amount of information and other difficulties, combined with MCC Beijing, Chinese Municipal Institute of North China, combined with the status quo of domestic design construction and maintenance, foreign experience, through the design and operation management to realize the underground pipe gallery software technology.
-
-</p>
-              <div class="post-bottom">
-                <div class="post-bottom-left">
-                </div>
-                <div class="post-bottom-right">
-                  Product stars：<i class="fa fa-star"> </i><i class="fa fa-star"> </i><i class="fa fa-star"> </i></i><i class="fa fa-star"> </i>
-                </div>
-                <div class="clearfix"> </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 artical-row2">
-            <div class="artical-info">
-              <div class="post-head post-head1">
-                <div class="post-head-left">
-                  <h4><a>Design features:</a></h4>
-                  <p class="author">By <a> Shanghua</a></p>
-                </div>
-                <div class="post-head-right post-head-right-C">
-                  <span>20</span><label>December 2016</label>
-                </div>
-                <div class="clearfix"> </div>
-              </div>
-              <p class="post-text"> Shanghua software based on the engineering construction of information field, focus on promoting the construction of city underground pipe gallery (underground "highway"), for the construction of the underground pipe gallery planning and design complex, difficult construction, operation management and maintenance of large amount of information and other difficulties, combined with the status quo in the design, construction, operation and maintenance, learn from foreign experience. The design and implementation of underground pipe gallery of software technology, improve the design efficiency, convenient operation and maintenance.</p>
+              <p class="post-text">
+              {$vo.content}
+              </p>
               <div class="post-bottom">
                 <div class="post-bottom-left">
                   
                 </div>
                 <div class="post-bottom-right">
-                  Features stars：<i class="fa fa-star"> </i><i class="fa fa-star"> </i><i class="fa fa-star"> </i>
+                  Star characteristics:<i class="fa fa-star"> </i><i class="fa fa-star"> </i><i class="fa fa-star"> </i></i><i class="fa fa-star"> </i>
                 </div>
                 <div class="clearfix"> </div>
               </div>
             </div>
-            <div class="artical-info">
-              <div class="post-head post-head1">
-                <div class="post-head-left">
-                  <h4><a>Function features:</a></h4>
-                  <p class="author">By <a> Shanghua</a></p>
-                </div>
-                <div class="post-head-right post-head-right-C">
-                  <span>23</span><label>December 2016</label>
-                </div>
-                <div class="clearfix"> </div>
-              </div>
-              <p class="post-text"> Scheme and construction design of comprehensive pipe gallery project; design of water, rainwater, sewage and reclaimed water, gas, heat, electricity, communications and other projects in the pipeline pipe gallery; rainwater, sewage inlet design, longitudinal section; comprehensive pipe gallery rainwater pipeline design; sewage pipe pipe corridor laying design.</p>
-              <div class="post-bottom">
-                <div class="post-bottom-left">                  
-                </div>
-                <div class="post-bottom-right">
-                  Features stars：<i class="fa fa-star"> </i><i class="fa fa-star"> </i><i class="fa fa-star"> </i><i class="fa fa-star"> </i><i class="fa fa-star"> </i>
-                </div>
-                <div class="clearfix"> </div>
-              </div>
-            </div>
+            </volist>
           </div>
           <div class="col-md-4 artical-row2">
-            <div class="artical-info">
+          <!--  -->
+          <volist name="producten" id="vo" offset="47" length="2">
+                  <div class="artical-info">
               <div class="post-head post-head1">
                 <div class="post-head-left">
-                  <h4><a>Technical features:</a></h4>
+                  <h4><a>{$vo.title}</a></h4>
                   <p class="author">By <a> Shanghua</a></p>
                 </div>
-                <div class="post-head-right post-head-right-C">
-                  <span>28</span><label>December 2016</label>
-                </div>
+                
                 <div class="clearfix"> </div>
               </div>
-              <p class="post-text"> Shanghua software based on the engineering construction of information field, focus on promoting the construction of city underground pipe gallery (underground "highway"), for the construction of the underground pipe gallery planning and design complex, difficult construction, operation management and maintenance of large amount of information and other difficulties, combined with the status quo in the design, construction, operation and maintenance, learn from foreign experience. The design and implementation of underground pipe gallery of software technology, improve the design efficiency, convenient operation and maintenance.</p>
+              <p class="post-text"> {$vo.content}</p>
               <div class="post-bottom">
-                <div class="post-bottom-left">                  
+                <div class="post-bottom-left">    
                 </div>
                 <div class="post-bottom-right">
-                  Features stars：<i class="fa fa-star"> </i><i class="fa fa-star"> </i><i class="fa fa-star"> </i>
+                 Star characteristics:<i class="fa fa-star"> </i><i class="fa fa-star"> </i><i class="fa fa-star"> </i>
                 </div>
                 <div class="clearfix"> </div>
               </div>
             </div>
-            <div class="artical-info">
-              <div class="post-head post-head1">
-                <div class="post-head-left">
-                  <h4><a href="#">Product features:</a></h4>
-                  <p class="author">By <a> Shanghua</a></p>
-                </div>
-                <div class="post-head-right post-head-right-C">
-                  <span>30</span><label>December 2016</label>
-                </div>
-                <div class="clearfix"> </div>
-              </div>
-              <p class="post-text"> Scheme and construction design of comprehensive pipe gallery project; design of water, rainwater, sewage and reclaimed water, gas, heat, electricity, communications and other projects in the pipeline pipe gallery; rainwater, sewage inlet design, longitudinal section; comprehensive pipe gallery rainwater pipeline design; sewage pipe pipe corridor laying design; </p>
-              <div class="post-bottom">
-                <div class="post-bottom-left">                  
-                </div>
-                <div class="post-bottom-right">
-                  Features stars：<i class="fa fa-star"> </i><i class="fa fa-star"> </i><i class="fa fa-star"> </i><i class="fa fa-star"> </i>
-                </div>
-                <div class="clearfix"> </div>
-              </div>
-            </div>
+          </volist>
+          <!--  -->
           </div>
-        </div>
+          <!-- 2 -->
+          <div class="col-md-4 artical-row2">
+          <!--  -->
+          <volist name="producten" id="vo" offset="49" length="2">
+                  <div class="artical-info">
+              <div class="post-head post-head1">
+                <div class="post-head-left">
+                  <h4><a>{$vo.title}</a></h4>
+                  <p class="author">By <a> Shanghua</a></p>
+                </div>
+                
+                <div class="clearfix"> </div>
+              </div>
+              <p class="post-text"> {$vo.content}</p>
+              <div class="post-bottom">
+                <div class="post-bottom-left">    
+                </div>
+                <div class="post-bottom-right">
+                 Star characteristics:<i class="fa fa-star"> </i><i class="fa fa-star"> </i><i class="fa fa-star"> </i>
+                </div>
+                <div class="clearfix"> </div>
+              </div>
+            </div>
+          </volist>
+          <!--  -->
+          </div>
+          <!-- 2 -->
+         
       </div>
     </div>
+
 
 
   <div id="footer">

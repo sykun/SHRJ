@@ -6,6 +6,9 @@
   <link rel="stylesheet" href="__PUBLIC__/home/css/styleNews.css">
   <link href="__PUBLIC__/home/css/touch.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="__PUBLIC__/home/js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript">
+    var img = '__PUBLIC__/home/images/weixin.jpg';
+  </script>
   <script type="text/javascript" src="__PUBLIC__/home/js/touch.js"></script>
 </head>
 <body>
@@ -17,74 +20,74 @@
     <div id="nav-center">
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Index/indexe">Home</a></li>
+            <li><a href="{:U('Index/indexe')}">Home</a></li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Honor/jianjiee">About&nbsp;SH</a>
+            <li><a href="{:U('Honor/jianjiee')}">About&nbsp;SH</a>
               <ul>
-                <li><a href="__MODULE__/Honor/jianjiee">Profile</a></li>
-                <li><a href="__MODULE__/Honor/wenhuae">Culture</a></li>
-                <li><a href="__MODULE__/Honor/rongyue">Honor</a></li>
-                <li><a href="__MODULE__/Job/join1e">Join&nbsp;Us</a></li>
+                <li><a href="{:U('Honor/jianjiee')}">Profile</a></li>
+                <li><a href="{:U('Honor/wenhuae')}">Culture</a></li>
+                <li><a href="{:U('Honor/rongyue')}">Honor</a></li>
+                <li><a href="{:U('Job/join1e')}">Join&nbsp;Us</a></li>
               </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Product/producte">Products</a>
+            <li><a href="{:U('Product/producte')}">Products</a>
               <ul>
-                <li><a href="__MODULE__/Product/intergradee">Integrated</a></li>
-                <li><a href="__MODULE__/Product/operatione">Maintenance</a></li>
-                <li><a href="__MODULE__/Product/lvsee">Green&nbsp;Building</a></li>
-                <li><a href="__MODULE__/Product/zhushoue">DWGHelp</a></li>
-                <li><a href="__MODULE__/Product/zonghee">PDMS&nbsp;Synthetic</a></li>
-                <li><a href="__MODULE__/Product/fenglie">PDMS&nbsp;Wind</a></li>
-                <li><a href="__MODULE__/Product/gongyie">Process</a></li>
+                <li><a href="{:U('Product/intergradee')}">Integrated</a></li>
+                <li><a href="{:U('Product/operatione')}">Maintenance</a></li>
+                <li><a href="{:U('Product/lvsee')}">Green&nbsp;Building</a></li>
+                <li><a href="{:U('Product/zhushoue')}">DWGHelp</a></li>
+                <li><a href="{:U('Product/zonghee')}">PDMS&nbsp;Synthetic</a></li>
+                <li><a href="{:U('Product/fenglie')}">PDMS&nbsp;Wind</a></li>
+                <li><a href="{:U('Product/gongyie')}">Process</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/New/companye">News</a>
+            <li><a href="{:U('New/companye?p=1')}">News</a>
                <ul>
-                <li><a href="__MODULE__/New/companye">Company</a></li>
-                <li><a href="__MODULE__/Industry/industrye">Industry</a></li> 
+                <li><a href="{:U('New/companye?p=1')}">Company</a></li>
+                <li><a href="{:U('Industry/industrye?p=1')}">Industry</a></li> 
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Success/gle">Success</a>
+            <li><a href="{:U('Success/gle')}">Success</a>
                <ul>
-                <li><a href="__MODULE__/Success/gle">Pipe&nbsp;Sallery</a></li>
-                <li><a href="__MODULE__/Success/VEe">VE</a></li>
+                <li><a href="{:U('Success/gle')}">Pipe&nbsp;Sallery</a></li>
+                <li><a href="{:U('Success/VEe')}">VE</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Apply/applye">Consulting</a>
+            <li><a href="{:U('Apply/applye')}">Consulting</a>
                <ul>
-                <li><a href="__MODULE__/Apply/applye">Apply</a></li>
-                <li><a href="__MODULE__/Advice/suggeste">Advice</a></li>
+                <li><a href="{:U('Apply/applye')}">Apply</a></li>
+                <li><a href="{:U('Apply/suggeste')}">Advice</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Contact/contacte">Contact</a></li>
+            <li><a href="{:U('Contact/contacte')}">Contact</a></li>
         </ul>
     </div>
     </div>
     <div id="nav-right">
-     <p><a href="__MODULE__/Product/lvse">中文&nbsp;</a>|<a href="__MODULE__/Product/lvsee">&nbsp;English</a></p>
+     <p><a href="{:U('Product/lvse')}">中文&nbsp;</a>|<a href="{:U('Product/lvsee')}">&nbsp;English</a></p>
     </div>
   </div>
   <div id="nav-banner">
@@ -92,97 +95,88 @@
   </div>
   <div id="bread">
     <div id="bread-left">Products</div>
-      <div id="bread-right"><a href="__MODULE__/Index/indexe">Home&nbsp;</a>>><a href="__MODULE__/Product/producte">&nbsp;Products&nbsp;</a>>>&nbsp;Green Buliding</div>
+      <div id="bread-right"><a href="{:U('Index/indexe')}">Home&nbsp;</a>>><a href="{:U('Product/producte')}">&nbsp;Products&nbsp;</a>>>&nbsp;Green Buliding</div>
   </div>
   
 
   <div class="product-content">
       <div class="product-v1" >
-          <h2>GREEN CONSTRUCTION SIMULATION ANALYSIS</h2>
-          
+          <volist name="producten" id="vo" offset="7" length="1">
+          <h2>{$vo.title}</h2>
+          </volist>
       </div>
       <div class="product-v2">
+        <volist name="producten" id="vo" offset="8" length="1">
           <div class="div-a">
-              <img src="__PUBLIC__/home/images/pro-4.png" width="80%"height="80%">  
+              <img src='__PUBLIC__/{$vo.thumb}' width="75%"height="100%">  
           </div>
           <div class="div-b" >
               <h2>SOFTWARE INTRODUCTION</h2>
-              <p> Analysis of green building simulation software (hereinafter referred to as IES) analysis software analysis software analysis software is simulated by the integrated green building performance developed by the British IES simulated by the integrated green building performance developed by the British IES simulated by the integrated green building performance developed by the British IES.</p>
+              <h3>软件简介</h3><p> &nbsp;&nbsp;&nbsp;&nbsp;{$vo.content}</p>
           </div>
+        </volist>
       </div>
       
       <div class="product-v3">
          <div class="v3">
               <h2>THE MAIN FUNCTION</h2>
-                 <br/>
+              <h3>主要功能</h3>   <br/>
           </div>
           <div >
+            <volist name="producten" id="vo" offset="9" length="1">
               <div class="product-wrap">
                   <div class="product-photo">
-                      <a href="#"><img src="__PUBLIC__/home/images/pro-5.png" style="width:100% " alt=""/><span><h2>THE MAIN FUNCTION</h2><h2>Main functional features</h2>（1）To establish a three-dimensional information architecture model,such as Revit or Sketchup, etc..<br/>（2）ApacheLoad according to ASHRAE (American heating, refrigeration and air conditioning engineering is the Association) standards for the calculation of hot and cold load.<br/>（3）Calculate the annual energy consumption, CO2 emissions, indoor air quality and so on, calculate the annual energy consumption of air conditioning system.<br/>（4） Simulation of natural ventilation of buildings, the results for the calculation of energy consumption.<br/>（5）Calculate the natural lighting inside and outside the building, you can show the results of the calculation directly.<br/>（6）Calculate the lighting, artificial lighting inside and outside the building, you can show the calculation directly<br/>（7）Calculate the construction of the solar block coefficient, and can be used to calculate the shielding coefficient of thermal simulation, you can dynamically display the day of the sun changes.<br/>（8）Calculating the time required for all personnel to leave the building in a dynamic simulation<br/>（9）By means of finite volume method, the internal and external 3D wind environment is calculated, the temperature field and flow field are simulated, andtemperature contour and thermal comfort.<br/></span></a>
+                      <a href="#"><img src='__PUBLIC__/{$vo.thumb}' style="width:100% " alt=""/><span><h2>THE MAIN FUNCTION</h2><h2>主要功能特点</h2>{$vo.content}</span></a>
                   </div>
               </div>
           </div>
+          </volist>
       </div>
       <div class="product-v4" >
-        <h2>THE WIDE USE OF IES</h2>
-          <br/>
+        <h2>THE WIDE USE OF SOFTWARE</h2>
+        <h3>软件的广泛使用</h3><br/>
         <ul>
+        <volist name="producten" id="vo" offset="10" length="2">
           <li> 
             <a href="#" target="_blank" rel="nofollow">
               <div class="thum animate">
-               <img src="__PUBLIC__/home/images/lvse1.png" class="animate" width="100%" alt="绿建"> 
+               <img src='__PUBLIC__/{$vo.thumb}' class="animate" width="100%" alt="{$vo.title}"> 
               </div>
             </a>
             <div class="name animate">
               <p class="animate"></p>
-              <strong class="animate">Building</strong>
+              <strong class="animate">{$vo.title}</strong>
             </div>
           </li>
-          <li>
-           <a href="#" target="_blank" rel="nofollow">
-              <div class="thum animate"> 
-                <img src="__PUBLIC__/home/images/lvse2.png" class="animate" width="100%" alt="鸟巢"> 
-              </div>
-            </a>
-            <div class="name animate">
-                <p class="animate"></p>
-                <strong class="animate">The bird's nest</strong>
-            </div>
-          </li>
+          </volist>
           <li class="three">
+          <volist name="producten" id="vo" offset="12" length="1">
             <a href="#" target="_blank" rel="nofollow">
               <div class="thum animate">
-               <img src="__PUBLIC__/home/images/lvse3.png" class="animate" width="100%" alt="水立方"> 
+               <img src='__PUBLIC__/{$vo.thumb}' class="animate" width="100%" alt="{$vo.title}"> 
                </div>
             </a>
             <div class="name animate">
               <p class="animate"></p>
-              <strong class="animate">The Water Cube</strong>
+              <strong class="animate">{$vo.title}</strong>
             </div>
           </li>
+          </volist>
         </ul>
         
       </div>
       <div class="product-v5">
+      <volist name="producten" id="vo" offset="13" length="1">
           <div class="div-a" >
               <h2>GENENAL INTRODUCTION</h2>
-              <p> IES is the world's well-known design units and engineering consulting units used, such as Arup (), WSP (Ke Jin), Atkins (Atkins), PB (Bai Cheng), and so on. These well-known design company or engineering company wide use of IES <VE> as they participate in the competition in the domestic project tools, and well-known projects are the bird's nest, water cube, Pudong International Airport, Beijing International Airport, Nokia Plaza, etc.. <VE> IES to the design of the square is not only a beautiful three-dimensional model,the real design of a high degree of unity of emotional and rational analysis.</p>   
+              <h3>总体介绍</h3><br/>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;{$vo.content}</p>  
           </div>
           <div class="div-b">
-              <img src="__PUBLIC__/home/images/pro-9.png" width="90%" >
+              <img src='__PUBLIC__/{$vo.thumb}' width="90%" >
           </div>
+          </volist>
       </div>
-
-
-      
-
-
-
-
-
-
-
   </div>
 
 
