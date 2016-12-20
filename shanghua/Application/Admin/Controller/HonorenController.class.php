@@ -8,17 +8,17 @@ class HonorenController extends Controller {
             $this->error("请先登录",U("Admin/login"));
         }
     }
-     public function lists(){
+     public function listsen(){
     	$honorenModel = D("honoren");
 		$honoren = $honorenModel->select();
 		$this->assign('honoren',$honoren);
 		$this->display();  
     }
-    public function add(){
+    public function adden(){
 
     	$this->display();
     }
-    public function doAdd(){
+    public function doAdden(){
 
     		$upload = new \Think\Upload();// 实例化上传类
 		    $upload->maxSize   =     3145728 ;// 设置附件上传大小
@@ -39,34 +39,34 @@ class HonorenController extends Controller {
 		    	
 		        $data['thumb']=$info['thumb']['savepath'].$info['thumb']['savename'];
 		    	if($honorenModel->add($data)){
-		    		$this->success('数据添加成功','lists');
+		    		$this->success('数据添加成功','listsen');
 
 		    }else{
 		    	$this->showError('数据添加失败');
 		    	}
 		    }
     	}
-    	public function delete() {
+    	public function deleteen() {
             //全部删除
             $id = $_GET['honorenId'];
             if(is_array($id)){
                 foreach($id as $value){
                     D("honoren")->delete($value);
                 }  
-                $this->success("批量删除成功！",U("lists"));
+                $this->success("批量删除成功！",U("listsen"));
             } 
         	//单个删除
         	else{
             	$honorenModel = D("honoren");
              	if($honorenModel->where("id=$id")->delete()){
-                    $this->success("删除成功",U("Honoren/lists"));
+                    $this->success("删除成功",U("Honoren/listsen"));
                 }
                 else{
                     $this->error($honorenModel->geterror());
                 }   
             }      
         }
-    	public function edit() {
+    	public function editen() {
 	        
 			$id=I('id');
 			//获取数据
@@ -77,7 +77,7 @@ class HonorenController extends Controller {
 			$this->display();
     	}
 
-   	public function doEdit(){
+   	public function doEditen(){
 			$upload = new \Think\Upload();// 实例化上传类
 		    $upload->maxSize   =     3145728 ;// 设置附件上传大小
 		    $upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
@@ -95,7 +95,7 @@ class HonorenController extends Controller {
 		    	
 		        $data['thumb']=$info['thumb']['savepath'].$info['thumb']['savename'];
 		    	if($honorenModel->save($data)){
-		    		$this->success('数据修改成功','lists');
+		    		$this->success('数据修改成功','listsen');
 
 		    }else{
 		    	$this->showError('数据修改失败');

@@ -8,7 +8,7 @@ class JobenController extends Controller {
             $this->error("请先登录",U("Admin/login"));
         }
     }
-     public function lists(){
+     public function listsen(){
     	$jobenModel = D("joben");
 		$joben = $jobenModel->select();
 		$this->assign('joben',$joben);
@@ -17,12 +17,12 @@ class JobenController extends Controller {
     public function get_time(){
     	return date("Y-m-d");
     }
-    public function add(){
+    public function adden(){
     	$time = $this->get_time();
     	$this->assign('time',$time);
     	$this->display();
     }
-    public function doAdd(){
+    public function doAdden(){
 	        if(!IS_POST){
 	            exit("bad request");
 	        }
@@ -31,33 +31,33 @@ class JobenController extends Controller {
 	            $this->error($jobenModel->getError());          
 	        }
 	        if($jobenModel->add()){
-	            $this->success("添加成功",U("lists"));
+	            $this->success("添加成功",U("listsen"));
 	        }
 	        else{
 	            $this->error("添加失败");
 	        }
     	}
-    public function delete() {
+    public function deleteen() {
         //全部删除
         $id = $_GET['jobenId'];
         if(is_array($id)){
             foreach($id as $value){
-                D("job")->delete($value);
+                D("joben")->delete($value);
             }  
-            $this->success("批量删除成功！",U("lists"));
+            $this->success("批量删除成功！",U("listsen"));
         } 
         //单个删除
         else{
             $jobenModel = D("joben");
             if($jobenModel->where("id=$id")->delete()){
-                $this->success("删除成功",U("Job/lists"));
+                $this->success("删除成功",U("Joben/listsen"));
             }
             else{
                 $this->error($jobenModel->geterror());
             }       
         }      
     }
-    public function edit() {
+    public function editen() {
 
 	        $id = intval($_GET['id']);
 	        if ($id == '') {
@@ -70,13 +70,13 @@ class JobenController extends Controller {
 	        $this->display();
     	}
 
-   		 public function doEdit() {
+   		 public function doEditen() {
 	        if (!IS_POST) {
 	            exit("error param");
 	        }
 	        $jobenModel = D("joben");
 	        if ($jobenModel->create() && $jobenModel->save()) {
-	            $this->success("修改成功!", U('Joben/lists'));
+	            $this->success("修改成功!", U('Joben/listsen'));
 	        }
 	        else {
 	            // $this->error($jobModel->getError());
