@@ -11,11 +11,15 @@ class HonorController extends Controller {
         $this->display();
     }
     public function rongyu(){
-
+        $honorModel=M('honor');
+        $data=$honorModel->select();
+        $this->assign("honor",$data);
         $this->display();
     }
     public function rongyue(){
-
+        $honorenModel=M('honoren');
+        $data=$honorenModel->select();
+        $this->assign("honoren",$data);
         $this->display();
     }
     public function wenhua(){
