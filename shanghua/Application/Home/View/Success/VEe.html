@@ -105,151 +105,30 @@
   </div>
 <div id="latest-news-container" class="latest-news-container">
 <div class="single-wrapper">
+<!--  -->
+<volist name='caseen' id="vo" offset="6" length="9">
 <div class="single-item single-item-1">
-<div class="single-item-main">
+ <div class="single-item-main">
 <div class="single-icon">
 <ul class="grid cs-style-5">
 <li>
-  <figure> <img src="__PUBLIC__/home/images/ve21.png" width="100%" height="100%" />
+  <figure> <img src='__PUBLIC__/{$vo.thumb}'style="width: 100%;
+ height:100%;" />
     <figcaption>
       <h3>VE</h3>
-      <span>BeiJing</span> <a href="#" class="button">
-      <button class="btn btn-blue btn-3blue fa fa-share">green ring</button>
+      <span title="{$vo.title}">{$vo.title}</span> <a href="#" class="button">
+      <button class="btn btn-blue btn-3blue fa fa-share" title="{$vo.content}">{$vo.content}</button>
       </a> </figcaption>
   </figure>
 </li>
+</ul>
 </div>
+<!-- single-item-main -->
 </div>
+<!-- Single Item Main -->
 </div>
-<div class="single-item single-item-1">
-<div class="single-item-main">
-<div class="single-icon">
-<ul class="grid cs-style-5">
-<li>
-  <figure> <img src="__PUBLIC__/home/images/ve22.png"style="width: 100%;
- height:100%;"  alt="" />
-    <figcaption>
-      <h3>VE</h3>
-      <span>BeiJing</span> <a href="#" class="button">
-      <button class="btn btn-blue btn-3blue fa fa-share">National</button>
-      </a> </figcaption>
-  </figure>
-</li>
-</div>
-</div>
-</div>
-<div class="single-item single-item-1">
-<div class="single-item-main">
-<div class="single-icon">
-<ul class="grid cs-style-5">
-<li>
-  <figure> <img src="__PUBLIC__/home/images/ve23.png" width="100%" height="100%" />
-    <figcaption>
-      <h3>VE</h3>
-      <span>Hua Nan</span> <a href="#" class="button">
-      <button class="btn btn-blue btn-3blue fa fa-share">technology</button>
-      </a> </figcaption>
-  </figure>
-</li>
-</div>
-</div>
-</div>
-<div class="single-item single-item-1" width="100%" height="100%">
-<div class="single-item-main">
-<div class="single-icon">
-<ul class="grid cs-style-5">
-<li>
-  <figure> <img src="__PUBLIC__/home/images/ve32.png" width="100%" height="100%" />
-    <figcaption>
-      <h3>VE</h3>
-      <span>Shan Dong</span> <a href="#" class="button">
-      <button class="btn btn-blue btn-3blue fa fa-share">construction</button>
-      </a> </figcaption>
-  </figure>
-</li>
-</div>
-</div>
-</div>
-<div class="single-item single-item-1">
-<div class="single-item-main">
-<div class="single-icon">
-<ul class="grid cs-style-5">
-<li>
-  <figure> <img src="__PUBLIC__/home/images/ve33.png" width="100%" height="100%" />
-    <figcaption>
-      <h3>VE</h3>
-      <span>Shang Hai</span> <a href="#" class="button">
-      <button class="btn btn-blue btn-3blue fa fa-share"> modern</button>
-      </a> </figcaption>
-  </figure>
-</li>
-</div>
-</div>
-</div>
-<div class="single-item single-item-1">
-<div class="single-item-main">
-<div class="single-icon">
-<ul class="grid cs-style-5">
-<li>
-  <figure> <img src="__PUBLIC__/home/images/ve41.png" width="100%" height="100%" />
-    <figcaption>
-      <h3>VE</h3>
-      <span>Shang Hai</span> <a href="#" class="button">
-      <button class="btn btn-blue btn-3blue fa fa-share">Green BJ</button>
-      </a> </figcaption>
-  </figure>
-</li>
-</div>
-</div>
-</div>
-<div class="single-item single-item-1">
-<div class="single-item-main">
-<div class="single-icon">
-<ul class="grid cs-style-5">
-<li>
-  <figure> <img src="__PUBLIC__/home/images/ve42.png" width="100%" height="100%" />
-    <figcaption>
-      <h3>VE</h3>
-      <span>Bei Jing</span> <a href="#" class="button">
-      <button class="btn btn-blue btn-3blue fa fa-share">university</button>
-      </a> </figcaption>
-  </figure>
-</li>
-</div>
-</div>
-</div>
-<div class="single-item single-item-1">
-<div class="single-item-main">
-<div class="single-icon">
-<ul class="grid cs-style-5">
-<li>
-  <figure> <img src="__PUBLIC__/home/images/ve43.png" width="100%" height="100%" />
-    <figcaption>
-      <h3>VE</h3>
-      <span>Shang Hai</span> <a href="#" class="button">
-      <button class="btn btn-blue btn-3blue fa fa-share">university</button>
-      </a> </figcaption>
-  </figure>
-</li>
-</div>
-</div>
-</div>
-<div class="single-item single-item-1">
-<div class="single-item-main">
-<div class="single-icon">
-<ul class="grid cs-style-5">
-<li>
-  <figure> <img src="__PUBLIC__/home/images/ve31.png" width="100%" height="100%" />
-    <figcaption>
-      <h3>VE</h3>
-      <span>beijing</span> <a href="#" class="button">
-      <button class="btn btn-blue btn-3blue fa fa-share">university</button>
-      </a> </figcaption>
-  </figure>
-</li>
-</div>
-</div>
-</div>
+</volist>
+<!--  -->
 </div>
 </div>
  <div id="footer">
