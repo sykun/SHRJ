@@ -8,17 +8,17 @@ class ProductenController extends Controller {
             $this->error("请先登录",U("Admin/login"));
         }
     }
-     public function lists(){
-	    	$productModel = D("producten");
-		    $producten = $productModel->select();
+     public function listsen(){
+	    	$productenModel = D("producten");
+		    $producten = $productenModel->select();
 		    $this->assign('producten',$producten);
 			$this->display();  
     }
-    public function add(){
+    public function adden(){
 
     		$this->display();
     }
-    public function doAdd(){
+    public function doAdden(){
 
     		$upload = new \Think\Upload();// 实例化上传类
 		    $upload->maxSize   =     3145728 ;// 设置附件上传大小
@@ -33,12 +33,12 @@ class ProductenController extends Controller {
 		        $this->error($upload->getError());
 		    }else{// 上传成功
 		        //$this->success('上传成功！');
-		       $productModel = M('producten');
-		    	$data =$productModel ->create();
+		       $productenModel = M('producten');
+		    	$data =$productenModel ->create();
 		    	//$productModel->add($data);
 		    	
 		        $data['thumb']=$info['thumb']['savepath'].$info['thumb']['savename'];
-		    	if($productModel->add($data)){
+		    	if($productenModel->add($data)){
 		    		$this->success('数据添加成功','listsen');
 
 		    }else{
@@ -46,7 +46,7 @@ class ProductenController extends Controller {
 		    	}
 		    }
     	}
-    public function delete() {
+    public function deleteen() {
         //全部删除
         $id = $_GET['productenId'];
         if(is_array($id)){
@@ -57,27 +57,27 @@ class ProductenController extends Controller {
         } 
         //单个删除
         else{
-            $productModel = D("producten");
-            if($productModel->where("id=$id")->delete()){
+            $productenModel = D("producten");
+            if($productenModel->where("id=$id")->delete()){
                 $this->success("删除成功",U("Producten/listsen"));
             }
             else{
-                $this->error($productModel->geterror());
+                $this->error($productenModel->geterror());
             } 
         }      
     }
-    public function edit() {
+    public function editen() {
 	        
 			$id=I('id');
 			//获取数据
-			$productModel = M('producten');
-			$data =$productModel ->find($id);
+			$productenModel = M('producten');
+			$data =$productenModel ->find($id);
 			//分配数据
 			$this->assign('producten',$data);
 			$this->display();
     	}
 
-   	public function doEdit(){
+   	public function doEditen(){
 			$upload = new \Think\Upload();// 实例化上传类
 		    $upload->maxSize   =     3145728 ;// 设置附件上传大小
 		    $upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
@@ -89,12 +89,12 @@ class ProductenController extends Controller {
 		        $this->error($upload->getError());
 		    }else{// 上传成功
 		        //$this->success('上传成功！');
-		       $productModel = M('producten');
-		    	$data =$productModel ->create();
+		       $productenModel = M('producten');
+		    	$data =$productenModel ->create();
 		    	//$productModel->add($data);
 		    	
 		        $data['thumb']=$info['thumb']['savepath'].$info['thumb']['savename'];
-		    	if($productModel->save($data)){
+		    	if($productenModel->save($data)){
 		    		$this->success('数据修改成功','listsen');
 
 		    }else{
