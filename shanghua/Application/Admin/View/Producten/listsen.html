@@ -91,7 +91,7 @@
             <div class="crumb-list"><i class="icon-font"></i><a href="__MODULE__/Indexen/index">Home page</a><span class="crumb-step">&gt;</span><span class="crumb-name">Product management</span></div>
         </div>
         <div class="result-wrap">
-            <form name="myform" id="myform" action="__MODULE__/Producten/delete">
+            <form name="myform" id="myform" action="__MODULE__/Producten/deleteen">
                 <div class="result-title">
                     <div class="result-list">
                         <a href="__MODULE__/Producten/adden"><i class="icon-font"></i>Add product</a>
@@ -116,7 +116,7 @@
                             <td>{$data.content|msubstr=0,10,'utf-8',ture}</td>
                             <td>
                                 <a class="link-update" href="__MODULE__/Producten/editen/id/{$data.id}">revise</a>
-                                <a class="link-del" href="__MODULE__/Producten/delete/productenId/{$data.id}">delete</a>
+                                <a class="link-del" href="__MODULE__/Producten/deleteen/productenId/{$data.id}">delete</a>
                             </td>
                         </tr>
                         </volist>
