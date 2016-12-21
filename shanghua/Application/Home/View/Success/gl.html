@@ -16,74 +16,74 @@
     <div id="nav-center">
     <div class="nav">
         <ul>
-          <li><a href="__MODULE__/Index/index">首页</a></li>
+            <li><a href="{:U('Index/index')}">首页</a></li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Honor/jianjie">关于上华</a>
+            <li><a href="{:U('Honor/jianjie')}">关于上华</a>
               <ul>
-                <li><a href="__MODULE__/Honor/jianjie">公司简介</a></li>
-                <li><a href="__MODULE__/Honor/wenhua">公司文化</a></li>
-                <li><a href="__MODULE__/Honor/rongyu">公司荣誉</a></li>
-                <li><a href="__MODULE__/Job/join1">加入我们</a></li>
+                <li><a href="{:U('Honor/jianjie')}">公司简介</a></li>
+                <li><a href="{:U('Honor/wenhua')}">公司文化</a></li>
+                <li><a href="{:U('Honor/rongyu')}">公司荣誉</a></li>
+                <li><a href="{:U('Honor/join1')}">加入我们</a></li>
               </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Product/product">产品服务</a>
+            <li><a href="{:U('Product/product')}">产品服务</a>
               <ul>
-                <li><a href="__MODULE__/Product/intergrade">设计软件</a></li>
-                <li><a href="__MODULE__/Product/operation">运维系统</a></li>
-                <li><a href="__MODULE__/Product/lvse">绿色建筑</a></li>
-                <li><a href="__MODULE__/Product/zhushou">DWGHelp</a></li>
-                <li><a href="__MODULE__/Product/zonghe">PDMS综合</a></li>
-                <li><a href="__MODULE__/Product/fengli">PDMS风力</a></li>
-                <li><a href="__MODULE__/Product/gongyi">工艺设计</a></li>
+                <li><a href="{:U('Product/intergrade')}">设计软件</a></li>
+                <li><a href="{:U('Product/operation')}">运维系统</a></li>
+                <li><a href="{:U('Product/lvse')}">绿色建筑</a></li>
+                <li><a href="{:U('Product/zhushou')}">DWGHelp</a></li>
+                <li><a href="{:U('Product/zonghe')}">PDMS综合</a></li>
+                <li><a href="{:U('Product/fengli')}">PDMS风力</a></li>
+                <li><a href="{:U('Product/gongyi')}">工艺设计</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/New/company">新闻中心</a>
+            <li><a href="{:U('New/company?p=1')}">新闻中心</a>
                <ul>
-                <li><a href="__MODULE__/New/company">公司新闻</a></li>
-                <li><a href="__MODULE__/Industry/industry">行业资讯</a></li> 
+                <li><a href="{:U('New/company?p=1')}">公司新闻</a></li>
+                <li><a href="{:U('Industry/industry?p=1')}">行业资讯</a></li> 
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Success/gl">成功案例</a>
+            <li><a href="{:U('Success/gl')}">成功案例</a>
                <ul>
-                <li><a href="__MODULE__/Success/gl">管廊</a></li>
-                <li><a href="__MODULE__/Success/VE">VE</a></li>
+                <li><a href="{:U('Success/gl')}">管廊</a></li>
+                <li><a href="{:U('Success/VE')}">VE</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Apply/apply">在线咨询</a>
+            <li><a href="{:U('Apply/apply')}">在线咨询</a>
                <ul>
-                <li><a href="__MODULE__/Apply/apply">申请试用</a></li>
-                <li><a href="__MODULE__/Advice/suggest">咨询或建议</a></li>
+                <li><a href="{:U('Apply/apply')}">申请试用</a></li>
+                <li><a href="{:U('Apply/suggest')}">咨询或建议</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-          <li><a href="__MODULE__/Contact/contact">联系我们</a></li>
+            <li><a href="{:U('Contact/contact')}">联系我们</a></li>
         </ul>
     </div>
     </div>
     <div id="nav-right">
-      <p><a href="__MODULE__/Success/gl">中文&nbsp;</a>|<a href="__MODULE__/Success/gle">&nbsp;English</a></p>
+      <p><a href="{:U('New/company?p=1')}">中文&nbsp;</a>|<a href="{:U('New/companye?p=1')}">&nbsp;English</a></p>
     </div>
   </div>
  <div id="nav-banner">
@@ -98,72 +98,22 @@
    <h2 style="color:#FF8C00;">成功案例展示</h2>
  </div>
         <div class="container-main">
-            <div class="wrap">
+        <!--  -->
+        <volist name='case' id="vo" offset="0" length="6">
+        <div class="wrap">
                 <div class="image">
                     <div class="display front">
-                        <img src="__PUBLIC__/home/images/01.png"style="width: 100%;
- height:100%;"  alt="" />
-                    </div>
-                    <div class="display back">
-                        <h3>北京工业大学引进智慧管廊建设新技术交流培训研讨会</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="wrap">
-                <div class="image">
-                    <div class="display front">
-                        <img src="__PUBLIC__/home/images/02.png"style="width: 100%;
- height:100%;" alt="" />
-                    </div>
-                    <div class="display back">
-                        <h3>北京建筑工程学院为城市规划建设做管理</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="wrap">
-                <div class="image">
-                    <div class="display front">
-                        <img src="__PUBLIC__/home/images/03.png" alt="" style="width: 100%;
- height:100%;"/>
-                    </div>
-                    <div class="display back">
-                        <h3>北京建筑设计研究院引入上华软件新技术</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="wrap">
-                <div class="image">
-                    <div class="display front">
-                        <img src="__PUBLIC__/home/images/11.png" alt="" style="width: 100%;
- height:100%;"/>
-                    </div>
-                    <div class="display back">
-                        <h3>青岛理工利用智慧管廊规划城市</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="wrap">
-                <div class="image">
-                    <div class="display front">
-                        <img src="__PUBLIC__/home/images/12.png" alt=""style="width: 100%;
+                       <img src='__PUBLIC__/{$vo.thumb}'style="width: 100%;
  height:100%;" />
                     </div>
                     <div class="display back">
-                        <h3>天津城建大学绿色建筑</h3>
+                        <h3 title="{$vo.title}">{$vo.title}</h3>
                     </div>
                 </div>
             </div>
-            <div class="wrap">
-                <div class="image">
-                    <div class="display front">
-                        <img src="__PUBLIC__/home/images/13.png" alt=""style="width: 100%;
- height:100%;" />
-                    </div>
-                    <div class="display back">
-                        <h3>广州大学利用VE软件 新发现</h3>
-                    </div>
-                </div>
-            </div>
+        </volist>
+            <!--  -->
+            
         </div>
  
 
