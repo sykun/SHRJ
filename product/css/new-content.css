@@ -1,0 +1,30 @@
+body{
+	background: url(../images/back1.jpg) no-repeat;
+}
+#new-content-content h1{
+	text-align: center;
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-top: 50px;
+}
+#new-content-content p{
+	margin-top: 80px;
+	margin-left: 200px;
+	margin-right: 200px;
+}
+#content-foot{
+	margin-top: 60px;
+	margin-left: 200px;
+}
+#content-foot ul{
+	list-style-type: none;
+}
+#content-foot ul li{
+	margin-top: 15px;
+}
+#content-foot ul li a{
+	color: rgb(19,160,178);
+}
+#content-foot ul li a:hover{
+	color: rgb(255,140,0);
+}

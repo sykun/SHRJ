@@ -1,13 +1,26 @@
+*{
+   /* font-family: "微软雅黑";*/
+    color:#3c3c3c;
+}
+.product-v2 p{
+    font-size: 15px;
+}
+.product-v3 p{
+    font-size: 15px;
+}
 .product-content{
     padding: 10px 70px;
     padding-bottom: 90px;
     font-family: "微软雅黑";
-    height:650px;
+    line-height:25px;
 }
-.product-v1 h2{
-    padding-right: 100px;
+.product-content{
+   padding-left: 100px;
+    padding-right:100px;
+    padding-top: 5%;
 }
 .fl{
+    padding-top: 50px;
     float:left;
     display: block;
 }
@@ -21,10 +34,10 @@
     
 }
 .product-v2 .fl {
-    width: 60%;
+    width: 55%;
 }
 .product-v2 .fr {
-    width: 35%;
+    width: 40%;
     
 }
 .product-v2 .extP_div {

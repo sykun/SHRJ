@@ -5,14 +5,14 @@
 .izl-rmenu
 {
 	position:fixed; 
-	right:0px;
+	right:1px;
 	bottom:10px;
 	 margin-left:532px;  
 	 padding-bottom:30px;
 	  background:url(../images/r_b.png) 0px bottom no-repeat; 
 	  z-index:999; 
 	  height: auto;
-	  width:100;
+	  width:100px;
 	}
 .izl-rmenu .btn{
 	width:65px;
@@ -51,7 +51,7 @@
 .izl-rmenu .btn-phone .phone{
 	background-color:#ff811b; 
 	position:absolute; 
-	width:160px; 
+	width:160px;
 	left:-160px; 
 	top:0px; 
 	line-height:65px; 
