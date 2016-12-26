@@ -25,74 +25,74 @@
     <div id="nav-center">
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Index/indexe">Home</a></li>
+            <li><a href="{:U('Index/indexe')}">Home</a></li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Honor/jianjiee">About&nbsp;SH</a>
+            <li><a href="{:U('Honor/jianjie')}">About&nbsp;SH</a>
               <ul>
-                <li><a href="__MODULE__/Honor/jianjiee">Profile</a></li>
-                <li><a href="__MODULE__/Honor/wenhuae">Culture</a></li>
-                <li><a href="__MODULE__/Honor/rongyue">Honor</a></li>
-                <li><a href="__MODULE__/Job/join1e">Join&nbsp;Us</a></li>
+                <li><a href="{:U('Honor/jianjiee')}">Profile</a></li>
+                <li><a href="{:U('Honor/wenhuae')}">Culture</a></li>
+                <li><a href="{:U('Honor/rongyue')}">Honor</a></li>
+                <li><a href="{:U('Job/joine?p=1')}">Join&nbsp;Us</a></li>
               </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Product/producte">Products</a>
+            <li><a href="{:U('Product/producte')}">Products</a>
               <ul>
-                <li><a href="__MODULE__/Product/intergradee">Integrated</a></li>
-                <li><a href="__MODULE__/Product/operatione">Maintenance</a></li>
-                <li><a href="__MODULE__/Product/lvsee">Green&nbsp;Building</a></li>
-                <li><a href="__MODULE__/Product/zhushoue">DWGHelp</a></li>
-                <li><a href="__MODULE__/Product/zonghee">PDMS&nbsp;Synthetic</a></li>
-                <li><a href="__MODULE__/Product/fenglie">PDMS&nbsp;Wind</a></li>
-                <li><a href="__MODULE__/Product/gongyie">Process</a></li>
+                <li><a href="{:U('Product/intergradee')}">Integrated</a></li>
+                <li><a href="{:U('Product/operatione')}">Maintenance</a></li>
+                <li><a href="{:U('Product/lvsee')}">Green&nbsp;Building</a></li>
+                <li><a href="{:U('Product/zhushoue')}">DWGHelp</a></li>
+                <li><a href="{:U('Product/zonghee')}">PDMS&nbsp;Synthetic</a></li>
+                <li><a href="{:U('Product/fenglie')}">PDMS&nbsp;Wind</a></li>
+                <li><a href="{:U('Product/gongyie')}">Process</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/New/companye">News</a>
+            <li><a href="{:U('New/companye?p=1')}">News</a>
                <ul>
-                <li><a href="__MODULE__/New/companye">Company</a></li>
-                <li><a href="__MODULE__/Industry/industrye">Industry</a></li> 
+                <li><a href="{:U('New/companye?p=1')}">Company</a></li>
+                <li><a href="{:U('Industry/industrye?p=1')}">Industry</a></li> 
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Success/gle">Success</a>
+            <li><a href="{:U('Success/gle')}">Success</a>
                <ul>
-                <li><a href="__MODULE__/Success/gle">Pipe&nbsp;Sallery</a></li>
-                <li><a href="__MODULE__/Success/VEe">VE</a></li>
+                <li><a href="{:U('Success/gle')}">Pipe&nbsp;Sallery</a></li>
+                <li><a href="{:U('Success/VEe')}">VE</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Apply/applye">Consulting</a>
+            <li><a href="{:U('Apply/applye')}">Consulting</a>
                <ul>
-                <li><a href="__MODULE__/Apply/applye">Apply</a></li>
-                <li><a href="__MODULE__/Advice/suggeste">Advice</a></li>
+                <li><a href="{:U('Apply/applye')}">Apply</a></li>
+                <li><a href="{:U('Advice/suggeste')}">Advice</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Contact/contacte">Contact</a></li>
+            <li><a href="{:U('Contact/contacte')}">Contact</a></li>
         </ul>
     </div>
     </div>
     <div id="nav-right">
-      <p><a href="__MODULE__/Index/index">中文&nbsp;</a>|<a href="__MODULE__/Index/indexe">&nbsp;English</a></p>
+      <p><a href="{:U('Index/index')}">中文&nbsp;</a>|<a href="{:U('Index/indexe')}">&nbsp;English</a></p>
     </div>
    </div>
 		<div class="slider-w3layouts">
@@ -147,7 +147,7 @@
 						<div class="details-grid-info-w3lsagile"><h4> Company Culture</h4>
 							<p>Companies adhering to the "to customers with advanced technology experience, with first-class service for customers warm feelings" .</p>
 						</div>
-						<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">MORE<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+						<button class="btn btn-primary" data-toggle="modal" data-target="#myModal"><a  href="{:U('Honor/wenhuae')} " style="color:black;">MORE</a><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
 						<div class="clearfix"></div>
 					</div>
 				</div>
@@ -160,7 +160,7 @@
 							<h4>Products&Services</h4>
 							<p>Company has 5 kinds of independent research and development products, involving municipal, civil construction, electric power, railway</p>
 						</div>
-						<button class="btn btn-primary" data-toggle="modal" data-target="#myModal2">MORE<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+						<button class="btn btn-primary" data-toggle="modal" data-target="#myModal2"><a  href="{:U('Product/producte')} " style="color:black;">MORE</a><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
 						<div class="clearfix"></div>
 					</div>
 				</div>
@@ -173,7 +173,7 @@
 							<h4>Apply For</h4>
 							<p>If you are interested in our software, welcome to apply to our software trial version, please fill out the information related to the trial, is convenient</p>
 						</div>
-						<button class="btn btn-primary" data-toggle="modal" data-target="#myModal3">MORE<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+						<button class="btn btn-primary" data-toggle="modal" data-target="#myModal3"><a  href="{:U('Apply/applye')} " style="color:black;">MORE</a><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
 						<div class="clearfix"></div>
 					</div>
 				</div>
@@ -190,13 +190,15 @@
 			<div class="activity_box agileits w3layouts">
 				<h3>NEWS CENTER</h3>
 				<div class="scrollbar agileits w3layouts" id="style-2">
-					<volist name='newsen' id="vo" offset="4" length="5">
+					<volist name='newsen' id="vo"  >
 					<div class="activity-row agileits w3layouts">
 						<div class="activity-img agileits w3layouts"><img src='__PUBLIC__/{$vo.thumb}'></div>
 						<div class="activity-desc agileits w3layouts">
 							
-							<p><a href="__MODULE__/New/c1" style="color: #777;" title="{$vo.title}">{$vo.title}
-							</a></p>
+							<p><a href="__MODULE__/New/content/id/{$vo.id}" style="color: #777;" title="{$vo.title}">{$vo.title}
+							</a><br/>
+							{$vo.time|strtotime|date="Y年m月d日",###}</p>
+
 						</div>
 						<div class="clearfix"></div>
 					</div>
@@ -213,63 +215,114 @@
 		<div class="clearfix"></div>
 	</div>
 	<div class="portfolio" id="portfolio">
-		<h3>PRODUCTS&CASE</h3>
+		<h3>PRODUCT&CASE</h3>
 		<div class="portfolio_grid_w3lss">
-			
-		<!-- 1 -->
-		<volist name='producten' id="vo" offset="51" length="3">
-		<div class="col-md-4 col-sm-4 w3agile_gallery_grid">
+			<div class="col-md-4 col-sm-4 w3agile_gallery_grid">
 				<div class="w3agile_gallery_image">
-					<a class="sb" href="__MODULE__/Product/zonghe">
 						<figure>
-							<img src='__PUBLIC__/{$vo.thumb}'class="img-responsive">
+							<img src="__PUBLIC__/home/images/portfolio-26.jpg" alt="W3layouts Agileits" class="img-responsive">
 							<figcaption>
-								<h4>PRODUCT</h4>
-								<p>{$vo.title}</p>
+Product								<p><a style="color:white;" href="{:U('Product/intergradee')}"> Integrated pipe gallery design software</a></p>
 							</figcaption>
 						</figure>
-					</a>
 				</div>
 			</div>
-					</volist>
-					</div>
-		<!-- 1 -->
-			
-		<!-- 2 -->
-		<volist name='producten' id="vo" offset="54" length="3">
-		<div class="col-md-4 col-sm-4 w3agile_gallery_grid">
+			<div class="col-md-4 col-sm-4 w3agile_gallery_grid">
 				<div class="w3agile_gallery_image">
-					<a class="sb" href="__MODULE__/Product/zonghe">
 						<figure>
-							<img src='__PUBLIC__/{$vo.thumb}'class="img-responsive">
+							<img src="__PUBLIC__/home/images/portfolio-15.jpg" alt="W3layouts Agileits" class="img-responsive">
 							<figcaption>
-								<h4>PRODUCT</h4>
-								<p>{$vo.title}</p>
+								<h4>Product</h4>
+								<p><a style="color:white;" href="{:U('Product/operatione')}">Integrated pipe gallery operation and maintenance system</a></p>
 							</figcaption>
 						</figure>
-					</a>
 				</div>
 			</div>
-					</volist>
-					</div>
-		<!-- 2 -->
-		<!-- 3 -->
-		<volist name='producten' id="vo" offset="57" length="3">
-		<div class="col-md-4 col-sm-4 w3agile_gallery_grid">
+			<div class="col-md-4 col-sm-4 w3agile_gallery_grid">
 				<div class="w3agile_gallery_image">
-					<a class="sb" href="__MODULE__/Product/zonghe">
 						<figure>
-							<img src='__PUBLIC__/{$vo.thumb}'class="img-responsive">
+							<img src="__PUBLIC__/home/images/portfolio-17.jpg" alt="W3layouts Agileits" class="img-responsive">
 							<figcaption>
-								<h4>PRODUCT</h4>
-								<p>{$vo.title}</p>
+								<h4>Product</h4>
+								<p><a style="color:white;" href="{:U('Product/lvsee')}">Simulation analysis of green building</a></p>
 							</figcaption>
 						</figure>
-					</a>
 				</div>
 			</div>
-					</volist>
-					</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="portfolio_grid_w3lss">
+			<div class="col-md-4 col-sm-4 w3agile_gallery_grid">
+				<div class="w3agile_gallery_image">
+						<figure>
+							<img src="__PUBLIC__/home/images/portfolio-13.jpg" alt="W3layouts Agileits" class="img-responsive">
+							<figcaption>
+								<h4>Product</h4>
+								<p><a style="color:white;" href="{:U('Product/zhushoue')}">Design assistant DWGHelp</a></p>
+							</figcaption>
+						</figure>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 w3agile_gallery_grid">
+				<div class="w3agile_gallery_image">
+						<figure>
+							<img src="__PUBLIC__/home/images/portfolio-21.jpg" alt="W3layouts Agileits" class="img-responsive">
+							<figcaption>
+								<h4>Product</h4>
+								<p><a style="color:white;" href="{:U('Product/fenglie')}">PDMS wind pipe hydraulic calculation</p>
+							</figcaption>
+						</figure>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 w3agile_gallery_grid">
+				<div class="w3agile_gallery_image">
+						<figure>
+							<img src="__PUBLIC__/home/images/portfolio-12.jpg" alt="W3layouts Agileits" class="img-responsive">
+							<figcaption>
+								<h4>Product</h4>
+								<p><a style="color:white;" href="{:U('Product/zonghee')}">PDMS integrated material automatic typesetting system</a></p>
+							</figcaption>
+						</figure>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="portfolio_grid_w3lss">
+			<div class="col-md-4 col-sm-4 w3agile_gallery_grid">
+				<div class="w3agile_gallery_image">
+						<figure>
+							<img src="__PUBLIC__/home/images/portfolio-23.jpg" alt="W3layouts Agileits" class="img-responsive">
+							<figcaption>
+								<h4>Product</h4>
+								<p><a style="color:white;" href="{:U('Product/gongyie')}">Process design software</a></p>
+							</figcaption>
+						</figure>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 w3agile_gallery_grid">
+				<div class="w3agile_gallery_image">
+						<figure>
+							<img src="__PUBLIC__/home/images/portfolio-11.jpg" alt="W3layouts Agileits" class="img-responsive">
+							<figcaption>
+								<h4>Case</h4>
+								<p><a style="color:white;" href="{:U('Success/gle')}">Pipe gallery</a></p>
+							</figcaption>
+						</figure>>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 w3agile_gallery_grid">
+				<div class="w3agile_gallery_image">
+						<figure>
+							<img src="__PUBLIC__/home/images/portfolio-25.jpg" alt="W3layouts Agileits" class="img-responsive">
+							<figcaption>
+								<h4>Case</h4>
+								<p><a style="color:white;" href="{:U('Success/VEe')}">VE</a></p>
+							</figcaption>
+						</figure>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
 		
 		<script type="text/javascript" src="__PUBLIC__/home/js/smoothbox.jquery2.js"></script>
 	</div><script type="text/javascript" src="__PUBLIC__/home/js/bootstrap.min.js"></script>>
@@ -338,15 +391,15 @@
     <div class="footer-top4" >
         <ul>
           <li><h5 style="text-align:left;">Product</h5></li>
-          <hr class="footer-hr" style="margin:5px 0px 0px 0px;padding:0px;">
-          <li class="footer-img"><img src="__PUBLIC__/home/images/1.jpg" width="50px" height="50px"></li>
-          <li class="footer-img"><img src="__PUBLIC__/home/images/3.jpg" width="50px" height="50px"></li>
-          <li class="footer-img"><img src="__PUBLIC__/home/images/4.jpg" width="50px" height="50px"></li>
+          <hr class="footer-hr">
+          <li class="footer-img"><a href="{:U('Product/fenglie')}"><img src="__PUBLIC__/home/images/1.jpg" width="50px" height="50px"></a></li>
+          <li class="footer-img"><a href="{:U('Product/gongyie')}"><img src="__PUBLIC__/home/images/3.jpg" width="50px" height="50px"></a></li>
+          <li class="footer-img"><a href="{:U('Product/intergradee')}"><img src="__PUBLIC__/home/images/4.jpg" width="50px" height="50px"></a></li>
         </ul>
         <ul class="footer-imgss">
-          <li class="footer-img"><img src="__PUBLIC__/home/images/5.png" width="50px" height="50px"></li>
-          <li class="footer-img"><img src="__PUBLIC__/home/images/6.png" width="50px" height="50px"></li>
-          <li class="footer-img"><img src="__PUBLIC__/home/images/7.png" width="50px" height="50px"></li>
+          <li class="footer-img"><a href="{:U('Product/operatione')}"><img src="__PUBLIC__/home/images/5.png" width="50px" height="50px"></a></li>
+          <li class="footer-img"><a href="{:U('Product/zhushoue')}"><img src="__PUBLIC__/home/images/6.png" width="50px" height="50px"></a></li>
+          <li class="footer-img"><a href="{:U('Product/lvsee')}"><img src="__PUBLIC__/home/images/7.png" width="50px" height="50px"></a></li>
         </ul>
     </div>
     </div>

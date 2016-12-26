@@ -6,95 +6,98 @@
   <link href="__PUBLIC__/home/css/touch.css" type="text/css" rel="stylesheet" />
   <script type="text/javascript" src="__PUBLIC__/home/js/jquery-1.8.3.min.js"></script>
   <script type="text/javascript" src="__PUBLIC__/home/js/touch.js"></script>
+  <script type="text/javascript">
+     var img="__PUBLIC__/home/images/weixin.jpg"
+  </script>
   <link href="__PUBLIC__/home/css/contact.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
   <div id="top"></div>
   <div id="nav-header">
     <div id="img">
-       <img src="__PUBLIC__/home/images/logo.jpg" width="100%" height="45px">
+       <img src="__PUBLIC__/home/images/logo.jpg" height="50px">
     </div>
     <div id="nav-center">
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Index/indexe">Home</a></li>
+            <li><a href="{:U('Index/indexe')}">Home</a></li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Honor/jianjiee">About&nbsp;SH</a>
+            <li><a href="{:U('Honor/jianjie')}">About&nbsp;SH</a>
               <ul>
-                <li><a href="__MODULE__/Honor/jianjiee">Profile</a></li>
-                <li><a href="__MODULE__/Honor/wenhuae">Culture</a></li>
-                <li><a href="__MODULE__/Honor/rongyue">Honor</a></li>
-                <li><a href="__MODULE__/Job/join1e">Join&nbsp;Us</a></li>
+                <li><a href="{:U('Honor/jianjiee')}">Profile</a></li>
+                <li><a href="{:U('Honor/wenhuae')}">Culture</a></li>
+                <li><a href="{:U('Honor/rongyue')}">Honor</a></li>
+                <li><a href="{:U('Job/joine?p=1')}">Join&nbsp;Us</a></li>
               </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Product/producte">Products</a>
+            <li><a href="{:U('Product/producte')}">Products</a>
               <ul>
-                <li><a href="__MODULE__/Product/intergradee">Integrated</a></li>
-                <li><a href="__MODULE__/Product/operatione">Maintenance</a></li>
-                <li><a href="__MODULE__/Product/lvsee">Green&nbsp;Building</a></li>
-                <li><a href="__MODULE__/Product/zhushoue">DWGHelp</a></li>
-                <li><a href="__MODULE__/Product/zonghee">PDMS&nbsp;Synthetic</a></li>
-                <li><a href="__MODULE__/Product/fenglie">PDMS&nbsp;Wind</a></li>
-                <li><a href="__MODULE__/Product/gongyie">Process</a></li>
+                <li><a href="{:U('Product/intergradee')}">Integrated</a></li>
+                <li><a href="{:U('Product/operatione')}">Maintenance</a></li>
+                <li><a href="{:U('Product/lvsee')}">Green&nbsp;Building</a></li>
+                <li><a href="{:U('Product/zhushoue')}">DWGHelp</a></li>
+                <li><a href="{:U('Product/zonghee')}">PDMS&nbsp;Synthetic</a></li>
+                <li><a href="{:U('Product/fenglie')}">PDMS&nbsp;Wind</a></li>
+                <li><a href="{:U('Product/gongyie')}">Process</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/New/companye">News</a>
+            <li><a href="{:U('New/companye?p=1')}">News</a>
                <ul>
-                <li><a href="__MODULE__/New/companye">Company</a></li>
-                <li><a href="__MODULE__/Industry/industrye">Industry</a></li> 
+                <li><a href="{:U('New/companye?p=1')}">Company</a></li>
+                <li><a href="{:U('Industry/industrye?p=1')}">Industry</a></li> 
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Success/gle">Success</a>
+            <li><a href="{:U('Success/gle')}">Success</a>
                <ul>
-                <li><a href="__MODULE__/Success/gle">Pipe&nbsp;Sallery</a></li>
-                <li><a href="__MODULE__/Success/VEe">VE</a></li>
+                <li><a href="{:U('Success/gle')}">Pipe&nbsp;Sallery</a></li>
+                <li><a href="{:U('Success/VEe')}">VE</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Apply/applye">Consulting</a>
+            <li><a href="{:U('Apply/applye')}">Consulting</a>
                <ul>
-                <li><a href="__MODULE__/Apply/applye">Apply</a></li>
-                <li><a href="__MODULE__/Advice/suggeste">Advice</a></li>
+                <li><a href="{:U('Apply/applye')}">Apply</a></li>
+                <li><a href="{:U('Advice/suggeste')}">Advice</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Contact/contacte">Contact</a></li>
+            <li><a href="{:U('Contact/contacte')}">Contact</a></li>
         </ul>
     </div>
     </div>
     <div id="nav-right">
-      <p><a href="__MODULE__/Contact/contact">中文&nbsp;</a>|<a href="__MODULE__/Contact/contacte">&nbsp;English</a></p>
+      <p><a href="{:U('Contact/contact')}">中文&nbsp;</a>|<a href="{:U('Contact/contacte')}">&nbsp;English</a></p>
     </div>
      
   </div>
   </div>
   <div id="nav-banner">
-    <img src="__PUBLIC__/home/images/z15.png">
+    <img src="__PUBLIC__/home/images/contact.jpg">
   </div>
   <div id="bread">
     <div id="bread-left">Contact</div>
-      <div id="bread-right"><a href="__MODULE__/Index/indexe">Home&nbsp;>></a>&nbsp;Contact</div>
+      <div id="bread-right"><a href="{:U('Index/indexe')}">Home&nbsp;>></a>&nbsp;Contact</div>
   </div>
   <div id="new-company">
     <div id="new-company-left">
@@ -102,24 +105,24 @@
         <h4>Contact</h4>
         <HR align="left" width="10%" color="#FFBB77" SIZE="3" style="margin-top:10px;"></HR>
         <ul class="new">
-          <li><a href="__MODULE__/Contact/contacte" class='active' style="color:#FFBB77"><em class='em1'></em>Contact</a></li>
+          <li><a href="{:U('Contact/contacte')}" class='active' style="color:#FFBB77"><em class='em1'></em>Contact</a></li>
         </ul>
       </div>
       <div id="new-company-product">
         <h4>Recommended products</h4>
         <HR align="left" width="10%" color="#FFBB77" SIZE="3" style="margin-top:10px;">
         <ul>
-          <li class="new-company-img1"><a href="__MODULE__/Product/zonghee"><img src="__PUBLIC__/home/images/4.jpg"></a>
+          <li class="new-company-img1"><a href="{:U('Product/zonghee')}"><img src="__PUBLIC__/home/images/4.jpg"></a>
             <p class="new-goods">Intelligent</p>
-            <p class="new-more"><a href="__MODULE__/Product/zonghee" id="product1">MORE</a></p>
+            <p class="new-more"><a href="{:U('Product/zonghee')}" id="product1">MORE</a></p>
           </li>
-          <li class="new-company-img2"><a href="__MODULE__/Product/lvsee"><img src="__PUBLIC__/home/images/5.png"></a>
+          <li class="new-company-img2"><a href="{:U('Product/lvsee')}"><img src="__PUBLIC__/home/images/5.png"></a>
             <p class="new-goods">Building</p>
-            <p class="new-more"><a href="__MODULE__/Product/lvsee" id="product2">MORE</a><p>
+            <p class="new-more"><a href="{:U('Product/lvsee')}" id="product2">MORE</a><p>
           </li>
-          <li class="new-company-img3"><a href="__MODULE__/Product/zhushoue"><img src="__PUBLIC__/home/images/7.png"></a>
+          <li class="new-company-img3"><a href="{:U('Product/intergradee')}"><img src="__PUBLIC__/home/images/7.png"></a>
             <p class="new-goods">Design</p>
-            <p class="new-more"><a href="__MODULE__/Product/zhushoue" id="product2">MORE</a></p>
+            <p class="new-more"><a href="{:U('Product/intergradee')}" id="product2">MORE</a></p>
           </li>
         </ul>
       </div>
@@ -127,12 +130,12 @@
          <h4>Hot key words</h4>
          <HR align="left" width="10%" color="#FFBB77" SIZE="3" style="margin-top:10px;">
           <ul class="p0 clouds">
-              <li><a href="__MODULE__/Success/VEe" target='_self'>VE</a></li>
-              <li><a href="__MODULE__/Success/gle" target='_self'>Intelligent pipe gallery</a></li>
-              <li><a href="__MODULE__/Product/gongyie" target='_self'>Process design software</a></li>
-              <li><a href="__MODULE__/Product/lvsee" target='_self'>Green building</a></li>
-              <li><a href="__MODULE__/Product/zhushoue" target='_self'>Design assistant</a></li>
-              <li><a href="__MODULE__/Product/fenglie" target='_self'>Hydraulic calculation of wind pipe</a></li>
+              <li><a href="{:U('Success/VEe')}" target='_self'>VE</a></li>
+              <li><a href="{:U('Success/gle')}" target='_self'>Intelligent pipe gallery</a></li>
+              <li><a href="{:U('Product/gongyie')}" target='_self'>Process design software</a></li>
+              <li><a href="{:U('Product/lvsee')}" target='_self'>Green building</a></li>
+              <li><a href="{:U('Product/zhushoue')}" target='_self'>Design assistant</a></li>
+              <li><a href="{:U('Product/fenglie')}" target='_self'>Hydraulic calculation of wind pipe</a></li>
           </ul>
       </div>
     </div>
@@ -190,16 +193,16 @@
           
         </ul>
     </div>
-    <div class="footer-top" >
+    <div class="footer-top4" >
         <ul>
           <li><h5>Product</h5></li>
           <hr class="footer-hr">
-          <li class="footer-img"><img src="__PUBLIC__/home/images/1.jpg" width="50px" height="50px"></li>
-          <li class="footer-img"><img src="__PUBLIC__/home/images/3.jpg" width="50px" height="50px"></li>
-          <li class="footer-img"><img src="__PUBLIC__/home/images/4.jpg" width="50px" height="50px"></li>
-          <li class="footer-img"><img src="__PUBLIC__/home/images/5.png" width="50px" height="50px"></li>
-          <li class="footer-img"><img src="__PUBLIC__/home/images/6.png" width="50px" height="50px"></li>
-          <li class="footer-img"><img src="__PUBLIC__/home/images/7.png" width="50px" height="50px"></li>
+          <li class="footer-img"><a href="{:U('Product/fenglie')}"><img src="__PUBLIC__/home/images/1.jpg" width="50px" height="50px"></a></li>
+          <li class="footer-img"><a href="{:U('Product/gongyie')}"><img src="__PUBLIC__/home/images/3.jpg" width="50px" height="50px"></a></li>
+          <li class="footer-img"><a href="{:U('Product/intergradee')}"><img src="__PUBLIC__/home/images/4.jpg" width="50px" height="50px"></a></li>
+          <li class="footer-img"><a href="{:U('Product/operatione')}"><img src="__PUBLIC__/home/images/5.png" width="50px" height="50px"></a></li>
+          <li class="footer-img"><a href="{:U('Product/zhushoue')}"><img src="__PUBLIC__/home/images/6.png" width="50px" height="50px"></a></li>
+          <li class="footer-img"><a href="{:U('Product/lvsee')}"><img src="__PUBLIC__/home/images/7.png" width="50px" height="50px"></a></li>
         </ul>
     </div>
     </div>

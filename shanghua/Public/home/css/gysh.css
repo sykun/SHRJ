@@ -18,7 +18,7 @@ li{
 }
 .col-md-4{
 	font-size: 16px;
-	width: 26%;
+	width: 27%;
 	float: left;
 	margin-left: 100px;
 	margin-top: 40px;
@@ -26,7 +26,7 @@ li{
 .col-md-7{
 	width: 50%;
 	float: left;
-	margin-left: 3%;
+	margin-left: 60px;
 }
 .col-md-7 p{
 	margin-right: 10px;
@@ -196,6 +196,7 @@ li{
     border: 1px solid #F0F0F0;
     width:100%;
 }
+
 .shop-page-content .single-shop-item .meta  h4{
     height:24px;
 	overflow:hidden;
@@ -423,7 +424,7 @@ li{
 .met_tools{
 	position:relative;
 	padding:10px 10px 0;
-	height:80px;
+	height:140px;
 	line-height:50px
 }
 .met_tools .met_page{
@@ -436,8 +437,7 @@ li{
 }
 .met_tools .met_page li{ 
 	display:block; 
-	width:50%; 
-	float:left; 
+	width:45%;  
 	list-style:none;
 	padding-left: 8px;
 	padding-right: 20px;
@@ -447,7 +447,7 @@ li{
 }
 .met_tools .met_page li.met_page_next{
 	text-align:right;
-	margin-left: 200px;
+	margin-left:0;
 	margin-top: -50px;
 }
 .met_tools .met_page li span{ 

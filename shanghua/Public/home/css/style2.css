@@ -49,10 +49,10 @@ to {box-shadow:0 0 0 20px transparent;}
 
 /* Circular Content Carousel Style */
 #latest-news-container {
- 	max-width:1180px;
+ 	max-width:1100px;
 	height:236px;
 	position:relative;
-	margin:50px auto 70px auto;
+	margin:50px 10% 70px 18%;
     font-family: 'kalingaregular';
 }
 
@@ -333,7 +333,7 @@ to {box-shadow:0 0 0 20px transparent;}
 /* ########################################## */
 
 /* General button style (reset) */
-.btn {
+.btn-blue{
 	font-family: 'kalingaregular';
 	border: none;
 	border-radius:3px;
@@ -343,7 +343,7 @@ to {box-shadow:0 0 0 20px transparent;}
 	cursor: pointer;
 	padding: 12px 18px;
 	display: inline-block;
-	margin: 0px 30px;
+	margin: 0px 60px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: normal;

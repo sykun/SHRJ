@@ -6,6 +6,7 @@ class IndustryController extends Controller {
         parent::__construct();
         if(!isLogin()){
             $this->error("请先登录",U("Admin/login"));
+            // $this->redirect('Admin/login',0);
         }
     }
 	    public function lists(){
@@ -43,7 +44,8 @@ class IndustryController extends Controller {
 		    	
 		        $data['thumb']=$info['thumb']['savepath'].$info['thumb']['savename'];
 		    	if($industryModel->add($data)){
-		    		$this->success('数据添加成功','lists');
+		    		//$this->success('数据添加成功','lists?p=1');
+		    		$this->redirect('lists?p=1',0);
 
 		    }else{
 		    	$this->showError('数据添加失败');
@@ -57,13 +59,15 @@ class IndustryController extends Controller {
                 foreach($id as $value){
                     D("industry")->delete($value);
                 }  
-                $this->success("批量删除成功！",U("lists"));
+                //$this->success("批量删除成功！",U("lists?p=1"));
+                $this->redirect('lists?p=1',0);
             } 
         	//单个删除
         	else{
             	$industryModel = D("industry");
              	if($industryModel->where("id=$id")->delete()){
-                    $this->success("删除成功",U("Industry/lists"));
+                   // $this->success("删除成功",U("Industry/lists?p=1"));
+             		$this->redirect('lists?p=1',0);
                 }
                 else{
                     $this->error($industryModel->geterror());
@@ -102,7 +106,8 @@ class IndustryController extends Controller {
 		    	
 		        $data['thumb']=$info['thumb']['savepath'].$info['thumb']['savename'];
 		    	if($industryModel->save($data)){
-		    		$this->success('数据修改成功','lists');
+		    		//$this->success('数据修改成功','lists?p=1');
+		    		$this->redirect('lists?p=1',0);
 
 		    }else{
 		    	$this->showError('数据修改失败');

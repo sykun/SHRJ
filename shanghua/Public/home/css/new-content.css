@@ -3,22 +3,28 @@ body{
 }
 #new-content-content h1{
 	text-align: center;
+	margin-left: 150px;
+	margin-right: 150px;
 	margin-top: 50px;
 }
 #new-content-content p{
-	margin-top: 30px;
+	margin-top: 80px;
 	margin-left: 200px;
 	margin-right: 200px;
 }
-#content-foot p{
-	float: right;
-	
+#content-foot{
+	margin-top: 60px;
+	margin-left: 200px;
 }
-#content-foot p a{
-	text-decoration: none;
-	color: black;
-	font-family: "黑体";
+#content-foot ul{
+	list-style-type: none;
 }
-#content-foot p a:hover{
-	color: red;
+#content-foot ul li{
+	margin-top: 15px;
+}
+#content-foot ul li a{
+	color: rgb(19,160,178);
+}
+#content-foot ul li a:hover{
+	color: rgb(255,140,0);
 }

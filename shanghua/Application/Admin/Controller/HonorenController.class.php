@@ -10,9 +10,16 @@ class HonorenController extends Controller {
     }
      public function listsen(){
     	$honorenModel = D("honoren");
-		$honoren = $honorenModel->select();
-		$this->assign('honoren',$honoren);
-		$this->display();  
+        $cut=8;
+        $currentPage = I("get.p");
+        $offset = ($currentPage-1) * $cut;
+        $honoren=$honorenModel->where()->limit("$offset,$cut")->select();
+        $this->assign("honoren",$honoren);
+        $count = $honorenModel->count();
+        $Page = new \Think\Page($count, $cut);
+        $show = $Page->show();
+        $this->assign("page", $show);
+        $this->display();  
     }
     public function adden(){
 
@@ -39,7 +46,8 @@ class HonorenController extends Controller {
 		    	
 		        $data['thumb']=$info['thumb']['savepath'].$info['thumb']['savename'];
 		    	if($honorenModel->add($data)){
-		    		$this->success('数据添加成功','listsen');
+		    		//$this->success('数据添加成功','listsen?p=1');
+		    		 $this->redirect('listsen?p=1',0);
 
 		    }else{
 		    	$this->showError('数据添加失败');
@@ -53,13 +61,15 @@ class HonorenController extends Controller {
                 foreach($id as $value){
                     D("honoren")->delete($value);
                 }  
-                $this->success("批量删除成功！",U("listsen"));
+               // $this->success("批量删除成功！",U("listsen?p=1"));
+                 $this->redirect('listsen?p=1',0);
             } 
         	//单个删除
         	else{
             	$honorenModel = D("honoren");
              	if($honorenModel->where("id=$id")->delete()){
-                    $this->success("删除成功",U("Honoren/listsen"));
+                   // $this->success("删除成功",U("Honoren/listsen?p=1"));
+             		 $this->redirect('listsen?p=1',0);
                 }
                 else{
                     $this->error($honorenModel->geterror());
@@ -95,7 +105,8 @@ class HonorenController extends Controller {
 		    	
 		        $data['thumb']=$info['thumb']['savepath'].$info['thumb']['savename'];
 		    	if($honorenModel->save($data)){
-		    		$this->success('数据修改成功','listsen');
+//this->success('数据修改成功','listsen?p=1');
+		    		 $this->redirect('listsen?p=1',0);
 
 		    }else{
 		    	$this->showError('数据修改失败');

@@ -1,40 +1,24 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html>
-<head>
-  <title>设计软件</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <link href="__PUBLIC__/home/css/nav.css" type="text/css" rel="stylesheet" />
-  <link href="__PUBLIC__/home/css/theme-style.css" rel='stylesheet' type='text/css' />
-  <link href="__PUBLIC__/home/css/bootstrap.css" rel='stylesheet' type='text/css' />
-  <script src="__PUBLIC__/home/js/jquery.min.js"></script>
-  <link href="__PUBLIC__/home/css/zzsc.css" type="text/css" rel="stylesheet" />
-  <script src="__PUBLIC__/home/js/zzsc.js"></script>
-  <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-  <script type="text/javascript">
+  <head>
+    <meta charset="UTF-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>设计</title>
+    <link href="__PUBLIC__/home/css/nav.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/set1.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/set2.css" />
+    <link href="__PUBLIC__/home/css/touch.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="__PUBLIC__/home/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript">
     var img = '__PUBLIC__/home/images/weixin.jpg';
   </script>
-  <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-    </script>
-  <link rel="stylesheet" href="__PUBLIC__/home/fonts/css/font-awesome.min.css">
-  <script>
-      $(function() {
-        var pull    = $('#pull');
-          menu    = $('nav ul');
-          menuHeight  = menu.height();
-        $(pull).on('click', function(e) {
-          e.preventDefault();
-          menu.slideToggle();
-        });
-        $(window).resize(function(){
-              var w = $(window).width();
-              if(w > 320 && menu.is(':hidden')) {
-                menu.removeAttr('style');
-              }
-          });
-      });
-    </script>
-<body>
-  <div id="nav-header">
+    <script type="text/javascript" src="__PUBLIC__/home/js/touch.js"></script>
+  </head>
+  <body style="background-color:rgb(249,249,249);">
+
+    <div id="nav-header">
     <div id="img">
        <img src="__PUBLIC__/home/images/logo.jpg" height="50px">
     </div>
@@ -51,7 +35,7 @@
                 <li><a href="{:U('Honor/jianjie')}">公司简介</a></li>
                 <li><a href="{:U('Honor/wenhua')}">公司文化</a></li>
                 <li><a href="{:U('Honor/rongyu')}">公司荣誉</a></li>
-                <li><a href="{:U('Job/join1')}">加入我们</a></li>
+                <li><a href="{:U('Job/join?p=1')}">加入我们</a></li>
               </ul>
             </li>
         </ul>
@@ -96,7 +80,7 @@
             <li><a href="{:U('Apply/apply')}">在线咨询</a>
                <ul>
                 <li><a href="{:U('Apply/apply')}">申请试用</a></li>
-                <li><a href="{:U('Apply/suggest')}">咨询或建议</a></li>
+                <li><a href="{:U('Advice/suggest')}">咨询或建议</a></li>
                </ul>
             </li>
         </ul>
@@ -108,110 +92,61 @@
     </div>
     </div>
     <div id="nav-right">
-      <p><a href="{:U('Product/intergrade')}">中文&nbsp;</a>|<a href="{:U('Product/intergradee')}">&nbsp;English</a></p>
+      <p><a href="{:U('product/intergrade')}">中文&nbsp;</a>|<a href="{:U('product/intergradee')}">&nbsp;English</a></p>
     </div>
   </div>
-  <div id="nav-banner">
-    <img src="__PUBLIC__/home/images/b5.png">
+  <div id="nav-banner" style="margin-top:-5px;">
+    <img src="__PUBLIC__/home/images/intergrade.jpg">
   </div>
   <div id="bread">
-    <div id="bread-left">设计软件</div>
-     <div id="bread-right"><a href="{:U('Index/index')}">首页&nbsp;</a>>><a href="{:U('Product/product')}">&nbsp;产品服务&nbsp;</a>>>&nbsp;设计软件</div>
+    <div id="bread-left">产品服务</div>
+      <div id="bread-right"><a href="__MODULE__/Index/index">首页&nbsp;</a><span style="color:black;">>></span><a href="__MODULE__/Product/product">&nbsp;产品服务&nbsp;</a><span style="color:black;">>></span>&nbsp;<span style="color:#3c3c3c;">设计软件</span></div>
   </div>
-     <div id="blog" class="blog">
-      <div class="container">
-        <volist name="product" id="vo" offset="45" length="1">
-            <h2>{$vo.title}</h2>
+    <div class="container">
+      <div class="content">
+        <volist name="product" id="vo" offset="37" length="1">
+        <h2 style="text-align:center;color:#3c3c3c">设计软件</h2>
         </volist>
-        <label> </label>
-        <div class="blog-grids">
-          <div class="col-md-4 blog-grid-row frist-row">
-          <volist name="product" id="vo" offset="46" length="1">
-            <a class="post-pic"><img src='__PUBLIC__/{$vo.thumb}' title="pic-name" /></a>
-            <div class="artical-info">
-              <div class="post-head">
-                <div class="post-head-left">
-                  <h4><a>总体介绍：</a></h4>
-                  <p class="author">By <a> Shanghua</a></p>
-                </div>
-                <!-- <div class="post-head-right">
-                  <span>17</span><label>December 2016</label>
-                </div> -->
-                <div class="clearfix"> </div>
-              </div>
-              <p class="post-text">
-              {$vo.content}
-              </p>
-              <div class="post-bottom">
-                <div class="post-bottom-left">
-                  
-                </div>
-                <div class="post-bottom-right">
-                  产品星级：<i class="fa fa-star"> </i><i class="fa fa-star"> </i><i class="fa fa-star"> </i></i><i class="fa fa-star"> </i>
-                </div>
-                <div class="clearfix"> </div>
-              </div>
-            </div>
-            </volist>
-          </div>
-          <div class="col-md-4 artical-row2">
-          <!--  -->
-          <volist name="product" id="vo" offset="47" length="2">
-                  <div class="artical-info">
-              <div class="post-head post-head1">
-                <div class="post-head-left">
-                  <h4><a>{$vo.title}</a></h4>
-                  <p class="author">By <a> Shanghua</a></p>
-                </div>
-                
-                <div class="clearfix"> </div>
-              </div>
-              <p class="post-text"> {$vo.content}</p>
-              <div class="post-bottom">
-                <div class="post-bottom-left">    
-                </div>
-                <div class="post-bottom-right">
-                 特点星级：<i class="fa fa-star"> </i><i class="fa fa-star"> </i><i class="fa fa-star"> </i>
-                </div>
-                <div class="clearfix"> </div>
-              </div>
-            </div>
-          </volist>
-          <!--  -->
-          </div>
-          <!-- 2 -->
-          <div class="col-md-4 artical-row2">
-          <!--  -->
-          <volist name="product" id="vo" offset="49" length="2">
-                  <div class="artical-info">
-              <div class="post-head post-head1">
-                <div class="post-head-left">
-                  <h4><a>{$vo.title}</a></h4>
-                  <p class="author">By <a> Shanghua</a></p>
-                </div>
-                
-                <div class="clearfix"> </div>
-              </div>
-              <p class="post-text"> {$vo.content}</p>
-              <div class="post-bottom">
-                <div class="post-bottom-left">    
-                </div>
-                <div class="post-bottom-right">
-                 特点星级：<i class="fa fa-star"> </i><i class="fa fa-star"> </i><i class="fa fa-star"> </i>
-                </div>
-                <div class="clearfix"> </div>
-              </div>
-            </div>
-          </volist>
-          <!--  -->
-          </div>
-          <!-- 2 -->
-         
+        <div class="grid"style="padding-top:60px">
+          <figure class="effect-layla">
+            <img src="__PUBLIC__/home/images/intergrade.jpg"/>
+            <figcaption>
+              <h2><span>总体介绍</span></h2>
+              <p>针对综合管廊（Utility tunnel）建设规划设计复杂、施工难度大、运营管理及后期维护信息量大等困难，结合国内设计、施工、运维现状。</p>
+            </figcaption>     
+          </figure>   
+          </figure>
+          <figure class="effect-romeo">
+            <img src="__PUBLIC__/home/images/intergrade4.jpg" width="100%" height="100%" />
+            <figcaption>
+              <h2> <span>设计特点</span></h2>
+              <p>实现综合管廊工程进行方案、施工图设计；
+                    给水、雨水、污水、再生水、天然气、热力、电力、通信等工程管线在管廊中的设计；雨水管道综合管廊敷设设计；雨水、污水等入水口设计，纵断面图等。
+</p>
+            </figcaption>     
+          </figure>
+        </div>
+        <div class="grid">
+          
+          <figure class="effect-jazz">
+            <img src="__PUBLIC__/home/images/intergrade2.jpg" width="100%" height="100%"/>
+            <figcaption>
+              <h2><span>功能特点</span></h2>
+              <p>通过调研国内外管廊设计师使用AutoCAD比较普遍，而AutoCAD专业功能又不强的特点，专为设计师二次开发的软件。
+</p>
+            </figcaption>     
+          </figure>
+          <figure class="effect-ming">
+            <img src="__PUBLIC__/home/images/intergrade1.jpg" width="100%" height="100%"/>
+            <figcaption>
+              <h2> <span>具体应用</span></h2>
+              <p>上华软件立足于工程建设信息化领域，重点推进城市地下综合管廊建设建设（地下“高速公路”），针对地下管廊建设规划设计复杂、施工难度大、运营管理及后期维护信息量大等困难，结合国内设计。</p>
+            </figcaption>     
+          </figure>
+        </div>
       </div>
-    </div>
-
-
-   <div id="footer">
+    </div><!-- /container -->
+    <div id="footer">
     <div class="footer-top">
       <h5>关于上华</h5>
       <hr class="footer-hr">
@@ -221,11 +156,11 @@
         <ul>
           <li style="list-style-type:none"><h5>行业链接</h5></li>
           <hr class="footer-hr">
-          <li><a href="#">中国市政工程行业协会</a></li>
-          <li><a href="#">中国勘察设计</a></li>
-          <li><a href="#">上海规划局</a></li>
-          <li><a href="#">中国BIM门户</a></li>
-          <li><a href="#">中国市政工程行业协会</a></li>
+          <li><a href="http://www.chszxh.org/">中国市政工程行业协会</a></li>
+          <li><a href="http://www.chinaeda.org/">中国勘察设计</a></li>
+          <li><a href="http://www.supec.org/">上海规划局</a></li>
+          <li><a href="http://www.chinabim.com/">中国BIM门户</a></li>
+          <li><a href="http://www.planning.org.cn/">中国城市规划学会</a></li>
         </ul>
     </div>
     <div class="footer-top3">
@@ -243,21 +178,21 @@
         <ul>
           <li><h5>产品展示</h5></li>
           <hr class="footer-hr">
-          <li class="footer-img"><img src="__PUBLIC__/home/images/1.jpg" width="50px" height="50px"></li>
-          <li class="footer-img"><img src="__PUBLIC__/home/images/3.jpg" width="50px" height="50px"></li>
-          <li class="footer-img"><img src="__PUBLIC__/home/images/4.jpg" width="50px" height="50px"></li>
+          <li class="footer-img"><a href="{:U('Product/fengli')}"><img src="__PUBLIC__/home/images/1.jpg" width="50px" height="50px"></a></li>
+          <li class="footer-img"><a href="{:U('Product/gongyi')}"><img src="__PUBLIC__/home/images/3.jpg" width="50px" height="50px"></a></li>
+          <li class="footer-img"><a href="{:U('Product/intergrade')}"><img src="__PUBLIC__/home/images/4.jpg" width="50px" height="50px"></a></li>
         </ul>
-        <ul   class="footer-imgss">
-          <li class="footer-img"><img src="__PUBLIC__/home/images/5.png" width="50px" height="50px"></li>
-          <li class="footer-img"><img src="__PUBLIC__/home/images/6.png" width="50px" height="50px"></li>
-          <li class="footer-img"><img src="__PUBLIC__/home/images/7.png" width="50px" height="50px"></li>
+        <ul class="footer-imgss">
+          <li class="footer-img"><a href="{:U('Product/operation')}"><img src="__PUBLIC__/home/images/5.png" width="50px" height="50px"></a></li>
+          <li class="footer-img"><a href="{:U('Product/zhushou')}"><img src="__PUBLIC__/home/images/6.png" width="50px" height="50px"></a></li>
+          <li class="footer-img"><a href="{:U('Product/lvse')}"><img src="__PUBLIC__/home/images/7.png" width="50px" height="50px"></a></li>
         </ul>
     </div>
     <div id="footer-bottom">
       <div id="footer-bottom1"><p><br/>
      本页面内容为网站演示数据，前台页面内容都可以在后台修改。</p></div>
     </div>
-    </div>
-    <div id="top"></div>
-</body>
+  </div>
+  <div id="top"></div>
+  </body>
 </html>

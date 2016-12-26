@@ -9,7 +9,6 @@
                 <div class="result-title">
                     <div class="result-list">
                         <a href="__MODULE__/Industry/add"><i class="icon-font"></i>新增资讯</a>
-                        <a id="updateOrd" href="javascript:void(0)"><i class="icon-font"></i>更新排序</a>
                     </div>
                 </div>
                 <div class="result-content">
@@ -20,7 +19,6 @@
                             <th width="20%">资讯标题</th>
                             <th width="20%">资讯内容</th>
                             <th width="15%">添加时间</th>
-                            <th width="10%">点击量</th>
                             <th width="12%">操作</th>
                         </tr>
                         <volist name="industry" id="data">
@@ -30,7 +28,6 @@
                             <td>{$data.title|msubstr=0,8,'utf-8',ture}</td>
                             <td>{$data.content|msubstr=0,8,'utf-8',ture}</td>
                             <td>{$data.time}</td>
-                            <td>{$data.click}</td>
                             <td>
                                 <a class="link-update" href="__MODULE__/Industry/edit/id/{$data.id}">修改</a>
                                 <a class="link-del" href="__MODULE__/Industry/delete/industryId/{$data.id}">删除</a>
@@ -42,7 +39,7 @@
 
                     <button type="submit" id="batchDel" class="btn btn-danger " href="__MODULE__/Industry/delete">批量删除</button> 
                      </div>
-                    <div class="list-page"> 2 条 1/1 页</div>
+                    <div class="list-page">  {$page}</div>
                 </div>
             </form>
         </div>

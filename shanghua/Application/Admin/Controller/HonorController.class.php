@@ -39,7 +39,8 @@ class HonorController extends Controller {
 		    	
 		        $data['thumb']=$info['thumb']['savepath'].$info['thumb']['savename'];
 		    	if($honorModel->add($data)){
-		    		$this->success('数据添加成功','lists');
+		    		//$this->success('数据添加成功','lists?p=1');
+		    		$this->redirect('lists?p=1',0);
 
 		    }else{
 		    	$this->showError('数据添加失败');
@@ -53,13 +54,15 @@ class HonorController extends Controller {
                 foreach($id as $value){
                     D("honor")->delete($value);
                 }  
-                $this->success("批量删除成功！",U("lists"));
+                //$this->success("批量删除成功！",U("lists?p=1"));
+                $this->redirect('lists?p=1',0);
             } 
         	//单个删除
         	else{
             	$honorModel = D("honor");
              	if($honorModel->where("id=$id")->delete()){
-                    $this->success("删除成功",U("Honor/lists"));
+                    //$this->success("删除成功",U("Honor/lists?p=1"));
+                    $this->redirect('lists?p=1',0);
                 }
                 else{
                     $this->error($honorModel->geterror());
@@ -95,7 +98,8 @@ class HonorController extends Controller {
 		    	
 		        $data['thumb']=$info['thumb']['savepath'].$info['thumb']['savename'];
 		    	if($honorModel->save($data)){
-		    		$this->success('数据修改成功','lists');
+		    		//$this->success('数据修改成功','lists?p=1');
+		    		$this->redirect('lists?p=1',0);
 
 		    }else{
 		    	$this->showError('数据修改失败');

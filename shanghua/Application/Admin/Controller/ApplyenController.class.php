@@ -31,14 +31,14 @@ class ApplyenController extends Controller {
                 D("applyen")->delete($value);
             }  
            // $this->success("批量删除成功！",U("listsen?p=1"));
-            $this->redirect('lists?p=1',0);
+           $this->redirect('listsen?p=1',0);
         } 
         //单个删除
         else{
             $applyenModel = D("applyen");
             if($applyenModel->where("id=$id")->delete()){
                // $this->success("删除成功",U("Applyen/listsen?p=1"));
-                $this->redirect('lists?p=1',0);
+                $this->redirect('listsen?p=1',0);
             }
             else{
                 $this->error($applyenModel->geterror());

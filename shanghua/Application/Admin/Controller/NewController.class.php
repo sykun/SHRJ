@@ -10,9 +10,16 @@ class NewController extends Controller {
     }
 	    public function lists(){
 	    	$newsModel = D("news");
-	        $news = $newsModel->select();
-	        $this->assign('news',$news);
-			$this->display();  
+	        $cut=8;
+	        $currentPage = I("get.p");
+	        $offset = ($currentPage-1) * $cut;
+	        $news=$newsModel->where()->limit("$offset,$cut")->order('time desc')->select();
+	        $this->assign("news",$news);
+	        $count = $newsModel->count();
+	        $Page = new \Think\Page($count, $cut);
+	        $show = $Page->show();
+	        $this->assign("page", $show);
+	    	$this->display();  
 	    }
 	    public function get_time(){
         	return date("Y-m-d");
@@ -42,7 +49,8 @@ class NewController extends Controller {
 		    	
 		        $data['thumb']=$info['thumb']['savepath'].$info['thumb']['savename'];
 		    	if($newsModel->add($data)){
-		    		$this->success('数据添加成功','lists');
+		    		//$this->success('数据添加成功','lists?p=1');
+		    		$this->redirect('lists?p=1',0);
 
 		    }else{
 		    	$this->showError('数据添加失败');
@@ -56,13 +64,15 @@ class NewController extends Controller {
                 foreach($id as $value){
                     D("News")->delete($value);
                 }  
-                $this->success("批量删除成功！",U("lists"));
+               // $this->success("批量删除成功！",U("lists?p=1"));
+                $this->redirect('lists?p=1',0);
             } 
              //单个删除
             else{
                 $newsModel = D("News");
                 if($newsModel->where("id=$id")->delete()){
-                    $this->success("删除成功",U("New/lists"));
+                    //$this->success("删除成功",U("New/lists?p=1"));
+                    $this->redirect('lists?p=1',0);
                 }
                 else{
                     $this->error($newsModel->geterror());
@@ -100,10 +110,12 @@ class NewController extends Controller {
 		    	
 		        $data['thumb']=$info['thumb']['savepath'].$info['thumb']['savename'];
 		    	if($newsModel->save($data)){
-		    		$this->success('数据修改成功','lists');
+		    		//$this->success('数据修改成功','lists?p=1');
+		    		$this->redirect('lists?p=1',0);
 
 		    }else{
 		    	$this->showError('数据修改失败');
+
 		    	}
 		    }
 

@@ -20,9 +20,10 @@
         </div>
         <div class="top-info-wrap">
             <ul class="top-info-list clearfix">
-                <li><a href="/shanghua/index.php/Admin/Index/index" class="top-a">后台首页</a></li>
+                <li><a href="<?php echo U('Index/index');?>" class="top-a">后台首页</a></li>
                 <li><a href="<?php echo U('Home/Index/index');?>" class="top-a">前台首页</a></li>
-                <li><a href="/shanghua/index.php/Admin/Index/loginout" class="top-a">退出</a></li>
+                <li><a href="<?php echo U('Admin/Indexen/index');?>" class="top-a">英文版</a></li>
+                <li><a href="<?php echo U('Index/loginout');?>" class="top-a">退出</a></li>
             </ul>
         </div>
     </div>
@@ -32,55 +33,55 @@
     <aside class="accordion" style="float:left">
         <h1><i class="icon-font">&#xe051;</i>账户管理</h1>
         <div class="opened-for-codepen">
-            <h2><a href="/shanghua/index.php/Admin/Users/lists"><i class="icon-font">&#xe050;</i>用户管理</a></h2>
-            <h2><a href="/shanghua/index.php/Admin/Users/add"><i class="icon-font">&#xe026;</i>添加用户</a></h2>
-            <h2><a href="/shanghua/index.php/Admin/Users/pass"><i class="icon-font">&#xe051;</i>修改个人密码</a></h2>
+            <h2><a href="<?php echo U('Users/lists?p=1');?>"><i class="icon-font">&#xe050;</i>用户管理</a></h2>
+            <h2><a href="<?php echo U('Users/add');?>"><i class="icon-font">&#xe026;</i>添加用户</a></h2>
+            <h2><a href="<?php echo U('Users/pass');?>"><i class="icon-font">&#xe051;</i>修改个人密码</a></h2>
         </div>
 
         <h1><i class="icon-font">&#xe001;</i>新闻管理</h1>
         <div>
-            <h2><a href="/shanghua/index.php/Admin/New/lists"><i class="icon-font">&#xe050;</i>新闻列表</a></h2>
-            <h2><a href="/shanghua/index.php/Admin/New/add"><i class="icon-font">&#xe026;</i>添加新闻</a></h2>
+            <h2><a href="<?php echo U('New/lists?p=1');?>"><i class="icon-font">&#xe050;</i>新闻列表</a></h2>
+            <h2><a href="<?php echo U('New/add');?>"><i class="icon-font">&#xe026;</i>添加新闻</a></h2>
         </div>
 
         <h1><i class="icon-font">&#xe005;</i>行业资讯</h1>
         <div>
-            <h2><a href="/shanghua/index.php/Admin/Industry/lists"><i class="icon-font">&#xe050;</i>咨询列表</a></h2>
-            <h2><a href="/shanghua/index.php/Admin/Industry/add"><i class="icon-font">&#xe026;</i>新增咨询</a></h2>
+            <h2><a href="<?php echo U('Industry/lists?p=1');?>"><i class="icon-font">&#xe050;</i>咨询列表</a></h2>
+            <h2><a href="<?php echo U('Industry/add');?>"><i class="icon-font">&#xe026;</i>新增咨询</a></h2>
         </div>
 
         <h1><i class="icon-font">&#xe018;</i>产品管理</h1>
         <div>
-            <h2><a href="/shanghua/index.php/Admin/Product/lists"><i class="icon-font">&#xe050;</i>产品列表</a></h2>
-            <h2><a href="/shanghua/index.php/Admin/Product/add"><i class="icon-font">&#xe026;</i>添加产品</a></h2>
+            <h2><a href="<?php echo U('Product/lists?p=1');?>"><i class="icon-font">&#xe050;</i>产品列表</a></h2>
+            <h2><a href="<?php echo U('Product/add');?>"><i class="icon-font">&#xe026;</i>添加产品</a></h2>
         </div>
 
         <h1><i class="icon-font">&#xe060;</i>成功案例</h1>
         <div>
-            <h2><a href="/shanghua/index.php/Admin/Case/lists"><i class="icon-font">&#xe050;</i>案列列表</a></h2>
-            <h2><a href="/shanghua/index.php/Admin/Case/add"><i class="icon-font">&#xe026;</i>新增案列</a></h2>
+            <h2><a href="<?php echo U('Case/lists?p=1');?>"><i class="icon-font">&#xe050;</i>案列列表</a></h2>
+            <h2><a href="<?php echo U('Case/add');?>"><i class="icon-font">&#xe026;</i>新增案列</a></h2>
         </div>
 
         <h1><i class="icon-font">&#xe002;</i>申请试用</h1>
         <div>
-            <h2><a href="/shanghua/index.php/Admin/Apply/lists"><i class="icon-font">&#xe050;</i>申请列表</a></h2>
+            <h2><a href="<?php echo U('Apply/lists?p=1');?>"><i class="icon-font">&#xe050;</i>申请列表</a></h2>
         </div>
 
         <h1><i class="icon-font">&#xe051;</i>荣誉管理</h1>
         <div>
-            <h2><a href="/shanghua/index.php/Admin/Honor/lists"><i class="icon-font">&#xe050;</i>荣誉列表</a></h2>
-            <h2><a href="/shanghua/index.php/Admin/Honor/add"><i class="icon-font">&#xe026;</i>新增荣誉</a></h2>
+            <h2><a href="<?php echo U('Honor/lists?p=1');?>"><i class="icon-font">&#xe050;</i>荣誉列表</a></h2>
+            <h2><a href="<?php echo U('Honor/add');?>"><i class="icon-font">&#xe026;</i>新增荣誉</a></h2>
         </div>
 
         <h1><i class="icon-font">&#xe003;</i>职位管理</h1>
         <div>
-            <h2><a href="/shanghua/index.php/Admin/Job/lists"><i class="icon-font">&#xe050;</i>职位列表</a></h2>
-            <h2><a href="/shanghua/index.php/Admin/Job/add"><i class="icon-font">&#xe026;</i>新增职位</a></h2>
+            <h2><a href="<?php echo U('Job/lists?p=1');?>"><i class="icon-font">&#xe050;</i>职位列表</a></h2>
+            <h2><a href="<?php echo U('Job/add');?>"><i class="icon-font">&#xe026;</i>新增职位</a></h2>
         </div>
 
         <h1><i class="icon-font">&#xe014;</i>咨询管理</h1>
         <div>
-            <h2><a href="/shanghua/index.php/Admin/Advice/lists"><i class="icon-font">&#xe050;</i>咨询列表</a></h2>
+            <h2><a href="<?php echo U('Advice/lists?p=1');?>"><i class="icon-font">&#xe050;</i>咨询列表</a></h2>
         </div>
     </aside>
 
@@ -98,65 +99,39 @@
             </div>
             <div class="result-content">
                 <div class="short-wrap">
-                    <ul>
-                        <li>
-                            <a href="/shanghua/index.php/Admin/New/lists"><i class="icon-font">&#xe048;</i>新闻列表</a>
-                            <a href="/shanghua/index.php/Admin/Prodect/lists"><i class="icon-font">&#xe048;</i>产品列表</a>
-                            <a href="/shanghua/index.php/Admin/Success/lists"><i class="icon-font">&#xe048;</i>成功案列</a>
-                            <a href="/shanghua/index.php/Admin/Apply/lists"><i class="icon-font">&#xe048;</i>申请试用</a>
-                        </li>
-                        <li class="index-top-lists">
-                            <a href="/shanghua/index.php/Admin/Honor/lists"><i class="icon-font">&#xe048;</i>荣誉列表</a>
-                            <a href="/shanghua/index.php/Admin/Job/lists"><i class="icon-font">&#xe048;</i>职位列表</a>
-                            <a href="/shanghua/index.php/Admin/Advice/lists"><i class="icon-font">&#xe048;</i>咨询列表</a>
-                        </li>
+                    <ul class="short-list">
+                        <li><div class="short-img"><img src="/shanghua/Public/admin/images/010.png" height="40px" width="50px"></div><div class="short-list1"><a href="<?php echo U('Users/lists?p=1');?>">用户管理</a></div></li>
+                        <li><div class="short-img"><img src="/shanghua/Public/admin/images/011.png" height="40px" width="50px"></div><div class="short-list1"><a href="<?php echo U('New/lists?p=1');?>">新闻列表</a></div></li>
+                        <li><div class="short-img"><img src="/shanghua/Public/admin/images/006.png" height="40px" width="50px"></div><div class="short-list1"><a href="<?php echo U('Industry/lists?p=1');?>">行业资讯</a></div></li>
+                    </ul>
+                    <ul class="short-list">
+                        <li><div class="short-img"><img src="/shanghua/Public/admin/images/008.png" height="40px" width="50px"></div><div class="short-list1"><a href="<?php echo U('Product/lists?p=1');?>">产品列表</a></div></li>
+                        <li><div class="short-img"><img src="/shanghua/Public/admin/images/001.png" height="40px" width="50px"></div><div class="short-list1"><a href="<?php echo U('Case/lists?p=1');?>">成功案例</a></div></li>
+                        <li><div class="short-img"><img src="/shanghua/Public/admin/images/012.png" height="40px" width="50px"></div><div class="short-list1"><a href="<?php echo U('Apply/lists?p=1');?>">申请试用</a></div></li>
+                    </ul>
+                    <ul class="short-list">
+                        <li><div class="short-img"><img src="/shanghua/Public/admin/images/003.png" height="40px" width="50px"></div><div class="short-list1"><a href="<?php echo U('Honor/lists?p=1');?>">荣誉列表</a></div></li>
+                        <li><div class="short-img"><img src="/shanghua/Public/admin/images/013.png" height="40px" width="50px"></div><div class="short-list1"><a href="<?php echo U('Job/lists?p=1');?>">职位列表</a></div></li>
+                        <li><div class="short-img"><img src="/shanghua/Public/admin/images/005.png" height="40px" width="50px"></div><div class="short-list1"><a href="<?php echo U('Advice/lists?p=1');?>">咨询列表</a></div></li>
                     </ul>
                 </div>
             </div>
         </div>
-        <!-- <div class="result-wrap">
-            <div class="result-title">
-                <h1>客房状况</h1>
-            </div>
-            <div class="result-content">
-                <ul class="sys-info-list">
-                    <li>
-                        <label class="res-lab">客房总数</label><span class="res-info">3089</span>
-                    </li>
-                    <li>
-                        <label class="res-lab">当前入住</label><span class="res-info">2388</span>
-                    </li>
-                    <li>
-                        <label class="res-lab">客房余量</label><span class="res-info">701</span>
-                    </li>
-                </ul>
-            </div>
-        </div> -->
         <div class="result-wrap">
             <div class="result-title">
-                <h1>系统基本信息</h1>
+                <h1>简介</h1>
             </div>
-            <div class="result-content">
-                <ul class="sys-info-list">
-                    <li>
-                        <label class="res-lab">操作系统</label><span class="res-info"><?php echo PHP_OS;?></span>
-                    </li>
-                    <li>
-                        <label class="res-lab">运行环境</label><span class="res-info">Apache/2.2.21(Win64)PHP/5.3.10</span>
-                    </li>
-                    <li>
-                        <label class="res-lab">上传附件限制</label><span class="res-info">2M</span>
-                    </li>
-                    <li>
-                        <label class="res-lab">北京时间</label><span class="res-info">2016-12-1</span>
-                    </li>
-                    <li>
-                        <label class="res-lab">服务器域名/IP</label><span class="res-info">localhost[127.0.0.1]</span>
-                    </li>
-                    <li>
-                        <label class="res-lab">Host</label><span class="res-info">127.0.0.1</span>
-                    </li>
-                </ul>
+            <div class="result-content1">
+                <h6>介绍</h6>
+                <p>北京上华软件有限公司是一家服务于勘察设计信息化发展领域的新型高科技信息化公司。</p>
+                <h6>主要产品</h6>
+                <p>各种软件</p>
+                <h6>地址</h6>
+                <p>北京市丰台区建华街道上华软件有限公司</p>
+                <h6>联系方式</h6>
+                <p>400-700-3609</p>
+                <h6>网址</h6>
+                <p>www.shanghua.com</p> 
             </div>
         </div>
         

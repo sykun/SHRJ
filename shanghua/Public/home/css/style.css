@@ -222,6 +222,7 @@ button i.fa {
 .activity-img {
 	width: 25%;
 	float: left;
+	height:100px;
 }
 
 .activity-desc {
@@ -230,6 +231,8 @@ button i.fa {
 }
 
 .activity-img img{
+	width:100%;
+	height:100%;
 	display: inline-block;
 }
 
@@ -1311,8 +1314,6 @@ button i.fa {
 		padding: 30px 5px;
 	}
 }
-
-
 
 
 

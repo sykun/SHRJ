@@ -14,7 +14,7 @@ class AdminController extends Controller {
             if($result>0){  //能查到数据，说明用户名密码正确
                 session("username",I("post.username"));
                 //$this->success("登录成功",U("Index/index"));
-                 $this->redirect('lists?p=1',0);
+                 $this->redirect('Index/index',0);
             }
             else{
                 $this->error("用户名或密码不正确");

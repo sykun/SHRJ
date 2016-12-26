@@ -10,11 +10,20 @@ class UsersController extends Controller {
     }
 
      public function lists(){
-    	$usersModel = D("adminUser");
-    	$users = $usersModel->select();
-    	$this->assign("users",$users);
+            $usersModel = D("adminUser");
+            $cut=8;
+            $currentPage = I("get.p");
+            $offset = ($currentPage-1) * $cut;
+            $users=$usersModel->where()->limit("$offset,$cut")->select();
+            $this->assign("users",$users);
 
-		$this->display();  
+            $count = $usersModel->count();
+            $Page = new \Think\Page($count, $cut);
+            $show = $Page->show();
+            $this->assign("page", $show);
+
+            $this->display(); 
+   
     }
     public function get_client_time(){
         return date("Y-m-d");
@@ -46,7 +55,8 @@ class UsersController extends Controller {
         }else{
             $usersModel->add();
             // 验证通过 可以进行其他数据操作
-            $this->success("新用户添加成功",U("lists"));
+           // $this->success("新用户添加成功",U("lists?p=1"));
+            $this->redirect('lists?p=1',0);
         }
     }
     public function delete() {
@@ -56,13 +66,15 @@ class UsersController extends Controller {
             foreach($id as $value){
                 D("adminUser")->delete($value);
             }  
-            $this->success("批量删除成功！",U("lists"));
+            //$this->success("批量删除成功！",U("lists?p=1"));
+            $this->redirect('lists?p=1',0);
         } 
         //单个删除
         else{
             $userModel = D("adminUser");
             if($userModel->where("id=$id")->delete()){
-                 $this->success("删除成功",U("Users/lists"));
+               //  $this->success("删除成功",U("Users/lists?p=1"));
+                $this->redirect('lists?p=1',0);
             }
             else{
                 $this->error($userModel->geterror());
@@ -83,10 +95,11 @@ class UsersController extends Controller {
         }
         $usersModel = D("adminUser");
         if ($usersModel->create() && $usersModel->save()) {
-            $this->success("修改成功!", U('Users/lists'));
+           // $this->success("修改成功!", U('Users/lists?p=1'));
+            $this->redirect('lists?p=1',0);
         }
         else {
-            // $this->error($usersModel->getError());
+             $this->error($usersModel->getError());
         }
     }
     public function pass() {
@@ -125,7 +138,8 @@ class UsersController extends Controller {
         }
 
         if ($usersModel->create() && $usersModel->save()) {
-            $this->success("修改成功!", U('Users/lists'));
+           // $this->success("修改成功!", U('Users/lists?p=1'));
+            $this->redirect('lists?p=1',0);
         }
         else {
             // $this->error($usersModel->getError());
@@ -149,7 +163,8 @@ class UsersController extends Controller {
         }
         $usersModel = D("adminUser");
         if ($usersModel->create() && $usersModel->save()) {
-            $this->success("修改成功!", U('Users/lists'));
+            //$this->success("修改成功!", U('Users/lists?p=1'));
+            $this->redirect('lists?p=1',0);
         }
         else {
             // $this->error($usersModel->getError());

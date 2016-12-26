@@ -20,9 +20,10 @@
         </div>
         <div class="top-info-wrap">
             <ul class="top-info-list clearfix">
-                <li><a href="/shanghua/index.php/Admin/Index/index" class="top-a">后台首页</a></li>
+                <li><a href="<?php echo U('Index/index');?>" class="top-a">后台首页</a></li>
                 <li><a href="<?php echo U('Home/Index/index');?>" class="top-a">前台首页</a></li>
-                <li><a href="/shanghua/index.php/Admin/Index/loginout" class="top-a">退出</a></li>
+                <li><a href="<?php echo U('Admin/Indexen/index');?>" class="top-a">英文版</a></li>
+                <li><a href="<?php echo U('Index/loginout');?>" class="top-a">退出</a></li>
             </ul>
         </div>
     </div>
@@ -32,55 +33,55 @@
     <aside class="accordion" style="float:left">
         <h1><i class="icon-font">&#xe051;</i>账户管理</h1>
         <div class="opened-for-codepen">
-            <h2><a href="/shanghua/index.php/Admin/Users/lists"><i class="icon-font">&#xe050;</i>用户管理</a></h2>
-            <h2><a href="/shanghua/index.php/Admin/Users/add"><i class="icon-font">&#xe026;</i>添加用户</a></h2>
-            <h2><a href="/shanghua/index.php/Admin/Users/pass"><i class="icon-font">&#xe051;</i>修改个人密码</a></h2>
+            <h2><a href="<?php echo U('Users/lists?p=1');?>"><i class="icon-font">&#xe050;</i>用户管理</a></h2>
+            <h2><a href="<?php echo U('Users/add');?>"><i class="icon-font">&#xe026;</i>添加用户</a></h2>
+            <h2><a href="<?php echo U('Users/pass');?>"><i class="icon-font">&#xe051;</i>修改个人密码</a></h2>
         </div>
 
         <h1><i class="icon-font">&#xe001;</i>新闻管理</h1>
         <div>
-            <h2><a href="/shanghua/index.php/Admin/New/lists"><i class="icon-font">&#xe050;</i>新闻列表</a></h2>
-            <h2><a href="/shanghua/index.php/Admin/New/add"><i class="icon-font">&#xe026;</i>添加新闻</a></h2>
+            <h2><a href="<?php echo U('New/lists?p=1');?>"><i class="icon-font">&#xe050;</i>新闻列表</a></h2>
+            <h2><a href="<?php echo U('New/add');?>"><i class="icon-font">&#xe026;</i>添加新闻</a></h2>
         </div>
 
         <h1><i class="icon-font">&#xe005;</i>行业资讯</h1>
         <div>
-            <h2><a href="/shanghua/index.php/Admin/Industry/lists"><i class="icon-font">&#xe050;</i>咨询列表</a></h2>
-            <h2><a href="/shanghua/index.php/Admin/Industry/add"><i class="icon-font">&#xe026;</i>新增咨询</a></h2>
+            <h2><a href="<?php echo U('Industry/lists?p=1');?>"><i class="icon-font">&#xe050;</i>咨询列表</a></h2>
+            <h2><a href="<?php echo U('Industry/add');?>"><i class="icon-font">&#xe026;</i>新增咨询</a></h2>
         </div>
 
         <h1><i class="icon-font">&#xe018;</i>产品管理</h1>
         <div>
-            <h2><a href="/shanghua/index.php/Admin/Product/lists"><i class="icon-font">&#xe050;</i>产品列表</a></h2>
-            <h2><a href="/shanghua/index.php/Admin/Product/add"><i class="icon-font">&#xe026;</i>添加产品</a></h2>
+            <h2><a href="<?php echo U('Product/lists?p=1');?>"><i class="icon-font">&#xe050;</i>产品列表</a></h2>
+            <h2><a href="<?php echo U('Product/add');?>"><i class="icon-font">&#xe026;</i>添加产品</a></h2>
         </div>
 
         <h1><i class="icon-font">&#xe060;</i>成功案例</h1>
         <div>
-            <h2><a href="/shanghua/index.php/Admin/Case/lists"><i class="icon-font">&#xe050;</i>案列列表</a></h2>
-            <h2><a href="/shanghua/index.php/Admin/Case/add"><i class="icon-font">&#xe026;</i>新增案列</a></h2>
+            <h2><a href="<?php echo U('Case/lists?p=1');?>"><i class="icon-font">&#xe050;</i>案列列表</a></h2>
+            <h2><a href="<?php echo U('Case/add');?>"><i class="icon-font">&#xe026;</i>新增案列</a></h2>
         </div>
 
         <h1><i class="icon-font">&#xe002;</i>申请试用</h1>
         <div>
-            <h2><a href="/shanghua/index.php/Admin/Apply/lists"><i class="icon-font">&#xe050;</i>申请列表</a></h2>
+            <h2><a href="<?php echo U('Apply/lists?p=1');?>"><i class="icon-font">&#xe050;</i>申请列表</a></h2>
         </div>
 
         <h1><i class="icon-font">&#xe051;</i>荣誉管理</h1>
         <div>
-            <h2><a href="/shanghua/index.php/Admin/Honor/lists"><i class="icon-font">&#xe050;</i>荣誉列表</a></h2>
-            <h2><a href="/shanghua/index.php/Admin/Honor/add"><i class="icon-font">&#xe026;</i>新增荣誉</a></h2>
+            <h2><a href="<?php echo U('Honor/lists?p=1');?>"><i class="icon-font">&#xe050;</i>荣誉列表</a></h2>
+            <h2><a href="<?php echo U('Honor/add');?>"><i class="icon-font">&#xe026;</i>新增荣誉</a></h2>
         </div>
 
         <h1><i class="icon-font">&#xe003;</i>职位管理</h1>
         <div>
-            <h2><a href="/shanghua/index.php/Admin/Job/lists"><i class="icon-font">&#xe050;</i>职位列表</a></h2>
-            <h2><a href="/shanghua/index.php/Admin/Job/add"><i class="icon-font">&#xe026;</i>新增职位</a></h2>
+            <h2><a href="<?php echo U('Job/lists?p=1');?>"><i class="icon-font">&#xe050;</i>职位列表</a></h2>
+            <h2><a href="<?php echo U('Job/add');?>"><i class="icon-font">&#xe026;</i>新增职位</a></h2>
         </div>
 
         <h1><i class="icon-font">&#xe014;</i>咨询管理</h1>
         <div>
-            <h2><a href="/shanghua/index.php/Admin/Advice/lists"><i class="icon-font">&#xe050;</i>咨询列表</a></h2>
+            <h2><a href="<?php echo U('Advice/lists?p=1');?>"><i class="icon-font">&#xe050;</i>咨询列表</a></h2>
         </div>
     </aside>
 
@@ -95,7 +96,6 @@
                 <div class="result-title">
                     <div class="result-list">
                         <a href="/shanghua/index.php/Admin/Honor/add"><i class="icon-font"></i>新增荣誉</a>
-                        <a id="updateOrd" href="javascript:void(0)"><i class="icon-font"></i>更新排序</a>
                     </div>
                 </div>
                 <div class="result-content">
@@ -120,7 +120,7 @@
 
                     <button type="submit" id="batchDel" class="btn btn-danger " href="/shanghua/index.php/Admin/Honor/delete">批量删除</button> 
                      </div>
-                    <div class="list-page"> 2 条 1/1 页</div>
+                    <div class="list-page">  <?php echo ($page); ?></div>
                 </div>
             </form>
         </div>

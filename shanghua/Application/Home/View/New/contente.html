@@ -6,6 +6,9 @@
   <link href="__PUBLIC__/home/css/new-content.css" type="text/css" rel="stylesheet" />
   <link href="__PUBLIC__/home/css/touch.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="__PUBLIC__/home/js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript">
+    var img = '__PUBLIC__/home/images/weixin.jpg';
+  </script>
   <script type="text/javascript" src="__PUBLIC__/home/js/touch.js"></script>
 </head>
 <body>
@@ -26,7 +29,7 @@
                 <li><a href="{:U('Honor/jianjiee')}">Profile</a></li>
                 <li><a href="{:U('Honor/wenhuae')}">Culture</a></li>
                 <li><a href="{:U('Honor/rongyue')}">Honor</a></li>
-                <li><a href="{:U('Job/join1e')}">Join&nbsp;Us</a></li>
+                <li><a href="{:U('Job/joine?p=1')}">Join&nbsp;Us</a></li>
               </ul>
             </li>
         </ul>
@@ -83,11 +86,11 @@
     </div>
     </div>
     <div id="nav-right">
-      <p><a href="{:U('New/companye?p=1')}">中文&nbsp;</a>|<a href="{:U('New/companye?p=1')}">&nbsp;English</a></p>
+      <p><a href="{:U('New/content?id=2')}">中文&nbsp;</a>|<a href="{:U('New/contente?id=2')}">&nbsp;English</a></p>
     </div>
   </div>
   <div id="nav-banner">
-    <img src="__PUBLIC__/home/images/z13.png">
+    <img src="__PUBLIC__/home/images/company-content.jpg">
   </div>
   <div id="bread">
     <div id="bread-left">News</div>
@@ -150,12 +153,14 @@
         <ul>
           <li><h5>Product</h5></li>
           <hr class="footer-hr">
-          <li class="footer-img"><img src="__PUBLIC__/home/images/1.jpg" width="50px" height="50px"></li>
-          <li class="footer-img"><img src="__PUBLIC__/home/images/3.jpg" width="50px" height="50px"></li>
-          <li class="footer-img"><img src="__PUBLIC__/home/images/4.jpg" width="50px" height="50px"></li>
-          <li class="footer-img"><img src="__PUBLIC__/home/images/5.png" width="50px" height="50px"></li>
-          <li class="footer-img"><img src="__PUBLIC__/home/images/6.png" width="50px" height="50px"></li>
-          <li class="footer-img"><img src="__PUBLIC__/home/images/7.png" width="50px" height="50px"></li>
+          <li class="footer-img"><a href="{:U('Product/fenglie')}"><img src="__PUBLIC__/home/images/1.jpg" width="50px" height="50px"></a></li>
+          <li class="footer-img"><a href="{:U('Product/gongyie')}"><img src="__PUBLIC__/home/images/3.jpg" width="50px" height="50px"></a></li>
+          <li class="footer-img"><a href="{:U('Product/intergradee')}"><img src="__PUBLIC__/home/images/4.jpg" width="50px" height="50px"></a></li>
+        </ul>
+        <ul class="footer-imgss">
+          <li class="footer-img"><a href="{:U('Product/operatione')}"><img src="__PUBLIC__/home/images/5.png" width="50px" height="50px"></a></li>
+          <li class="footer-img"><a href="{:U('Product/zhushoue')}"><img src="__PUBLIC__/home/images/6.png" width="50px" height="50px"></a></li>
+          <li class="footer-img"><a href="{:U('Product/lvsee')}"><img src="__PUBLIC__/home/images/7.png" width="50px" height="50px"></a></li>
         </ul>
     </div>
     </div>

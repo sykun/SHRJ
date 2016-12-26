@@ -89,11 +89,12 @@ a:hover{
 	margin-top: 20px;
 }
 #new-company-product ul li{
+	width: 31%;
 	list-style-type: none;
 	float:left;
 }
 #new-company-product ul li img{
-	width: 70px;
+	width: 100%;
 	height: 70px;
 	float: left;
 }
@@ -212,7 +213,7 @@ a:hover{
 	padding-top: 30px;
 }
 .new-company-article-time{
-	width: 75px;
+	width: 80px;
 	height: 100px;
 	border-width: 1px;
 	border-style:solid;
@@ -221,9 +222,11 @@ a:hover{
 	float: left;
 }
 .new-company-article-time p{
+
 	text-align:center;
 	font-family: "黑体";
-	font-size: 25px;
+	font-size: 16px;
+	margin-top: 20px;
 	font-weight: bolder;
 	color: rgb(19,160,178);
 }
@@ -233,7 +236,8 @@ a:hover{
 	margin-left: 26px;
 }
 .new-company-article-title h4{
-	padding-top: 30px;
+	/*background-color: red;*/
+	padding-top: 50px;
 	margin-left: 80px;
 }
 .new-company-article-title h4 a{
@@ -246,6 +250,7 @@ a:hover{
 }
 
 .new-company-article-title p{
+	/*background-color: red;*/
 	margin-top: 20px;
 	padding-left: 105px;
 	background:url(../images/calendar.png) no-repeat;
@@ -264,11 +269,13 @@ a:hover{
 	font-size: 14px;
 }
 .new-company-article-content p{
+
 	width:100%;
 	line-height:20px;
 	margin-top: 20px;
 }
 .new-company-btn{
+	/*background-color: red;*/
 	font-size:16px;
 	margin-top: 20px;
 	float: left;

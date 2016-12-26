@@ -6,6 +6,9 @@
   <link href="__PUBLIC__/home/css/consulting.css" type="text/css" rel="stylesheet" />
   <link href="__PUBLIC__/home/css/touch.css" type="text/css" rel="stylesheet" />
   <script type="text/javascript" src="__PUBLIC__/home/js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript">
+     var img="__PUBLIC__/home/images/weixin.jpg"
+  </script>
   <script type="text/javascript" src="__PUBLIC__/home/js/touch.js"></script>
 </head>
 <body>
@@ -17,89 +20,89 @@
     <div id="nav-center">
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Index/index">首页</a></li>
+            <li><a href="{:U('Index/index')}">首页</a></li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Honor/jianjie">关于上华</a>
+            <li><a href="{:U('Honor/jianjie')}">关于上华</a>
               <ul>
-                <li><a href="__MODULE__/Honor/jianjie">公司简介</a></li>
-                <li><a href="__MODULE__/Honor/wenhua">公司文化</a></li>
-                <li><a href="__MODULE__/Honor/rongyu">公司荣誉</a></li>
-                <li><a href="__MODULE__/Job/join1">加入我们</a></li>
+                <li><a href="{:U('Honor/jianjie')}">公司简介</a></li>
+                <li><a href="{:U('Honor/wenhua')}">公司文化</a></li>
+                <li><a href="{:U('Honor/rongyu')}">公司荣誉</a></li>
+                <li><a href="{:U('Job/join?p=1')}">加入我们</a></li>
               </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Product/product">产品服务</a>
+            <li><a href="{:U('Product/product')}">产品服务</a>
               <ul>
-                <li><a href="__MODULE__/Product/intergrade">设计软件</a></li>
-                <li><a href="__MODULE__/Product/operation">运维系统</a></li>
-                <li><a href="__MODULE__/Product/lvse">绿色建筑</a></li>
-                <li><a href="__MODULE__/Product/zhushou">DWGHelp</a></li>
-                <li><a href="__MODULE__/Product/zonghe">PDMS综合</a></li>
-                <li><a href="__MODULE__/Product/fengli">PDMS风力</a></li>
-                <li><a href="__MODULE__/Product/gongyi">工艺设计</a></li>
+                <li><a href="{:U('Product/intergrade')}">设计软件</a></li>
+                <li><a href="{:U('Product/operation')}">运维系统</a></li>
+                <li><a href="{:U('Product/lvse')}">绿色建筑</a></li>
+                <li><a href="{:U('Product/zhushou')}">DWGHelp</a></li>
+                <li><a href="{:U('Product/zonghe')}">PDMS综合</a></li>
+                <li><a href="{:U('Product/fengli')}">PDMS风力</a></li>
+                <li><a href="{:U('Product/gongyi')}">工艺设计</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/New/company">新闻中心</a>
+            <li><a href="{:U('New/company?p=1')}">新闻中心</a>
                <ul>
-                <li><a href="__MODULE__/New/company">公司新闻</a></li>
-                <li><a href="__MODULE__/Industry/industry">行业资讯</a></li> 
+                <li><a href="{:U('New/company?p=1')}">公司新闻</a></li>
+                <li><a href="{:U('Industry/industry?p=1')}">行业资讯</a></li> 
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Success/gl">成功案例</a>
+            <li><a href="{:U('Success/gl')}">成功案例</a>
                <ul>
-                <li><a href="__MODULE__/Success/gl">管廊</a></li>
-                <li><a href="__MODULE__/Success/VE">VE</a></li>
+                <li><a href="{:U('Success/gl')}">管廊</a></li>
+                <li><a href="{:U('Success/VE')}">VE</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Apply/apply">在线咨询</a>
+            <li><a href="{:U('Apply/apply')}">在线咨询</a>
                <ul>
-                <li><a href="__MODULE__/Apply/apply">申请试用</a></li>
-                <li><a href="__MODULE__/Advice/suggest">咨询或建议</a></li>
+                <li><a href="{:U('Apply/apply')}">申请试用</a></li>
+                <li><a href="{:U('Advice/suggest')}">咨询或建议</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="__MODULE__/Contact/contact">联系我们</a></li>
+            <li><a href="{:U('Contact/contact')}">联系我们</a></li>
         </ul>
     </div>
     </div>
     <div id="nav-right">
-      <p><a href="__MODULE__/Advice/suggest">中文&nbsp;</a>|<a href="__MODULE__/Advice/suggeste">&nbsp;English</a></p>
+      <p><a href="{:U('Apply/apply')}">中文&nbsp;</a>|<a href="{:U('Apply/applye')}">&nbsp;English</a></p>
     </div>
   </div>
   <div id="nav-banner" >
-    <img src="__PUBLIC__/home/images/b16.png">
+    <img src="__PUBLIC__/home/images/apply.jpg">
   </div>
 
   <div id="bread">
     <div id="bread-left">申请试用</div>
-      <div id="bread-right"><a href="__MODULE__/Index/index">首页&nbsp;</a>>><a href="__MODULE__/Apply/apply">&nbsp;在线咨询&nbsp;</a>>>&nbsp;申请试用</div>
+      <div id="bread-right"><a href="{:U('Index/index')}">首页&nbsp;</a>>><a href="{:U('Apply/apply')}">&nbsp;在线咨询&nbsp;</a>>>&nbsp;申请试用</div>
   </div>
   <div class="consulting-container">
       <div class="consulting-container-left">
             <div class="table">
 
-              <form><br/>
+              <form method="post" ><br/>
                 <h5>请完整填写以下信息，并提交申请,获得软件试用版</h5><br/>
                 <h5>您的姓名：</h5>
                 <input type="text" name="firstname" style="width:200px"><p>&nbsp;&nbsp;&nbsp;</p>
@@ -179,12 +182,12 @@
         <ul>
           <li><h5>产品展示</h5></li>
           <hr class="footer-hr">
-          <li class="footer-img"><img src="__PUBLIC__/home/images/1.jpg" width="50px" height="50px"></li>
-          <li class="footer-img"><img src="__PUBLIC__/home/images/3.jpg" width="50px" height="50px"></li>
-          <li class="footer-img"><img src="__PUBLIC__/home/images/4.jpg" width="50px" height="50px"></li>
-          <li class="footer-img"><img src="__PUBLIC__/home/images/5.png" width="50px" height="50px"></li>
-          <li class="footer-img"><img src="__PUBLIC__/home/images/6.png" width="50px" height="50px"></li>
-          <li class="footer-img"><img src="__PUBLIC__/home/images/7.png" width="50px" height="50px"></li>
+          <li class="footer-img"><a href="{:U('Product/fengli')}"><img src="__PUBLIC__/home/images/1.jpg" width="50px" height="50px"></a></li>
+          <li class="footer-img"><a href="{:U('Product/gongyi')}"><img src="__PUBLIC__/home/images/3.jpg" width="50px" height="50px"></a></li>
+          <li class="footer-img"><a href="{:U('Product/intergrade')}"><img src="__PUBLIC__/home/images/4.jpg" width="50px" height="50px"></a></li>
+          <li class="footer-img"><a href="{:U('Product/operation')}"><img src="__PUBLIC__/home/images/5.png" width="50px" height="50px"></a></li>
+          <li class="footer-img"><a href="{:U('Product/zhushou')}"><img src="__PUBLIC__/home/images/6.png" width="50px" height="50px"></a></li>
+          <li class="footer-img"><a href="{:U('Product/lvse')}"><img src="__PUBLIC__/home/images/7.png" width="50px" height="50px"></a></li>
         </ul>
     </div>
     </div>

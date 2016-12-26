@@ -10,9 +10,16 @@ class JobenController extends Controller {
     }
      public function listsen(){
     	$jobenModel = D("joben");
-		$joben = $jobenModel->select();
-		$this->assign('joben',$joben);
-		$this->display();  
+        $cut=8;
+        $currentPage = I("get.p");
+        $offset = ($currentPage-1) * $cut;
+        $joben=$jobenModel->where()->limit("$offset,$cut")->select();
+        $this->assign("joben",$joben);
+        $count = $jobenModel->count();
+        $Page = new \Think\Page($count, $cut);
+        $show = $Page->show();
+        $this->assign("page", $show);
+        $this->display(); 
     }
     public function get_time(){
     	return date("Y-m-d");
@@ -31,7 +38,8 @@ class JobenController extends Controller {
 	            $this->error($jobenModel->getError());          
 	        }
 	        if($jobenModel->add()){
-	            $this->success("添加成功",U("listsen"));
+	           // $this->success("添加成功",U("listsen?p=1"));
+                 $this->redirect('listsen?p=1',0);
 	        }
 	        else{
 	            $this->error("添加失败");
@@ -44,13 +52,15 @@ class JobenController extends Controller {
             foreach($id as $value){
                 D("joben")->delete($value);
             }  
-            $this->success("批量删除成功！",U("listsen"));
+           // $this->success("批量删除成功！",U("listsen?p=1"));
+             $this->redirect('listsen?p=1',0);
         } 
         //单个删除
         else{
             $jobenModel = D("joben");
             if($jobenModel->where("id=$id")->delete()){
-                $this->success("删除成功",U("Joben/listsen"));
+               // $this->success("删除成功",U("Joben/listsen?p=1"));
+               $this->redirect('listsen?p=1',0);
             }
             else{
                 $this->error($jobenModel->geterror());
@@ -76,10 +86,11 @@ class JobenController extends Controller {
 	        }
 	        $jobenModel = D("joben");
 	        if ($jobenModel->create() && $jobenModel->save()) {
-	            $this->success("修改成功!", U('Joben/listsen'));
+	          //  $this->success("修改成功!", U('Joben/listsen?p=1'));
+                 $this->redirect('listsen?p=1',0);
 	        }
 	        else {
-	            // $this->error($jobModel->getError());
+	             $this->error($jobModel->getError());
 	        }
     	}
     

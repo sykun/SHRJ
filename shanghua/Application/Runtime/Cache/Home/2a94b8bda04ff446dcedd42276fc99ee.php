@@ -5,6 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	 <link href="/shanghua/Public/home/css/nav.css" type="text/css" rel="stylesheet" />
+	 <script type="text/javascript">
+	 var img='/shanghua/Public/home/images/weixin.jpg';
+	 </script>
 	<meta name="keywords" content="">
 	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 	<link rel="stylesheet" href="/shanghua/Public/home/css/bootstrap.min.css"	type="text/css" media="all">
@@ -12,6 +15,9 @@
 	<script type="text/javascript" src="/shanghua/Public/home/js/jquery-2.1.4.min.js"></script>
 	<link href="/shanghua/Public/home/css/index-touch.css" type="text/css" rel="stylesheet" />
 	<script type="text/javascript" src="/shanghua/Public/home/js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript">
+    var img = '/shanghua/Public/home/images/weixin.jpg';
+  </script>
 	<script type="text/javascript" src="/shanghua/Public/home/js/touch.js"></script>
 </head>
 <body>
@@ -22,74 +28,74 @@
     <div id="nav-center">
     <div class="nav">
         <ul>
-            <li><a href="/shanghua/index.php/Home/Index/index">首页</a></li>
+            <li><a href="<?php echo U('Index/index');?>">首页</a></li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="/shanghua/index.php/Home/Honor/jianjie">关于上华</a>
+            <li><a href="<?php echo U('Honor/jianjie');?>">关于上华</a>
               <ul>
-                <li><a href="/shanghua/index.php/Home/Honor/jianjie">公司简介</a></li>
-                <li><a href="/shanghua/index.php/Home/Honor/wenhua">公司文化</a></li>
-                <li><a href="/shanghua/index.php/Home/Honor/rongyu">公司荣誉</a></li>
-                <li><a href="/shanghua/index.php/Home/Job/join1">加入我们</a></li>
+                <li><a href="<?php echo U('Honor/jianjie');?>">公司简介</a></li>
+                <li><a href="<?php echo U('Honor/wenhua');?>">公司文化</a></li>
+                <li><a href="<?php echo U('Honor/rongyu');?>">公司荣誉</a></li>
+                <li><a href="<?php echo U('Job/join?p=1');?>">加入我们</a></li>
               </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="/shanghua/index.php/Home/Product/product">产品服务</a>
+            <li><a href="<?php echo U('Product/product');?>">产品服务</a>
               <ul>
-                <li><a href="/shanghua/index.php/Home/Product/intergrade">设计软件</a></li>
-                <li><a href="/shanghua/index.php/Home/Product/operation">运维系统</a></li>
-                <li><a href="/shanghua/index.php/Home/Product/lvse">绿色建筑</a></li>
-                <li><a href="/shanghua/index.php/Home/Product/zhushou">DWGHelp</a></li>
-                <li><a href="/shanghua/index.php/Home/Product/zonghe">PDMS综合</a></li>
-                <li><a href="/shanghua/index.php/Home/Product/fengli">PDMS风力</a></li>
-                <li><a href="/shanghua/index.php/Home/Product/gongyi">工艺设计</a></li>
+                <li><a href="<?php echo U('Product/intergrade');?>">设计软件</a></li>
+                <li><a href="<?php echo U('Product/operation');?>">运维系统</a></li>
+                <li><a href="<?php echo U('Product/lvse');?>">绿色建筑</a></li>
+                <li><a href="<?php echo U('Product/zhushou');?>">DWGHelp</a></li>
+                <li><a href="<?php echo U('Product/zonghe');?>">PDMS综合</a></li>
+                <li><a href="<?php echo U('Product/fengli');?>">PDMS风力</a></li>
+                <li><a href="<?php echo U('Product/gongyi');?>">工艺设计</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="/shanghua/index.php/Home/New/company">新闻中心</a>
+            <li><a href="<?php echo U('New/company?p=1');?>">新闻中心</a>
                <ul>
-                <li><a href="/shanghua/index.php/Home/New/company">公司新闻</a></li>
-                <li><a href="/shanghua/index.php/Home/Industry/industry">行业资讯</a></li> 
+                <li><a href="<?php echo U('New/company?p=1');?>">公司新闻</a></li>
+                <li><a href="<?php echo U('Industry/industry?p=1');?>">行业资讯</a></li> 
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="/shanghua/index.php/Home/Success/gl">成功案例</a>
+            <li><a href="<?php echo U('Success/gl');?>">成功案例</a>
                <ul>
-                <li><a href="/shanghua/index.php/Home/Success/gl">管廊</a></li>
-                <li><a href="/shanghua/index.php/Home/Success/VE">VE</a></li>
+                <li><a href="<?php echo U('Success/gl');?>">管廊</a></li>
+                <li><a href="<?php echo U('Success/VE');?>">VE</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="/shanghua/index.php/Home/Apply/apply">在线咨询</a>
+            <li><a href="<?php echo U('Apply/apply');?>">在线咨询</a>
                <ul>
-                <li><a href="/shanghua/index.php/Home/Apply/apply">申请试用</a></li>
-                <li><a href="/shanghua/index.php/Home/Advice/suggest">咨询或建议</a></li>
+                <li><a href="<?php echo U('Apply/apply');?>">申请试用</a></li>
+                <li><a href="<?php echo U('Apply/suggest');?>">咨询或建议</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="/shanghua/index.php/Home/Contact/contact">联系我们</a></li>
+            <li><a href="<?php echo U('Contact/contact');?>">联系我们</a></li>
         </ul>
     </div>
     </div>
     <div id="nav-right">
-      <p><a href="/shanghua/index.php/Home/Index/index">中文&nbsp;</a>|<a href="/shanghua/index.php/Home/Index/indexe">&nbsp;English</a></p>
+      <p><a href="<?php echo U('Index/index');?>">中文&nbsp;</a>|<a href="<?php echo U('Index/indexe');?>">&nbsp;English</a></p>
     </div>
     
    </div>
@@ -144,7 +150,7 @@
 						<div class="details-grid-info-w3lsagile"><h4>公司文化</h4>
 							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司秉承“用先进的技术给客户完美的体验，用一流的服务给客户温暖的感受”为理念,将技术应用于各个领域，主要包括各大高校，企业等等，其中知名的有北京大学.....</p>
 						</div>
-						<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">更多<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+						<button class="btn btn-primary" data-toggle="modal" data-target="#myModal"><a href="<?php echo U('Honor/wenhua');?> " style="color:black;">更多</a><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
 						<div class="clearfix"></div>
 					</div>
 				</div>
@@ -157,7 +163,7 @@
 							<h4>产品及服务</h4>
 							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司拥有自主研发产品5种，涉及市政、民用建筑、-电力、铁路、轨道交通、核工业、石油，主要软件包括基于三维BIM技术的地下管廊设计软件，管廊运维Sh-Uto等等.....</p>
 						</div>
-						<button class="btn btn-primary" data-toggle="modal" data-target="#myModal2">更多<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+						<button class="btn btn-primary" data-toggle="modal" data-target="#myModal2"><a href="<?php echo U('Product/product');?>" style="color:black;">更多</a><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
 						<div class="clearfix"></div>
 					</div>
 				</div>
@@ -170,107 +176,32 @@
 							<h4>申请使用</h4>
 							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如果您对我们的软件感兴趣，欢迎申请我们软件的试用版，请填好相关试用信息，方便我们为您选择最佳软件，我们的软件主要涉及智慧管廊设计，管廊运维，绿色建筑.....</p>
 						</div>
-						<button class="btn btn-primary" data-toggle="modal" data-target="#myModal3">更多<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+						<button class="btn btn-primary" data-toggle="modal" data-target="#myModal3"><a href="<?php echo U('Apply/apply');?>" style="color:black;">更多</a><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
 						<div class="clearfix"></div>
 					</div>
 				</div>
 				<div class="clearfix"></div>
 			</div>
-			<div class="tooltip-content">
-				<div class="modal fade details-modal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
-					<div class="modal-dialog modal-lg" >
-						<div class="modal-content" style="margin-top:120px;">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-								<h4 class="modal-title">LOREM IPSUM</h4>
-							</div>
-							<div class="modal-body">
-								<img src="/shanghua/Public/home/images/detail-1.jpg" alt="W3layouts Agileits">
-								<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="modal fade details-modal" id="myModal2" tabindex="-1" role="dialog" aria-hidden="true">
-					<div class="modal-dialog modal-lg">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-								<h4 class="modal-title">LOREM IPSUM</h4>
-							</div>
-							<div class="modal-body">
-								<img src="/shanghua/Public/home/images/detail-2.jpg" alt="W3layouts Agileits">
-								<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="modal fade details-modal" id="myModal3" tabindex="-1" role="dialog" aria-hidden="true">
-					<div class="modal-dialog modal-lg">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-								<h4 class="modal-title">LOREM IPSUM</h4>
-							</div>
-							<div class="modal-body">
-								<img src="/shanghua/Public/home/images/detail-3.jpg" alt="W3layouts Agileits">
-								<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
 			</div>
-			
-		</div>
+				
 	</div>
 
 	<div class="display-w3lsagile" id="display" style="margin-top:120px;">
 		<div class="col-md-5 col-sm-5 display-grid-w3lsagile display-grid-1-w3lsagile">
 			<div class="activity_box agileits w3layouts">
 				<h3>新闻中心</h3>
-				<div class="scrollbar agileits w3layouts" id="style-2">
-					<div class="activity-row agileits w3layouts">
-						<div class="activity-img agileits w3layouts"><img src='/shanghua/Public/home/images/new-1.jpg' alt="W3layouts Agileits"></div>
+				<div class="scrollbar agileits w3layouts">
+				<?php if(is_array($news)): $i = 0; $__LIST__ = $news;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="activity-row agileits w3layouts">
+						<div class="activity-img agileits w3layouts"><img src='/shanghua/Public/<?php echo ($vo["thumb"]); ?>'></div>
 						<div class="activity-desc agileits w3layouts">
 							
-							<p><a href="/shanghua/index.php/Home/New/c1" style="color: #777;">全国优秀工程勘察设计计算机软件奖申报
-							</a></p>
+							<p><a href="/shanghua/index.php/Home/New/content/id/<?php echo ($vo["id"]); ?>" style="color: #777;" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?>
+							</a><br/>
+							<?php echo (date("Y年m月d日",strtotime($vo["time"]))); ?></p>
+
 						</div>
 						<div class="clearfix"></div>
-					</div>
-					<div class="activity-row agileits w3layouts">
-						<div class="activity-img agileits w3layouts"><img src='/shanghua/Public/home/images/new-2.jpg' alt="W3layouts Agileits"></div>
-						<div class="activity-desc agileits w3layouts">
-							<p><a href="/shanghua/index.php/Home/New/c2" style="color: #777;">我公司荣获山东省十大软件企业创新奖
-							</a></p>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-					<div class="activity-row agileits w3layouts">
-						<div class="activity-img agileits w3layouts"><img src='/shanghua/Public/home/images/new-3.jpg' alt="W3layouts Agileits"></div>
-						<div class="activity-desc agileits w3layouts">
-							<p><a href="/shanghua/index.php/Home/New/c3" style="color: #777;">给设计院里新人的建议
-							</a></p>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-					<div class="activity-row agileits w3layouts">
-						<div class="activity-img agileits w3layouts"><img src='/shanghua/Public/home/images/new-4.jpg' alt="W3layouts Agileits"></div>
-						<div class="activity-desc agileits w3layouts">
-							<p><a href="/shanghua/index.php/Home/Industry/s1" style="color: #777;">贯彻“发动机”文化 做“奔日子的人”
-							</a></p>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-					<div class="activity-row agileits w3layouts">
-						<div class="activity-img agileits w3layouts"><img src='/shanghua/Public/home/images/new-5.jpg' alt="W3layouts Agileits"></div>
-						<div class="activity-desc agileits w3layouts">
-							<p><a href="/shanghua/index.php/Home/Industry/s2" style="color: #777;">助力合伙人把握转型时代新机遇
-							</a></p>
-						</div>
-						<div class="clearfix"></div>
+					</div><?php endforeach; endif; else: echo "" ;endif; ?>
 					</div>
 				</div>
 			</div>
@@ -285,41 +216,35 @@
 		<div class="portfolio_grid_w3lss">
 			<div class="col-md-4 col-sm-4 w3agile_gallery_grid">
 				<div class="w3agile_gallery_image">
-					<a class="sb" href="/shanghua/index.php/Home/Product/zonghe">
 						<figure>
 							<img src="/shanghua/Public/home/images/portfolio-26.jpg" alt="W3layouts Agileits" class="img-responsive">
 							<figcaption>
 								<h4>产品</h4>
-								<p>综合管廊设计软件</p>
+								<p><a style="color:white;" href="<?php echo U('Product/intergrade');?>"> 综合管廊设计软件</a></p>
 							</figcaption>
 						</figure>
-					</a>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-4 w3agile_gallery_grid">
 				<div class="w3agile_gallery_image">
-					<a class="sb" href="/shanghua/index.php/Home/Product/operation">
 						<figure>
 							<img src="/shanghua/Public/home/images/portfolio-15.jpg" alt="W3layouts Agileits" class="img-responsive">
 							<figcaption>
 								<h4>产品</h4>
-								<p>综合管廊运维系统</p>
+								<p><a style="color:white;" href="<?php echo U('Product/operation');?>">综合管廊运维系统</a></p>
 							</figcaption>
 						</figure>
-					</a>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-4 w3agile_gallery_grid">
 				<div class="w3agile_gallery_image">
-					<a class="sb" href="/shanghua/index.php/Home/Product/lvse">
 						<figure>
 							<img src="/shanghua/Public/home/images/portfolio-17.jpg" alt="W3layouts Agileits" class="img-responsive">
 							<figcaption>
 								<h4>产品</h4>
-								<p>绿色建筑模拟分析</p>
+								<p><a style="color:white;" href="<?php echo U('Product/lvse');?>">绿色建筑模拟分析</a></p>
 							</figcaption>
 						</figure>
-					</a>
 				</div>
 			</div>
 			<div class="clearfix"> </div>
@@ -327,41 +252,35 @@
 		<div class="portfolio_grid_w3lss">
 			<div class="col-md-4 col-sm-4 w3agile_gallery_grid">
 				<div class="w3agile_gallery_image">
-					<a class="sb" href="/shanghua/index.php/Home/Product/zhushou">
 						<figure>
 							<img src="/shanghua/Public/home/images/portfolio-13.jpg" alt="W3layouts Agileits" class="img-responsive">
 							<figcaption>
 								<h4>产品</h4>
-								<p>设计助手DWGHelp</p>
+								<p><a style="color:white;" href="<?php echo U('Product/zhushou');?>">设计助手DWGHelp</a></p>
 							</figcaption>
 						</figure>
-					</a>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-4 w3agile_gallery_grid">
 				<div class="w3agile_gallery_image">
-					<a class="sb" href="/shanghua/index.php/Home/Product/fengli">
 						<figure>
 							<img src="/shanghua/Public/home/images/portfolio-21.jpg" alt="W3layouts Agileits" class="img-responsive">
 							<figcaption>
 								<h4>产品</h4>
-								<p>PDMS风管水力计算</p>
+								<p><a style="color:white;" href="<?php echo U('Product/fengli');?>">PDMS风管水力计算</p>
 							</figcaption>
 						</figure>
-					</a>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-4 w3agile_gallery_grid">
 				<div class="w3agile_gallery_image">
-					<a class="sb" href="/shanghua/index.php/Home/Product/zonghe">
 						<figure>
 							<img src="/shanghua/Public/home/images/portfolio-12.jpg" alt="W3layouts Agileits" class="img-responsive">
 							<figcaption>
 								<h4>产品</h4>
-								<p>PDMS综合材料自动排版系统</p>
+								<p><a style="color:white;" href="<?php echo U('Product/intergrade');?>">PDMS综合材料自动排版系统</a></p>
 							</figcaption>
 						</figure>
-					</a>
 				</div>
 			</div>
 			<div class="clearfix"> </div>
@@ -369,41 +288,35 @@
 		<div class="portfolio_grid_w3lss">
 			<div class="col-md-4 col-sm-4 w3agile_gallery_grid">
 				<div class="w3agile_gallery_image">
-					<a class="sb" href="/shanghua/index.php/Home/Product/gongyi">
 						<figure>
 							<img src="/shanghua/Public/home/images/portfolio-23.jpg" alt="W3layouts Agileits" class="img-responsive">
 							<figcaption>
 								<h4>产品</h4>
-								<p>工艺设计软件</p>
+								<p><a style="color:white;" href="<?php echo U('Product/gongyi');?>">工艺设计软件</a></p>
 							</figcaption>
 						</figure>
-					</a>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-4 w3agile_gallery_grid">
 				<div class="w3agile_gallery_image">
-					<a class="sb" href="/shanghua/index.php/Home/Success/gl">
 						<figure>
 							<img src="/shanghua/Public/home/images/portfolio-11.jpg" alt="W3layouts Agileits" class="img-responsive">
 							<figcaption>
 								<h4>案例</h4>
-								<p>管廊</p>
+								<p><a style="color:white;" href="<?php echo U('Success/gl');?>">管廊</a></p>
 							</figcaption>
-						</figure>
-					</a>
+						</figure>>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-4 w3agile_gallery_grid">
 				<div class="w3agile_gallery_image">
-					<a class="sb" href="/shanghua/index.php/Home/Product/VE">
 						<figure>
 							<img src="/shanghua/Public/home/images/portfolio-25.jpg" alt="W3layouts Agileits" class="img-responsive">
 							<figcaption>
 								<h4>案例</h4>
-								<p>VE</p>
+								<p><a style="color:white;" href="<?php echo U('Success/VE');?>">VE</a></p>
 							</figcaption>
 						</figure>
-					</a>
 				</div>
 			</div>
 			<div class="clearfix"></div>
@@ -473,18 +386,18 @@
           <li><img src="/shanghua/Public/home/images/footer4.png"height="12px"style="width:12px">&nbsp;shanghua@163.com</li>
         </ul>
     </div>
-    <div class="footer-top4">
+    <div class="footer-top4" >
         <ul>
-          <li><h5 style="text-align:left;">产品展示</h5></li>
-          <hr class="footer-hr"style="margin:5px 0px 0px 0px;padding:0px;">
-          <li class="footer-img"><img src="/shanghua/Public/home/images/1.jpg" width="50%" height="50%"></li>
-          <li class="footer-img"><img src="/shanghua/Public/home/images/3.jpg" width="50px" height="50px"></li>
-          <li class="footer-img"><img src="/shanghua/Public/home/images/4.jpg" width="50px" height="50px"></li>
+          <li><h5 style="text-align:left;"> 产品展示</h5></li>
+          <hr class="footer-hr">
+          <li class="footer-img"><a href="<?php echo U('Product/fengli');?>"><img src="/shanghua/Public/home/images/1.jpg" width="50px" height="50px"></a></li>
+          <li class="footer-img"><a href="<?php echo U('Product/gongyi');?>"><img src="/shanghua/Public/home/images/3.jpg" width="50px" height="50px"></a></li>
+          <li class="footer-img"><a href="<?php echo U('Product/intergrade');?>"><img src="/shanghua/Public/home/images/4.jpg" width="50px" height="50px"></a></li>
         </ul>
-        <ul class="footer-imgss"> 
-          <li class="footer-img"><img src="/shanghua/Public/home/images/5.png" width="50px" height="50px"></li>
-          <li class="footer-img"><img src="/shanghua/Public/home/images/6.png" width="50px" height="50px"></li>
-          <li class="footer-img"><img src="/shanghua/Public/home/images/7.png" width="50px" height="50px"></li>
+        <ul class="footer-imgss">
+          <li class="footer-img"><a href="<?php echo U('Product/operation');?>"><img src="/shanghua/Public/home/images/5.png" width="50px" height="50px"></a></li>
+          <li class="footer-img"><a href="<?php echo U('Product/zhushou');?>"><img src="/shanghua/Public/home/images/6.png" width="50px" height="50px"></a></li>
+          <li class="footer-img"><a href="<?php echo U('Product/lvse');?>"><img src="/shanghua/Public/home/images/7.png" width="50px" height="50px"></a></li>
         </ul>
     </div>
     </div>

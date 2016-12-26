@@ -7,6 +7,9 @@
   <link href="/shanghua/Public/home/css/gysh.css" type="text/css" rel="stylesheet" />
   <link href="/shanghua/Public/home/css/touch.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="/shanghua/Public/home/js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript">
+    var img = '/shanghua/Public/home/images/weixin.jpg';
+  </script>
   <script type="text/javascript" src="/shanghua/Public/home/js/touch.js"></script> 
 <body>
   <div id="nav-header">
@@ -14,84 +17,84 @@
        <img src="/shanghua/Public/home/images/logo.jpg" height="50px">
     </div>
     <div id="nav-center">
-     <div class="nav">
+    <div class="nav">
         <ul>
-          <li><a href="/shanghua/index.php/Home/Index/index">首页</a></li>
+            <li><a href="<?php echo U('Index/index');?>">首页</a></li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="/shanghua/index.php/Home/Honor/jianjie">关于上华</a>
+            <li><a href="<?php echo U('Honor/jianjie');?>">关于上华</a>
               <ul>
-                <li><a href="/shanghua/index.php/Home/Honor/jianjie">公司简介</a></li>
-                <li><a href="/shanghua/index.php/Home/Honor/wenhua">公司文化</a></li>
-                <li><a href="/shanghua/index.php/Home/Honor/rongyu">公司荣誉</a></li>
-                <li><a href="/shanghua/index.php/Home/Job/join1">加入我们</a></li>
+                <li><a href="<?php echo U('Honor/jianjie');?>">公司简介</a></li>
+                <li><a href="<?php echo U('Honor/wenhua');?>">公司文化</a></li>
+                <li><a href="<?php echo U('Honor/rongyu');?>">公司荣誉</a></li>
+                <li><a href="<?php echo U('Job/join?p=1');?>">加入我们</a></li>
               </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="/shanghua/index.php/Home/Product/product">产品服务</a>
+            <li><a href="<?php echo U('Product/product');?>">产品服务</a>
               <ul>
-                <li><a href="/shanghua/index.php/Home/Product/intergrade">设计软件</a></li>
-                <li><a href="/shanghua/index.php/Home/Product/operation">运维系统</a></li>
-                <li><a href="/shanghua/index.php/Home/Product/lvse">绿色建筑</a></li>
-                <li><a href="/shanghua/index.php/Home/Product/zhushou">DWGHelp</a></li>
-                <li><a href="/shanghua/index.php/Home/Product/zonghe">PDMS综合</a></li>
-                <li><a href="/shanghua/index.php/Home/Product/fengli">PDMS风力</a></li>
-                <li><a href="/shanghua/index.php/Home/Product/gongyi">工艺设计</a></li>
+                <li><a href="<?php echo U('Product/intergrade');?>">设计软件</a></li>
+                <li><a href="<?php echo U('Product/operation');?>">运维系统</a></li>
+                <li><a href="<?php echo U('Product/lvse');?>">绿色建筑</a></li>
+                <li><a href="<?php echo U('Product/zhushou');?>">DWGHelp</a></li>
+                <li><a href="<?php echo U('Product/zonghe');?>">PDMS综合</a></li>
+                <li><a href="<?php echo U('Product/fengli');?>">PDMS风力</a></li>
+                <li><a href="<?php echo U('Product/gongyi');?>">工艺设计</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="/shanghua/index.php/Home/New/company">新闻中心</a>
+            <li><a href="<?php echo U('New/company?p=1');?>">新闻中心</a>
                <ul>
-                <li><a href="/shanghua/index.php/Home/New/company">公司新闻</a></li>
-                <li><a href="/shanghua/index.php/Home/Industry/industry">行业资讯</a></li> 
+                <li><a href="<?php echo U('New/company?p=1');?>">公司新闻</a></li>
+                <li><a href="<?php echo U('Industry/industry?p=1');?>">行业资讯</a></li> 
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="/shanghua/index.php/Home/Success/gl">成功案例</a>
+            <li><a href="<?php echo U('Success/gl');?>">成功案例</a>
                <ul>
-                <li><a href="/shanghua/index.php/Home/Success/gl">管廊</a></li>
-                <li><a href="/shanghua/index.php/Home/Success/VE">VE</a></li>
+                <li><a href="<?php echo U('Success/gl');?>">管廊</a></li>
+                <li><a href="<?php echo U('Success/VE');?>">VE</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-            <li><a href="/shanghua/index.php/Home/Apply/apply">在线咨询</a>
+            <li><a href="<?php echo U('Apply/apply');?>">在线咨询</a>
                <ul>
-                <li><a href="/shanghua/index.php/Home/Apply/apply">申请试用</a></li>
-                <li><a href="/shanghua/index.php/Home/Advice/suggest">咨询或建议</a></li>
+                <li><a href="<?php echo U('Apply/apply');?>">申请试用</a></li>
+                <li><a href="<?php echo U('Advice/suggest');?>">咨询或建议</a></li>
                </ul>
             </li>
         </ul>
     </div>
     <div class="nav">
         <ul>
-          <li><a href="/shanghua/index.php/Home/Contact/contact">联系我们</a></li>
+            <li><a href="<?php echo U('Contact/contact');?>">联系我们</a></li>
         </ul>
     </div>
     </div>
     <div id="nav-right">
-      <p><a href="/shanghua/index.php/Home/Job/detail5">中文&nbsp;</a>|<a href="/shanghua/index.php/Home/Job/detail5e">&nbsp;English</a></p>
+      <p><a href="<?php echo U('Honor/jianjie');?>">中文&nbsp;</a>|<a href="<?php echo U('Honor/jianjiee');?>">&nbsp;English</a></p>
     </div>
   </div>
   <div id="nav-banner">
-    <img src="/shanghua/Public/home/images/b1.png">
+    <img src="/shanghua/Public/home/images/jianjie.jpg">
   </div>
   <div id="bread">
     <div id="bread-left">公司简介</div>
-      <div id="bread-right"><a href="/shanghua/index.php/Home/Index/index">首页&nbsp;</a>>><a href="/shanghua/index.php/Home/Honor/jianjie">&nbsp;关于上华&nbsp;</a>>>&nbsp;公司简介</div>
+      <div id="bread-right"><a href="<?php echo U('Index/index');?>">首页&nbsp;</a>>><a href="<?php echo U('Honor/jianjie');?>">&nbsp;关于上华&nbsp;</a>>>&nbsp;公司简介</div>
   </div>
 
   <div>
@@ -103,19 +106,19 @@
             <hr style="border:none;border-top:2px ridge orange;width:40px;margin-top:5px;position:absolute;" /><br/>
               <ul class="p0 category_item met_aside_list ecopc">
 
-                <li><a href="/shanghua/index.php/Home/Honor/jianjie" class='active' title="公司简介" target='_self'><i class="fa fa-angle-right"></i><em class="em1"></em>&nbsp;&nbsp;公司简介</a> 
+                <li><a href="<?php echo U('Honor/jianjie');?>" class='active' title="公司简介" target='_self'><i class="fa fa-angle-right"></i><em class="em1"></em>&nbsp;&nbsp;公司简介</a> 
              
                 </li>
 
-                <li><a href="/shanghua/index.php/Home/Honor/wenhua"  title="公司文化" target='_self'><i class="fa fa-angle-right"></i><em class="em2"></em>&nbsp;&nbsp;公司文化</a> 
+                <li><a href="<?php echo U('Honor/wenhua');?>"  title="公司文化" target='_self'><i class="fa fa-angle-right"></i><em class="em2"></em>&nbsp;&nbsp;公司文化</a> 
              
                 </li>
 
-                <li><a href="/shanghua/index.php/Home/Honor/rongyu"  title="公司荣誉" target='_self'><i class="fa fa-angle-right"></i><em class="em2"></em>&nbsp;&nbsp;公司荣誉</a> 
+                <li><a href="<?php echo U('Honor/rongyu');?>"  title="公司荣誉" target='_self'><i class="fa fa-angle-right"></i><em class="em2"></em>&nbsp;&nbsp;公司荣誉</a> 
              
                 </li>
 
-                <li><a href="/shanghua/index.php/Home/Job/join1"  title="加入我们" target='_self'><i class="fa fa-angle-right"></i><em class="em2"></em>&nbsp;&nbsp;加入我们</a> 
+                <li><a href="<?php echo U('Job/join?p=1');?>"  title="加入我们" target='_self'><i class="fa fa-angle-right"></i><em class="em2"></em>&nbsp;&nbsp;加入我们</a> 
              
                 </li>
 
@@ -125,25 +128,19 @@
             <hr style="border:none;border-top:2px ridge orange;width:40px;margin-top:5px;position:absolute;" /><br/>
              <div  class="ecobadding15">
                 <div class="single_product_item">
-                  <a  href="/shanghua/index.php/Home/Success/gl" title="智慧管廊" target='_self'><img src="/shanghua/Public/home/images/4.jpg" alt="智慧管廊" title="智慧管廊"></a> 
+                  <a  href="<?php echo U('Success/gl');?>" title="智慧管廊" target='_self'><img src="/shanghua/Public/home/images/4.jpg" alt="智慧管廊" title="智慧管廊"></a> 
                   <p>智慧管廊</p>
-                    <a  href="/shanghua/index.php/Home/Success/gl" title="智慧管廊" target='_self'>MORE</a>
+                    <a  href="<?php echo U('Success/gl');?>" title="智慧管廊" target='_self'>MORE</a>
                 </div>
-                
-
-                
-                <div class="single_product_item">
-                  <a  href="/shanghua/index.php/Home/Product/lvse" title="VE" target='_self'><img src="/shanghua/Public/home/images/5.png" alt="VE" title="VE"></a> 
+             <div class="single_product_item">
+                  <a  href="<?php echo U('Product/lvse');?>" title="VE" target='_self'><img src="/shanghua/Public/home/images/5.png" alt="VE" title="VE"></a> 
                   <p>绿色建筑</p>
-                    <a  href="/shanghua/index.php/Home/Product/lvse" title="VE" target='_self'>MORE</a>
-                </div>
-                
-
-                
+                    <a  href="<?php echo U('Product/lvse');?>" title="VE" target='_self'>MORE</a>
+                </div>  
                 <div class="single_product_item">
-                  <a  href="/shanghua/index.php/Home/Product/gongyi" title="工艺设计软件" target='_self'><img src="/shanghua/Public/home/images/7.png" alt="工艺设计软件" title="工艺设计软件"></a> 
+                  <a  href="<?php echo U('Product/gongyi');?>" title="工艺设计软件" target='_self'><img src="/shanghua/Public/home/images/7.png" alt="工艺设计软件" title="工艺设计软件"></a>
                   <p>设计软件</p>
-                    <a  href="/shanghua/index.php/Home/Product/gongyi" title="工艺设计软件" target='_self'>MORE</a>
+                    <a  href="<?php echo U('Product/gongyi');?>" title="工艺设计软件" target='_self'>MORE</a>
                 </div>
                 </div>
                 <br/><br/><br/>
@@ -152,17 +149,17 @@
                 <hr style="border:none;border-top:2px ridge orange;width:40px;margin-top:5px;position:absolute;" /><br/>
                 <ul class="p0 clouds">
 
-                  <li><a href="/shanghua/index.php/Home/Success/VE" target='_self'>VE</a></li>
+                  <li><a href="<?php echo U('Success/VE');?>" target='_self'>VE</a></li>
 
-                  <li><a href="/shanghua/index.php/Home/Success/gl" target='_self'>管廊</a></li>
+                  <li><a href="<?php echo U('Success/gl');?>" target='_self'>管廊</a></li>
 
-                  <li><a href="/shanghua/index.php/Home/Product/gongyi" target='_self'>工艺设计软件</a></li>
+                  <li><a href="<?php echo U('Product/gongyi');?>" target='_self'>工艺设计软件</a></li>
 
-                  <li><a href="/shanghua/index.php/Home/Product/lvse" target='_self'>绿色建筑</a></li>
+                  <li><a href="<?php echo U('Product/lvse');?>" target='_self'>绿色建筑</a></li>
 
-                  <li><a href="/shanghua/index.php/Home/Product/zhushou" target='_self'>设计助手</a></li>
+                  <li><a href="<?php echo U('Product/zhushou');?>" target='_self'>设计助手</a></li>
 
-                  <li><a href="/shanghua/index.php/Home/Product/fengli" target='_self'>风管水力计算</a></li>
+                  <li><a href="<?php echo U('Product/fengli');?>" target='_self'>风管水力计算</a></li>
 
                 </ul>
           </div>
@@ -229,12 +226,14 @@
         <ul>
           <li><h5>产品展示</h5></li>
           <hr class="footer-hr">
-          <li class="footer-img"><img src="/shanghua/Public/home/images/1.jpg" width="50px" height="50px"></li>
-          <li class="footer-img"><img src="/shanghua/Public/home/images/3.jpg" width="50px" height="50px"></li>
-          <li class="footer-img"><img src="/shanghua/Public/home/images/4.jpg" width="50px" height="50px"></li>
-          <li class="footer-img"><img src="/shanghua/Public/home/images/5.png" width="50px" height="50px"></li>
-          <li class="footer-img"><img src="/shanghua/Public/home/images/6.png" width="50px" height="50px"></li>
-          <li class="footer-img"><img src="/shanghua/Public/home/images/7.png" width="50px" height="50px"></li>
+          <li class="footer-img"><a href="<?php echo U('Product/fengli');?>"><img src="/shanghua/Public/home/images/1.jpg" width="50px" height="50px"></a></li>
+          <li class="footer-img"><a href="<?php echo U('Product/gongyi');?>"><img src="/shanghua/Public/home/images/3.jpg" width="50px" height="50px"></a></li>
+          <li class="footer-img"><a href="<?php echo U('Product/intergrade');?>"><img src="/shanghua/Public/home/images/4.jpg" width="50px" height="50px"></a></li>
+        </ul>
+        <ul class="footer-imgss">
+          <li class="footer-img"><a href="<?php echo U('Product/operation');?>"><img src="/shanghua/Public/home/images/5.png" width="50px" height="50px"></a></li>
+          <li class="footer-img"><a href="<?php echo U('Product/zhushou');?>"><img src="/shanghua/Public/home/images/6.png" width="50px" height="50px"></a></li>
+          <li class="footer-img"><a href="<?php echo U('Product/lvse');?>"><img src="/shanghua/Public/home/images/7.png" width="50px" height="50px"></a></li>
         </ul>
     </div>
     <div id="footer-bottom">

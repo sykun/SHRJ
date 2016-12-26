@@ -10,9 +10,16 @@ class ProductenController extends Controller {
     }
      public function listsen(){
 	    	$productenModel = D("producten");
-		    $producten = $productenModel->select();
-		    $this->assign('producten',$producten);
-			$this->display();  
+	        $cut=8;
+	        $currentPage = I("get.p");
+	        $offset = ($currentPage-1) * $cut;
+	        $producten=$productenModel->where()->limit("$offset,$cut")->select();
+	        $this->assign("producten",$producten);
+	        $count = $productenModel->count();
+	        $Page = new \Think\Page($count, $cut);
+	        $show = $Page->show();
+	        $this->assign("page", $show);
+	        $this->display();
     }
     public function adden(){
 
@@ -39,7 +46,8 @@ class ProductenController extends Controller {
 		    	
 		        $data['thumb']=$info['thumb']['savepath'].$info['thumb']['savename'];
 		    	if($productenModel->add($data)){
-		    		$this->success('数据添加成功','listsen');
+		    		//$this->success('数据添加成功','listsen?p=1');
+		    		$this->redirect('listsen?p=1',0);
 
 		    }else{
 		    	$this->showError('数据添加失败');
@@ -53,13 +61,15 @@ class ProductenController extends Controller {
             foreach($id as $value){
                 D("producten")->delete($value);
             }  
-            $this->success("批量删除成功！",U("listsen"));
+           // $this->success("批量删除成功！",U("listsen?p=1"));
+           $this->redirect('listsen?p=1',0);
         } 
         //单个删除
         else{
             $productenModel = D("producten");
             if($productenModel->where("id=$id")->delete()){
-                $this->success("删除成功",U("Producten/listsen"));
+               // $this->success("删除成功",U("Producten/listsen?p=1"));
+            	 $this->redirect('listsen?p=1',0);
             }
             else{
                 $this->error($productenModel->geterror());
@@ -95,7 +105,8 @@ class ProductenController extends Controller {
 		    	
 		        $data['thumb']=$info['thumb']['savepath'].$info['thumb']['savename'];
 		    	if($productenModel->save($data)){
-		    		$this->success('数据修改成功','listsen');
+		    		//$this->success('数据修改成功','listsen?p=1');
+		    		 $this->redirect('listsen?p=1',0);
 
 		    }else{
 		    	$this->showError('数据修改失败');

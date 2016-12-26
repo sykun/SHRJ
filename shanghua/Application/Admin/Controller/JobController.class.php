@@ -31,7 +31,8 @@ class JobController extends Controller {
 	            $this->error($jobModel->getError());          
 	        }
 	        if($jobModel->add()){
-	            $this->success("添加成功",U("lists"));
+	           // $this->success("添加成功",U("lists?p=1"));
+                $this->redirect('lists?p=1',0);
 	        }
 	        else{
 	            $this->error("添加失败");
@@ -44,13 +45,15 @@ class JobController extends Controller {
             foreach($id as $value){
                 D("job")->delete($value);
             }  
-            $this->success("批量删除成功！",U("lists"));
+            //$this->success("批量删除成功！",U("lists?p=1"));
+            $this->redirect('lists?p=1',0);
         } 
         //单个删除
         else{
             $jobModel = D("job");
             if($jobModel->where("id=$id")->delete()){
-                $this->success("删除成功",U("Job/lists"));
+               // $this->success("删除成功",U("Job/lists?p=1"));
+                $this->redirect('lists?p=1',0);
             }
             else{
                 $this->error($jobModel->geterror());
@@ -76,7 +79,8 @@ class JobController extends Controller {
 	        }
 	        $jobModel = D("job");
 	        if ($jobModel->create() && $jobModel->save()) {
-	            $this->success("修改成功!", U('Job/lists'));
+	           // $this->success("修改成功!", U('Job/lists?p=1'));
+                $this->redirect('lists?p=1',0);
 	        }
 	        else {
 	            // $this->error($jobModel->getError());

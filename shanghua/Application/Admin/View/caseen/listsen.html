@@ -31,71 +31,56 @@
 
 
     <aside class="accordion" style="float:left">
-        <h1><i class="icon-font">&#xe051;</i>Account</h1>
-        <div class="opened-for-codepen">
-            <h2><a href="__MODULE__/Usersen/listsen"><i class="icon-font">&#xe050;</i>User</a></h2>
-            <h2><a href="__MODULE__/Usersen/adden"><i class="icon-font">&#xe026;</i>Add user</a></h2>
-            <h2><a href="__MODULE__/Usersen/passen"><i class="icon-font">&#xe051;</i>Password</a></h2>
-        </div>
-
         <h1><i class="icon-font">&#xe001;</i>News</h1>
         <div>
-            <h2><a href="__MODULE__/Newen/listsen"><i class="icon-font">&#xe050;</i>News list</a></h2>
-            <h2><a href="__MODULE__/Newen/adden"><i class="icon-font">&#xe026;</i>Add news</a></h2>
+            <h2><a href="{:U('Newen/listsen?p=1')}"><i class="icon-font">&#xe050;</i>News list</a></h2>
+            <h2><a href="{:U('Newen/adden')}"><i class="icon-font">&#xe026;</i>Add news</a></h2>
         </div>
-
         <h1><i class="icon-font">&#xe005;</i>Industry</h1>
         <div>
-            <h2><a href="__MODULE__/Industryen/listsen"><i class="icon-font">&#xe050;</i>Consulting list</a></h2>
-            <h2><a href="__MODULE__/Industryen/adden"><i class="icon-font">&#xe026;</i>Add</a></h2>
+            <h2><a href="{:U('Industryen/listsen?p=1')}"><i class="icon-font">&#xe050;</i>Consulting list</a></h2>
+            <h2><a href="{:U('Industryen/adden')}"><i class="icon-font">&#xe026;</i>Add</a></h2>
         </div>
-
         <h1><i class="icon-font">&#xe018;</i>Product</h1>
         <div>
-            <h2><a href="__MODULE__/Producten/listsen"><i class="icon-font">&#xe050;</i>Product list</a></h2>
-            <h2><a href="__MODULE__/Producten/adden"><i class="icon-font">&#xe026;</i>Add product</a></h2>
+            <h2><a href="{:U('Producten/listsen?p=1')}"><i class="icon-font">&#xe050;</i>Product list</a></h2>
+            <h2><a href="{:U('Producten/adden')}"><i class="icon-font">&#xe026;</i>Add product</a></h2>
         </div>
-
         <h1><i class="icon-font">&#xe060;</i>Successful case</h1>
         <div>
-            <h2><a href="__MODULE__/Caseen/listsen"><i class="icon-font">&#xe050;</i>Case list</a></h2>
-            <h2><a href="__MODULE__/Caseen/adden"><i class="icon-font">&#xe026;</i>New case</a></h2>
+            <h2><a href="{:U('Caseen/listsen?p=1')}"><i class="icon-font">&#xe050;</i>Case list</a></h2>
+            <h2><a href="{:U('Caseen/adden')}"><i class="icon-font">&#xe026;</i>New case</a></h2>
         </div>
-
         <h1><i class="icon-font">&#xe002;</i>Application</h1>
         <div>
-            <h2><a href="__MODULE__/Applyen/listsen"><i class="icon-font">&#xe050;</i>Application</a></h2>
+            <h2><a href="{:U('Applyen/listsen?p=1')}"><i class="icon-font">&#xe050;</i>Application</a></h2>
         </div>
-
         <h1><i class="icon-font">&#xe051;</i>Honor</h1>
         <div>
-            <h2><a href="__MODULE__/Honoren/listsen"><i class="icon-font">&#xe050;</i>Honor list</a></h2>
-            <h2><a href="__MODULE__/Honoren/adden"><i class="icon-font">&#xe026;</i>Add honor</a></h2>
+            <h2><a href="{:U('Honoren/listsen?p=1')}"><i class="icon-font">&#xe050;</i>Honor list</a></h2>
+            <h2><a href="{:U('Honoren/adden')}"><i class="icon-font">&#xe026;</i>Add honor</a></h2>
         </div>
-
         <h1><i class="icon-font">&#xe003;</i>Position</h1>
         <div>
-            <h2><a href="__MODULE__/Joben/listsen"><i class="icon-font">&#xe050;</i>Position list</a></h2>
-            <h2><a href="__MODULE__/Joben/adden"><i class="icon-font">&#xe026;</i>New job</a></h2>
+            <h2><a href="{:U('Joben/listsen?p=1')}"><i class="icon-font">&#xe050;</i>Position list</a></h2>
+            <h2><a href="{:U('Joben/adden')}"><i class="icon-font">&#xe026;</i>New job</a></h2>
         </div>
-
         <h1><i class="icon-font">&#xe014;</i>Consulting</h1>
         <div>
-            <h2><a href="__MODULE__/Adviceen/listsen"><i class="icon-font">&#xe050;</i>Consulting list</a></h2>
+            <h2><a href="{:U('Adviceen/listsen?p=1')}"><i class="icon-font">&#xe050;</i>Consulting list</a></h2>
         </div>
     </aside>
 
     <div class="main-wrap">
 
         <div class="crumb-wrap">
-            <div class="crumb-list"><i class="icon-font"></i><a href="__MODULE__/Indexen/index">Home page</a><span class="crumb-step">&gt;</span><span class="crumb-name">Case management</span></div>
+            <div class="crumb-list"><i class="icon-font"></i><a href="__MODULE__/Indexen/index">Home page</a><span class="crumb-step">&gt;</span><span class="crumb-name">Case list</span></div>
         </div>
         <div class="result-wrap">
             <form name="myform" id="myform" action="__MODULE__/caseen/delete">
                 <div class="result-title">
                     <div class="result-list">
                         <a href="__MODULE__/Caseen/adden"><i class="icon-font"></i>Add case</a>
-                        <a id="updateOrd" href="javascript:void(0)"><i class="icon-font"></i>更新排序</a>
                     </div>
                 </div>
                 <div class="result-content">
@@ -107,24 +92,24 @@
                             <th width="40%">CONTENT</th>
                             <th width="12%">OPERATE</th>
                         </tr>
-                        <volist name="case" id="data">
+                        <volist name="caseen" id="data">
                         <tr>
                             <td><input type="checkbox" name="caseenId[]" id="checkbox" value="{$data.id}"><label for="checkbox"></label></td>
                             <td><img src="__PUBLIC__/{$data.thumb}" width="60px" height="60px"></td>
                             <td>{$data.title|msubstr=0,8,'utf-8',ture}</td>
                             <td>{$data.content|msubstr=0,10,'utf-8',ture}</td>
                             <td>
-                                <a class="link-update" href="__MODULE__/Caseen/editeb/id/{$data.id}">revise</a>
-                                <a class="link-del" href="__MODULE__/Caseen/delete/caseenId/{$data.id}">delete</a>
+                                <a class="link-update" href="__MODULE__/Caseen/editen/id/{$data.id}">revise</a>
+                                <a class="link-del" href="__MODULE__/Caseen/deleteen/caseenId/{$data.id}">delete</a>
                             </td>
                         </tr>
                         </volist>
                     </table>
                     <div id="alldelete">
 
-                    <button type="submit" id="batchDel" class="btn btn-danger " href="__MODULE__/caseen/delete">Batch delete</button> 
+                    <button type="submit" id="batchDel" class="btn btn-danger " href="__MODULE__/caseen/deleteen">Batch delete</button> 
                      </div>
-                    <div class="list-page"> 2 条 1/1 页</div>
+                    <div class="list-page"> {$page}</div>
                 </div>
             </form>
         </div>

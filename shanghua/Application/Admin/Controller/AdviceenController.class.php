@@ -32,14 +32,14 @@ class AdviceenController extends Controller {
                 D("adviceen")->delete($value);
             }  
            // $this->success("批量删除成功！",U("listsen"));
-            $this->redirect('lists?p=1',0);
+            $this->redirect('listsen?p=1',0);
         } 
         //单个删除
         else{
             $adviceenModel = D("adviceen");
             if($adviceenModel->where("id=$id")->delete()){
                // $this->success("删除成功",U("Adviceen/listsen"));
-                $this->redirect('lists?p=1',0);
+               $this->redirect('listsen?p=1',0);
             }
             else{
                 $this->error($adviceenModel->geterror());

@@ -53,7 +53,7 @@ $(".box ul li").hover(
                 <li><a href="{:U('Honor/jianjie')}">公司简介</a></li>
                 <li><a href="{:U('Honor/wenhua')}">公司文化</a></li>
                 <li><a href="{:U('Honor/rongyu')}">公司荣誉</a></li>
-                <li><a href="{:U('Job/join1')}">加入我们</a></li>
+                <li><a href="{:U('Job/join?p=1')}">加入我们</a></li>
               </ul>
             </li>
         </ul>
@@ -98,7 +98,7 @@ $(".box ul li").hover(
             <li><a href="{:U('Apply/apply')}">在线咨询</a>
                <ul>
                 <li><a href="{:U('Apply/apply')}">申请试用</a></li>
-                <li><a href="{:U('Apply/suggest')}">咨询或建议</a></li>
+                <li><a href="{:U('Advice/suggest')}">咨询或建议</a></li>
                </ul>
             </li>
         </ul>
@@ -114,7 +114,7 @@ $(".box ul li").hover(
     </div>
   </div>
   <div id="nav-banner">
-    <img src="__PUBLIC__/home/images/b12.png">
+    <img src="__PUBLIC__/home/images/industry1.jpg">
   </div>
   <div id="bread">
     <div id="bread-left">新闻中心</div>
@@ -129,7 +129,7 @@ $(".box ul li").hover(
 				<ul class="new">
 					<li><a href="{:U('New/company?p=1')}" class='active' style="color:#FFBB77"><em class='em1'></em>公司新闻</a></li>
 					
-					<li><a href="{:U('Industry/industry?p=1')}"><em class="em2"></em>行业动态</a></li>
+					<li><a href="{:U('Industry/industry?p=1')}"><em class="em2"></em>行业咨询</a></li>
 				</ul>
 			</div>
 			<div id="new-company-product">
@@ -151,15 +151,15 @@ $(".box ul li").hover(
 				</ul>
 			</div>
       <div id="new-company-hot">
-         <h4>热门产品搜索</h4>
+         <h4>热门关键词搜索</h4>
          <HR align="left" width="10%" color="#FFBB77" SIZE="3" style="margin-top:10px;">
           <ul class="p0 clouds">
               <li><a href="{:U('Success/VE')}" target='_self'>VE</a></li>
               <li><a href="{:U('Success/gl')}" target='_self'>智慧管廊</a></li>
-              <li><a href="{:U('Success/gongyi')}" target='_self'>工艺设计软件</a></li>
-              <li><a href="{:U('Success/lvse')}" target='_self'>绿色建筑</a></li>
-              <li><a href="{:U('Success/zhushou')}" target='_self'>设计助手</a></li>
-              <li><a href="{:U('Success/fengli')}" target='_self'>风管水力计算</a></li>
+              <li><a href="{:U('Product/gongyi')}" target='_self'>工艺设计软件</a></li>
+              <li><a href="{:U('Product/lvse')}" target='_self'>绿色建筑</a></li>
+              <li><a href="{:U('Product/zhushou')}" target='_self'>设计助手</a></li>
+              <li><a href="{:U('Product/fengli')}" target='_self'>风管水力计算</a></li>
           </ul>
       </div>
 		</div>
@@ -237,12 +237,14 @@ $(".box ul li").hover(
         <ul>
           <li><h5>产品展示</h5></li>
           <hr class="footer-hr">
-          <li class="footer-img"><img src="__PUBLIC__/home/images/1.jpg" width="50px" height="50px"></li>
-          <li class="footer-img"><img src="__PUBLIC__/home/images/3.jpg" width="50px" height="50px"></li>
-          <li class="footer-img"><img src="__PUBLIC__/home/images/4.jpg" width="50px" height="50px"></li>
-          <li class="footer-img"><img src="__PUBLIC__/home/images/5.png" width="50px" height="50px"></li>
-          <li class="footer-img"><img src="__PUBLIC__/home/images/6.png" width="50px" height="50px"></li>
-          <li class="footer-img"><img src="__PUBLIC__/home/images/7.png" width="50px" height="50px"></li>
+          <li class="footer-img"><a href="{:U('Product/fengli')}"><img src="__PUBLIC__/home/images/1.jpg" width="50px" height="50px"></a></li>
+          <li class="footer-img"><a href="{:U('Product/gongyi')}"><img src="__PUBLIC__/home/images/3.jpg" width="50px" height="50px"></a></li>
+          <li class="footer-img"><a href="{:U('Product/intergrade')}"><img src="__PUBLIC__/home/images/4.jpg" width="50px" height="50px"></a></li>
+        </ul>
+        <ul class="footer-imgss">
+          <li class="footer-img"><a href="{:U('Product/operation')}"><img src="__PUBLIC__/home/images/5.png" width="50px" height="50px"></a></li>
+          <li class="footer-img"><a href="{:U('Product/zhushou')}"><img src="__PUBLIC__/home/images/6.png" width="50px" height="50px"></a></li>
+          <li class="footer-img"><a href="{:U('Product/lvse')}"><img src="__PUBLIC__/home/images/7.png" width="50px" height="50px"></a></li>
         </ul>
     </div>
     <div id="footer-bottom">
