@@ -9,10 +9,18 @@ class CaseController extends Controller {
         }
     }
      public function lists(){
-    	$caseModel = D("case");
-		$case = $caseModel->select();
-		$this->assign('case',$case);
-		$this->display();  
+            $caseModel = D("case");
+	        $cut=8;
+	        $currentPage = I("get.p");
+	        $offset = ($currentPage-1) * $cut;
+	        $case=$caseModel->where()->limit("$offset,$cut")->select();
+	        $this->assign("case",$case);
+	        $count = $caseModel->count();
+	        $Page = new \Think\Page($count, $cut);
+	        $show = $Page->show();
+	        $this->assign("page", $show);
+	    	$this->display(); 
+	 
     }
     public function add(){
 
@@ -39,7 +47,8 @@ class CaseController extends Controller {
 		    	
 		        $data['thumb']=$info['thumb']['savepath'].$info['thumb']['savename'];
 		    	if($caseModel->add($data)){
-		    		$this->success('数据添加成功','lists');
+		    		//$this->success('数据添加成功','lists?p=1');
+		    		$this->redirect('lists?p=1',0);
 
 		    }else{
 		    	$this->showError('数据添加失败');
@@ -53,13 +62,15 @@ class CaseController extends Controller {
                 foreach($id as $value){
                     D("case")->delete($value);
                 }  
-                $this->success("批量删除成功！",U("lists"));
+                //$this->success("批量删除成功！",U("lists?p=1"));
+                $this->redirect('lists?p=1',0);
             } 
         //单个删除
         else{
             $caseModel = D("case");
             if($caseModel->where("id=$id")->delete()){
-                    $this->success("删除成功",U("case/lists"));
+                   // $this->success("删除成功",U("case/lists?p=1"));
+            	$this->redirect('lists?p=1',0);
             }
             else{
                 $this->error($caseModel->geterror());
@@ -95,7 +106,8 @@ class CaseController extends Controller {
 		    	
 		        $data['thumb']=$info['thumb']['savepath'].$info['thumb']['savename'];
 		    	if($caseModel->save($data)){
-		    		$this->success('数据修改成功','lists');
+		    		//$this->success('数据修改成功','lists?p=1');
+		    		$this->redirect('lists?p=1',0);
 
 		    }else{
 		    	$this->showError('数据修改失败');
