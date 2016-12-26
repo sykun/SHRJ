@@ -9,10 +9,17 @@ class AdviceController extends Controller {
         }
     }
      public function lists(){
-    	$adviceModel = D("advice");
-	    $advice = $adviceModel->select();
-	    $this->assign('advice',$advice);
-		$this->display();  
+    	    $adviceModel = D("advice");
+            $cut=8;
+            $currentPage = I("get.p");
+            $offset = ($currentPage-1) * $cut;
+            $advice=$adviceModel->where()->limit("$offset,$cut")->select();
+            $this->assign("advice",$advice);
+            $count = $adviceModel->count();
+            $Page = new \Think\Page($count, $cut);
+            $show = $Page->show();
+            $this->assign("page", $show);
+            $this->display();  
     }
     public function delete() {
         //全部删除
@@ -21,13 +28,15 @@ class AdviceController extends Controller {
             foreach($id as $value){
                 D("advice")->delete($value);
             }  
-            $this->success("批量删除成功！",U("lists"));
+            //$this->success("批量删除成功！",U("lists?p=1"));
+            $this->redirect('lists?p=1',0);
         } 
         //单个删除
         else{
             $adviceModel = D("advice");
             if($adviceModel->where("id=$id")->delete()){
-                $this->success("删除成功",U("Advice/lists"));
+                //$this->success("删除成功",U("Advice/lists?p=1"));
+                $this->redirect('lists?p=1',0);
             }
             else{
                 $this->error($adviceModel->geterror());
